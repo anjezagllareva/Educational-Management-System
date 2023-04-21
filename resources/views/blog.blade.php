@@ -49,11 +49,12 @@
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10">
-                            <div class="menu-wrapper d-flex align-items-center justify-content-end">
-                                <!-- Main-menu -->
-                                <div class="main-menu d-none d-lg-block">
-                                    <nav>
-                                        <li class="active" ><a href="{{ url('/index') }}">Home</a></li>
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li class="active" ><a href="{{ url('/index') }}">Home</a></li>
                                                 <li><a href="{{ url('/courses') }}">Courses</a></li>
                                                 <li><a href="{{ url('/about') }}">About</a></li>
                                                 <li><a href="#">Blog</a>
@@ -67,11 +68,11 @@
                                                 <!-- Button -->
                                                 <li class="button-header margin-left "><a href="#" class="btn">Join</a></li>
                                                 <li class="button-header"><a href="{{ url('auth/login') }}" class="btn btn3">Log in</a></li>
-                                        </ul>
-                                    </nav>
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </div>
-                            </div>
-                        </div> 
+                            </div> 
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
