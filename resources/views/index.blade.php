@@ -70,7 +70,7 @@
                                                         <li><a href="{{ url('/elements') }}">Element</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                                <li><a href="{{ url('/contact') }}">Contact</a></li>
                                                 <!-- Button -->
                                                 <li class="button-header margin-left "><a href="#" class="btn">Join</a></li>
                                                 <li class="button-header"><a href="{{ url('auth/login') }}" class="btn btn3">Log in</a></li>
