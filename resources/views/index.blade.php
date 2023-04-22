@@ -11,21 +11,20 @@
 
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/slicknav.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/flaticon.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/progressbar_barfiller.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/gijgo.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/animated-headline.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/fontawesome-all.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/themify-icons.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/slick.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/nice-select.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -72,8 +71,8 @@
                                                 </li>
                                                 <li><a href="{{ url('/contact') }}">Contact</a></li>
                                                 <!-- Button -->
-                                                <li class="button-header margin-left "><a href="#" class="btn">Join</a></li>
-                                                <li class="button-header"><a href="{{ url('auth/login') }}" class="btn btn3">Log in</a></li>
+                                                <li class="button-header margin-left "><a href="{{ url('/register') }}" class="btn">Join</a></li>
+                                                <li class="button-header"><a href="{{ url('/login') }}" class="btn btn3">Log in</a></li>
                                             </ul>
                                         </nav>
                                     </div>

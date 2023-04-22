@@ -73,7 +73,7 @@
                 <input type="submit" name="submit" value="Registration">
             </div>
             <!-- Forget Password -->
-            <a href="login.html" class="registration">login</a>
+            <a href="{{ url('/login') }}" class="registration">login</a>
         </div>
     </form>
     <!-- /end login form -->
