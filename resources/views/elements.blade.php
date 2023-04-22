@@ -61,11 +61,11 @@
                                                         <li><a href="{{ url('/blog_details') }}">Blog Details</a></li>
                                                         <li><a href="{{ url('/elements') }}">Element</a></li>
                                                     </ul>
-                                                </li>
-                                                <li><a href="{{ url('/contact') }}">Contact</a></li>
+                                                </li>{{ url('/contact') }}
+                                                <li><a href="">Contact</a></li>
                                                 <!-- Button -->
-                                                <li class="button-header margin-left "><a href="#" class="btn">Join</a></li>
-                                                <li class="button-header"><a href="{{ url('auth/login') }}" class="btn btn3">Log in</a></li>
+                                                <li class="button-header margin-left "><a href="{{ url('/register') }}" class="btn">Join</a></li>
+                                                <li class="button-header"><a href="{{ url('/login') }}" class="btn btn3">Log in</a></li>
 										</ul>
 									</nav>
 								</div>

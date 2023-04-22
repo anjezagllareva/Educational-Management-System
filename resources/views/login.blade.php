@@ -62,7 +62,6 @@
                     <input type="submit" name="submit" value="login">
                 </div>
                 
-                
                 <!-- Forget Password -->
                 <a href="{{ url('/register') }}" class="registration">Registration</a>
             </div>
