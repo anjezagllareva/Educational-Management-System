@@ -450,7 +450,7 @@
                             </div>
                             <div class="features-caption">
                                 <h3>20+ Programming courses</h3>
-                                <p>The automated process all your website tasks.</p>
+                                <p>Learn courses through our books</p>
                             </div>
                         </div>
                     </div>
@@ -460,8 +460,8 @@
                                 <img src="assets/img/icon/icon2.svg" alt="">
                             </div>
                             <div class="features-caption">
-                                <h3>Expert instructors</h3>
-                                <p>The automated process all your website tasks.</p>
+                            <h3>Staff</h3>
+                            <p>We have the perfect staff for your teachings</p>
                             </div>
                         </div>
                     </div>
@@ -471,8 +471,8 @@
                                 <img src="assets/img/icon/icon3.svg" alt="">
                             </div>
                             <div class="features-caption">
-                                <h3>Life time access</h3>
-                                <p>The automated process all your website tasks.</p>
+                            <h3>A suitable schedule</h3>
+                            <p>The most suitable schedule for the lectures</p>
                             </div>
                         </div>
                     </div>
