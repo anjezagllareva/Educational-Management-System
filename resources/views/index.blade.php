@@ -522,7 +522,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="section-tittle text-center mb-55">
-                            <h2>Community experts</h2>
+                            <h2>Community experts.</h2>
                         </div>
                     </div>
                 </div>
