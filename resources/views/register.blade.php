@@ -44,7 +44,7 @@
 
 <main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
     <!-- Login Admin -->
-    <form class="form-default" action="login-bg.mp4" method="POST">
+    <form class="form-default" action="{{ url('/login') }}" method="POST">
         
         <div class="login-form">
             <!-- logo-login -->
@@ -70,7 +70,7 @@
                 <input type="password" name="password" placeholder="Confirm Password">
             </div>
             <div class="form-input pt-30">
-                <input type="submit" name="submit" value="Registration">
+                <input type="submit" name="submit"  value="Registration">
             </div>
             <!-- Forget Password -->
             <a href="{{ url('/login') }}" class="registration">login</a>

@@ -47,7 +47,7 @@
             <div class="login-form">
                 <!-- logo-login -->
                 <div class="logo-login">
-                    <a href="index.html"><img src="assets/img/logo/loder.png" alt=""></a>
+                    <a href="{{ url('/index') }}"><img src="assets/img/logo/loder.png" alt=""></a>
                 </div>
                 <h2>Login Here</h2>
                 <div class="form-input">
@@ -112,6 +112,8 @@
     
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
     <script src="./assets/js/main.js"></script>
     
     </body>
