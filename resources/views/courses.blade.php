@@ -56,7 +56,7 @@
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-lg-block">
                                     <nav>
-                                        <ul id="navigation">                                                                                          
+                                        <ul id="navigation">
                                              <li class="active" ><a href="{{ url('/index') }}">Home</a></li>
                                                 <li><a href="{{ url('/courses') }}">Courses</a></li>
                                                 <li><a href="{{ url('/about') }}">About</a></li>
@@ -75,7 +75,7 @@
                                     </nav>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -101,14 +101,14 @@
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                            <li class="breadcrumb-item"><a href="#">Services</a></li> 
+                                            <li class="breadcrumb-item"><a href="#">Services</a></li>
                                         </ol>
                                     </nav>
                                     <!-- breadcrumb End -->
                                 </div>
                             </div>
                         </div>
-                    </div>          
+                    </div>
                 </div>
             </div>
         </section>
@@ -131,8 +131,8 @@
                                 </div>
                                 <div class="properties__caption">
                                     <p>User Experience</p>
-                                    <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                    <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                                    <h3><a href="#">Fundamental of Java</a></h3>
+                                    <p>Popular for its versatility and ability to create a wide variety of applications, learning Java opens up your possibilities when coding.
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
@@ -146,7 +146,7 @@
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
                                         <div class="price">
-                                            <span>$135</span>
+                                            <span></span>
                                         </div>
                                     </div>
                                     <a href="#" class="border-btn border-btn2">Find out more</a>
@@ -162,9 +162,9 @@
                                 </div>
                                 <div class="properties__caption">
                                     <p>User Experience</p>
-                                    <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                    <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
-                                        
+                                    <h3><a href="#">Fundamental of Python</a></h3>
+                                    <p>Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because Python code is concise and easy to read.
+
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
@@ -178,12 +178,12 @@
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
                                         <div class="price">
-                                            <span>$135</span>
+                                            <span></span>
                                         </div>
                                     </div>
                                     <a href="#" class="border-btn border-btn2">Find out more</a>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -195,9 +195,9 @@
                                 </div>
                                 <div class="properties__caption">
                                     <p>User Experience</p>
-                                    <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                    <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
-                                        
+                                    <h3><a href="#">Fundamental of C++</a></h3>
+                                    <p>Learn C++ — a versatile programming language that’s important for developing software, games, databases, and more.
+
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
@@ -211,12 +211,12 @@
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
                                         <div class="price">
-                                            <span>$135</span>
+                                            <span></span>
                                         </div>
                                     </div>
                                     <a href="#" class="border-btn border-btn2">Find out more</a>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -228,9 +228,9 @@
                                 </div>
                                 <div class="properties__caption">
                                     <p>User Experience</p>
-                                    <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                    <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
-                                        
+                                    <h3><a href="#">Fundamental of Java Script</a></h3>
+                                    <p>Learn how to use JavaScript — a powerful and flexible programming language for adding website interactivity.
+
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
@@ -244,12 +244,12 @@
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
                                         <div class="price">
-                                            <span>$135</span>
+                                            <span></span>
                                         </div>
                                     </div>
                                     <a href="#" class="border-btn border-btn2">Find out more</a>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -261,9 +261,9 @@
                                 </div>
                                 <div class="properties__caption">
                                     <p>User Experience</p>
-                                    <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                    <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
-                                        
+                                    <h3><a href="#">Fundamental of HTML</a></h3>
+                                    <p>
+                                    Start at the beginning by learning HTML basics — an important foundation for building and editing web pages.
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
@@ -277,12 +277,12 @@
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
                                         <div class="price">
-                                            <span>$135</span>
+                                            <span></span>
                                         </div>
                                     </div>
                                     <a href="#" class="border-btn border-btn2">Find out more</a>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -294,8 +294,8 @@
                                 </div>
                                 <div class="properties__caption">
                                     <p>User Experience</p>
-                                    <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                                    <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                                    <h3><a href="#">Fundamental of React</a></h3>
+                                    <p>In this React course, you’ll build powerful interactive applications with one of the most popular JavaScript libraries.
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
@@ -309,7 +309,7 @@
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
                                         <div class="price">
-                                            <span>$135</span>
+                                            <span></span>
                                         </div>
                                     </div>
                                     <a href="#" class="border-btn border-btn2">Find out more</a>
@@ -345,7 +345,7 @@
                                 <img src="assets/img/gallery/topic1.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">HTML</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -357,7 +357,7 @@
                                 <img src="assets/img/gallery/topic2.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">CSS</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -369,7 +369,7 @@
                                 <img src="assets/img/gallery/topic3.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">C++</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -381,7 +381,7 @@
                                 <img src="assets/img/gallery/topic4.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">Python</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -393,7 +393,7 @@
                                 <img src="assets/img/gallery/topic5.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">Java</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -405,7 +405,7 @@
                                 <img src="assets/img/gallery/topic6.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">Java Script</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -417,7 +417,7 @@
                                 <img src="assets/img/gallery/topic7.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">React</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -429,7 +429,7 @@
                                 <img src="assets/img/gallery/topic8.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">Node JS</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -445,7 +445,7 @@
                 </div>
             </div>
         </div>
-        <!-- top subjects End -->  
+        <!-- top subjects End -->
         <!-- ? services-area -->
         <div class="services-area services-area2 section-padding40">
             <div class="container">
@@ -456,7 +456,7 @@
                                 <img src="assets/img/icon/icon1.svg" alt="">
                             </div>
                             <div class="features-caption">
-                                <h3>60+ UX courses</h3>
+                                <h3>20+ Programming courses</h3>
                                 <p>The automated process all your website tasks.</p>
                             </div>
                         </div>
@@ -519,43 +519,16 @@
                                <div class="footer-tittle">
                                    <h4>Our solutions</h4>
                                    <ul>
-                                       <li><a href="#">Design & creatives</a></li>
-                                       <li><a href="#">Telecommunication</a></li>
-                                       <li><a href="#">Restaurant</a></li>
-                                       <li><a href="#">Programing</a></li>
-                                       <li><a href="#">Architecture</a></li>
-                                   </ul>
+                                    <li><a href="#">Master the art of searching</a></li>
+                                    <li><a href="#">Solve problems</a></li>
+                                    <li><a href="#">Practice</a></li>
+
+                                </ul>
                                </div>
                            </div>
                        </div>
-                       <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                           <div class="single-footer-caption mb-50">
-                               <div class="footer-tittle">
-                                   <h4>Support</h4>
-                                   <ul>
-                                       <li><a href="#">Design & creatives</a></li>
-                                       <li><a href="#">Telecommunication</a></li>
-                                       <li><a href="#">Restaurant</a></li>
-                                       <li><a href="#">Programing</a></li>
-                                       <li><a href="#">Architecture</a></li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                           <div class="single-footer-caption mb-50">
-                               <div class="footer-tittle">
-                                   <h4>Company</h4>
-                                   <ul>
-                                       <li><a href="#">Design & creatives</a></li>
-                                       <li><a href="#">Telecommunication</a></li>
-                                       <li><a href="#">Restaurant</a></li>
-                                       <li><a href="#">Programing</a></li>
-                                       <li><a href="#">Architecture</a></li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
+
+
                    </div>
                </div>
            </div>
@@ -577,7 +550,7 @@
               </div>
               <!-- Footer End-->
           </div>
-      </footer> 
+      </footer>
       <!-- Scroll Up -->
       <div id="back-top" >
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
@@ -607,7 +580,7 @@
     <script src="./assets/js/jquery.sticky.js"></script>
     <!-- Progress -->
     <script src="./assets/js/jquery.barfiller.js"></script>
-    
+
     <!-- counter , waypoint,Hover Direction -->
     <script src="./assets/js/jquery.counterup.min.js"></script>
     <script src="./assets/js/waypoints.min.js"></script>
@@ -620,10 +593,10 @@
     <script src="./assets/js/jquery.validate.min.js"></script>
     <script src="./assets/js/mail-script.js"></script>
     <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-    
-    <!-- Jquery Plugins, main Jquery -->	
+
+    <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
-    
+
 </body>
 </html>
