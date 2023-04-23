@@ -121,8 +121,8 @@
                                 <img src="assets/img/icon/icon1.svg" alt="">
                             </div>
                             <div class="features-caption">
-                                <h3>60+ UX courses</h3>
-                                <p>The automated process all your website tasks.</p>
+                                <h3>20+ courses for programing</h3>
+                                <p>Learn courses through our books</p>
                             </div>
                         </div>
                     </div>
@@ -132,8 +132,8 @@
                                 <img src="assets/img/icon/icon2.svg" alt="">
                             </div>
                             <div class="features-caption">
-                                <h3>Expert instructors</h3>
-                                <p>The automated process all your website tasks.</p>
+                                <h3>Staff</h3>
+                                <p>We have the perfect staff for your teachings</p>
                             </div>
                         </div>
                     </div>
@@ -143,8 +143,8 @@
                                 <img src="assets/img/icon/icon3.svg" alt="">
                             </div>
                             <div class="features-caption">
-                                <h3>Life time access</h3>
-                                <p>The automated process all your website tasks.</p>
+                                <h3>A suitable schedule</h3>
+                                <p>The most suitable schedule for the lectures</p>
                             </div>
                         </div>
                     </div>
@@ -161,10 +161,8 @@
                     <!-- section tittle -->
                     <div class="section-tittle section-tittle2 mb-55">
                         <div class="front-text">
-                            <h2 class="">Learn new skills online with top educators</h2>
-                            <p>The automated process all your website tasks. Discover tools and 
-                                techniques to engage effectively with vulnerable children and young 
-                            people.</p>
+                            <h2 class="">Welcome to our Home Page</h2>
+                            <p>Discover your own programming skills through our online courses.We offer the best programing techniques for our students. </p>
                         </div>
                     </div>
                     <div class="single-features">
@@ -180,7 +178,7 @@
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Join millions of people from around the world  learning together.</p>
+                            <p>Online classes </p>
                         </div>
                     </div>
 
@@ -189,7 +187,7 @@
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Join millions of people from around the world learning together. Online learning is as easy and natural.</p>
+                            <p>International Certificate</p>
                         </div>
                     </div>
                 </div>
@@ -199,7 +197,7 @@
                         <img src="assets/img/gallery/about.png" alt="">
 
                         <div class="video-icon" >
-                            <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
+                            <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=zOjov-2OZ0E"><i class="fas fa-play"></i></a>
                         </div>
                     </div>
                 </div>
@@ -212,7 +210,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="section-tittle text-center mb-55">
-                            <h2>Explore top subjects</h2>
+                            <h2>Our top subjects</h2>
                         </div>
                     </div>
                 </div>
@@ -223,7 +221,7 @@
                                 <img src="assets/img/gallery/topic1.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">HTML</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -235,7 +233,7 @@
                                 <img src="assets/img/gallery/topic2.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">CSS</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +245,7 @@
                                 <img src="assets/img/gallery/topic3.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">C++</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -259,7 +257,7 @@
                                 <img src="assets/img/gallery/topic4.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">Python</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -271,7 +269,7 @@
                                 <img src="assets/img/gallery/topic5.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">Java</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -283,7 +281,7 @@
                                 <img src="assets/img/gallery/topic6.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">Java Script</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -295,7 +293,7 @@
                                 <img src="assets/img/gallery/topic7.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">React JS</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -307,7 +305,7 @@
                                 <img src="assets/img/gallery/topic8.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Programing</a></h3>
+                                        <h3><a href="#">Node JS</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -345,7 +343,7 @@
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Techniques to engage effectively with vulnerable children and young people.</p>
+                            <p>Learning to express their creativity using coding and technology</p>
                         </div>
                     </div>
                     <div class="single-features">
@@ -353,8 +351,7 @@
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Join millions of people from around the world
-                            learning together.</p>
+                            <p>Learning to solve a variety of problems encountered in their projects</p>
                         </div>
                     </div>
                     <div class="single-features">
@@ -362,8 +359,7 @@
                             <img src="assets/img/icon/right-icon.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <p>Join millions of people from around the world learning together.
-                            Online learning is as easy and natural.</p>
+                            <p>Creating meaningful software applications rather than isolated chunks of code</p>
                         </div>
                     </div>
                 </div>
@@ -376,7 +372,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="section-tittle text-center mb-55">
-                            <h2>Community experts</h2>
+                            <h2>Our experts</h2>
                         </div>
                     </div>
                 </div>
@@ -386,8 +382,8 @@
                             <img src="assets/img/gallery/team1.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Urela</a></h5>
-                            <p>The automated process all your website tasks.</p>
+                            <h5><a href="services.html">Dr.Arian </a></h5>
+                            <p>Python expert</p>
                         </div>
                     </div>
                     <div class="single-cat text-center">
@@ -395,8 +391,8 @@
                             <img src="assets/img/gallery/team2.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Uttom</a></h5>
-                            <p>The automated process all your website tasks.</p>
+                            <h5><a href="services.html">Msc.Vesa</a></h5>
+                            <p>CSS, HTML expert</p>
                         </div>
                     </div>
                     <div class="single-cat text-center">
@@ -404,8 +400,8 @@
                             <img src="assets/img/gallery/team3.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Shakil</a></h5>
-                            <p>The automated process all your website tasks.</p>
+                            <h5><a href="services.html">Dr.Lavdim</a></h5>
+                            <p>Java Script expert</p>
                         </div>
                     </div>
                     <div class="single-cat text-center">
@@ -413,8 +409,8 @@
                             <img src="assets/img/gallery/team4.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Mr. Arafat</a></h5>
-                            <p>The automated process all your website tasks.</p>
+                            <h5><a href="services.html">Msc.Anjeza</a></h5>
+                            <p>C++ expert</p>
                         </div>
                     </div>
                     <div class="single-cat text-center">
@@ -422,8 +418,8 @@
                             <img src="assets/img/gallery/team3.png" alt="">
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Mr. saiful</a></h5>
-                            <p>The automated process all your website tasks.</p>
+                            <h5><a href="services.html">Dr.Ardit</a></h5>
+                            <p>React JS expert</p>
                         </div>
                     </div>
                 </div>
@@ -446,7 +442,7 @@
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p>The automated process starts as soon as your clothes go into the machine.</p>
+                                        <p>For further information click on our courses.</p>
                                     </div>
                                 </div>
                                 <!-- social -->
@@ -461,45 +457,17 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
-                                <h4>Our solutions</h4>
+                            <h4>Our solutions</h4>
                                 <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
+                                    <li><a href="#">Master the art of searching</a></li>
+                                    <li><a href="#">Solve problems</a></li>
+                                    <li><a href="#">Practice</a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Support</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Company</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                
                 </div>
             </div>
         </div>
@@ -511,7 +479,7 @@
                         <div class="col-xl-12 ">
                             <div class="footer-copy-right text-center">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
                                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                               </div>
                           </div>
