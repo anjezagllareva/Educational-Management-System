@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <Body background="assets/img/bg.jpg"> <br> 
 
 	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -49,7 +50,7 @@
         <div class="login-form">
             <!-- logo-login -->
             <div class="logo-login">
-                <a href="index.html"><img src="assets/img/logo/loder.png" alt=""></a>
+                <a href="{{ url('/index') }}"><img src="assets/img/logo/loder.png" alt=""></a>
             </div>
             <h2>Registration Here</h2>
 
@@ -88,8 +89,6 @@
     <!-- Jquery Mobile Menu -->
     <script src="./assets/js/jquery.slicknav.min.js"></script>
 
-    <!-- Video bg -->
-    <script src="./assets/js/jquery.vide.js"></script>
 
     <!-- Jquery Slick , Owl-Carousel Plugins -->
     <script src="./assets/js/owl.carousel.min.js"></script>
