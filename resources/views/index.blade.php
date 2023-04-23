@@ -593,7 +593,7 @@
                                 toward your personal
                                 and professional goals
                             with us.</h2>
-                            <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
+                            <p>We offer professional courses.</p>
                             <a href="#" class="btn">Join now for Free</a>
                         </div>
                     </div>
@@ -617,7 +617,7 @@
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p>The automated process starts as soon as your clothes go into the machine.</p>
+                                        <p>For further information click on our courses.</p>
                                     </div>
                                 </div>
                                 <!-- social -->
@@ -655,7 +655,7 @@
                         <div class="col-xl-12 ">
                             <div class="footer-copy-right text-center">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
                                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                               </div>
                           </div>
