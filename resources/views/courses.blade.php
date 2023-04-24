@@ -93,8 +93,7 @@
                                     <!-- breadcrumb Start-->
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                            <li class="breadcrumb-item"><a href="#">Services</a></li>
+                                            <li class="breadcrumb-item"><a href="{{ url('/index') }}">Home</a></li>
                                         </ol>
                                     </nav>
                                     <!-- breadcrumb End -->
@@ -138,11 +137,8 @@
                                             </div>
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
-                                        <div class="price">
-                                            <span></span>
-                                        </div>
                                     </div>
-                                    <a href="#" class="border-btn border-btn2">Find out more</a>
+                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -170,11 +166,8 @@
                                             </div>
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
-                                        <div class="price">
-                                            <span></span>
-                                        </div>
                                     </div>
-                                    <a href="#" class="border-btn border-btn2">Find out more</a>
+                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
                                 </div>
 
                             </div>
@@ -203,11 +196,8 @@
                                             </div>
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
-                                        <div class="price">
-                                            <span></span>
-                                        </div>
                                     </div>
-                                    <a href="#" class="border-btn border-btn2">Find out more</a>
+                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
                                 </div>
 
                             </div>
@@ -236,11 +226,8 @@
                                             </div>
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
-                                        <div class="price">
-                                            <span></span>
-                                        </div>
                                     </div>
-                                    <a href="#" class="border-btn border-btn2">Find out more</a>
+                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
                                 </div>
 
                             </div>
@@ -269,11 +256,8 @@
                                             </div>
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
-                                        <div class="price">
-                                            <span></span>
-                                        </div>
                                     </div>
-                                    <a href="#" class="border-btn border-btn2">Find out more</a>
+                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
                                 </div>
 
                             </div>
@@ -301,11 +285,8 @@
                                             </div>
                                             <p><span>(4.5)</span> based on 120</p>
                                         </div>
-                                        <div class="price">
-                                            <span></span>
-                                        </div>
                                     </div>
-                                    <a href="#" class="border-btn border-btn2">Find out more</a>
+                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
                                 </div>
                             </div>
                         </div>
@@ -314,7 +295,6 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-8">
                         <div class="section-tittle text-center mt-40">
-                            <a href="#" class="border-btn">Load More</a>
                         </div>
                     </div>
                 </div>
@@ -432,7 +412,6 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-12">
                         <div class="section-tittle text-center mt-20">
-                            <a href="courses.html" class="border-btn">View More Subjects</a>
                         </div>
                     </div>
                 </div>
@@ -450,7 +429,7 @@
                             </div>
                             <div class="features-caption">
                                 <h3>20+ Programming courses</h3>
-                                <p>The automated process all your website tasks.</p>
+                                <p>Learn courses through our books</p>
                             </div>
                         </div>
                     </div>
@@ -460,8 +439,8 @@
                                 <img src="assets/img/icon/icon2.svg" alt="">
                             </div>
                             <div class="features-caption">
-                                <h3>Expert instructors</h3>
-                                <p>The automated process all your website tasks.</p>
+                            <h3>Staff</h3>
+                            <p>We have the perfect staff for your teachings</p>
                             </div>
                         </div>
                     </div>
@@ -471,8 +450,8 @@
                                 <img src="assets/img/icon/icon3.svg" alt="">
                             </div>
                             <div class="features-caption">
-                                <h3>Life time access</h3>
-                                <p>The automated process all your website tasks.</p>
+                            <h3>A suitable schedule</h3>
+                            <p>The most suitable schedule for the lectures</p>
                             </div>
                         </div>
                     </div>
