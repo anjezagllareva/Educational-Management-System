@@ -97,7 +97,7 @@
                                     </p>
 
 
-                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join for Free</a>
+                                    <a href="{{ url('/register') }}" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join for Free</a>
                                 </div>
                             </div>
                         </div>

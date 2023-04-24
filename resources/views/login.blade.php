@@ -53,18 +53,20 @@
                 <h2>Login Here</h2>
                 <div class="form-input">
                     <label for="name">Email</label>
-                    <input  type="email" name="email" placeholder="Email">
+                    <input  type="email" class="form-control" id = "email-input" placeholder="Email" name="email" required>
                 </div>
                 <div class="form-input">
                     <label for="name">Password</label>
-                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" class="form-control" id = "password-input" placeholder="Password" name="password" required>
                 </div>
-                <div class="form-input pt-30">
-                    <input type="submit" name="submit" value="login">
+                <button type="submit" id="button" class="btn "
+                onclick="validateForm()">Login</button>
+
+                <a href="{{ url('/register')}}"> Register?</a></p>
+                
+            <script src="assets/js/login.js"></script>
                 </div>
                 
-                <!-- Forget Password -->
-                <a href="{{ url('/register') }}" class="registration">Registration</a>
             </div>
         </form>
         <!-- /end login form -->
