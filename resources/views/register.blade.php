@@ -40,7 +40,6 @@
     </div>
     <!-- Preloader Start-->
 
-
 <!-- Register -->
 
 <main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
@@ -56,25 +55,25 @@
 
             <div class="form-input">
                 <label for="name">Full name</label>
-                <input  type="text" name="name" placeholder="Full name">
+                <input  type="text"  class="form-control" id = "name-input" placeholder="Full name" name="name" required>
             </div>
             <div class="form-input">
                 <label for="name">Email Address</label>
-                <input type="email" name="email" placeholder="Email Address">
+                <input type="email"  class="form-control" id = "email-input" placeholder="Email Address" name="email" required>
             </div>
             <div class="form-input">
                 <label for="name">Password</label>
-                <input type="password" name="password" placeholder="Password">
+                <input type="password" class="form-control" id = "password-input"  placeholder="Password" name="password" required>
             </div>
             <div class="form-input">
                 <label for="name">Confirm Password</label>
-                <input type="password" name="password" placeholder="Confirm Password">
+                <input type="password"  class="form-control" id = "confirm-input"  placeholder="Confirm Password" name="password" required>
             </div>
-            <div class="form-input pt-30">
-                <input type="submit" name="submit"  value="Registration">
-            </div>
-            <!-- Forget Password -->
+            <button type="submit" id="button" class="btn "
+                onclick="validateFormRegister()">Register</button>
+            <!-- Login -->
             <a href="{{ url('/login') }}" class="registration">login</a>
+            <script src="assets/js/register.js"></script>
         </div>
     </form>
     <!-- /end login form -->
@@ -122,6 +121,6 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
-    
+    <script src="./assets/js/register.js"></script>
     </body>
 </html>
