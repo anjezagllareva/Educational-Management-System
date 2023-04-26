@@ -81,3 +81,6 @@ Route::get('admin/professors', function () {
 Route::get('admin/schedule', function () {
     return view('admin/schedule');
 });
+Route::get('admin/edit', function () {
+    return view('admin/edit');
+});
