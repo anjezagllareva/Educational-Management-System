@@ -189,40 +189,40 @@
                 <table class="table bg-white">
                     <thead>
                         <tr>
-                            <th>Routine</th>
-                            <th>10 am</th>
+                            <th>Day's</th>
+                            <th>9 am</th>
                             <th>11 am</th>
-                            <th>03 pm</th>
-                            <th>05 pm</th>
-                            <th class="last">07 pm</th>
+                            <th>12 pm</th>
+                            <th>2 pm</th>
+                            <th class="last">3 pm</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="day">Sunday</td>
                             <td class="active">
-                                <h4>Weight Loss</h4>
-                                <p>10 am - 11 am</p>
+                                <h4>Algoritme 2</h4>
+                                <p>9 am - 11 am</p>
                                 <div class="hover">
-                                    <h4>Weight Loss</h4>
-                                    <p>10 am - 11 am</p> <span>Wayne Ponce</span>
+                                    <h4>Algoritme 2</h4>
+                                    <p>9 am - 11 am</p> <span>Vesa Morina</span>
                                 </div>
                             </td>
                             <td></td>
                             <td class="active">
-                                <h4>Yoga</h4>
+                                <h4>SHKI 1</h4>
                                 <p>03 pm - 04 pm</p>
                                 <div class="hover">
-                                    <h4>Yoga</h4>
-                                    <p>03 pm - 04 pm</p> <span>Francisco Watt</span>
+                                    <h4>SHKI 1</h4>
+                                    <p>03 pm - 04 pm</p> <span>Lavdim Menxhiqi</span>
                                 </div>
                             </td>
                             <td class="active">
-                                <h4>Boxing</h4>
+                                <h4>Rrjeta Kompjuterike</h4>
                                 <p>05 pm - 06 pm</p>
                                 <div class="hover">
-                                    <h4>Boxing</h4>
-                                    <p>05 pm - 046am</p> <span>Charles King</span>
+                                    <h4>Rrjeta Kompjuterike</h4>
+                                    <p>05 pm - 046am</p> <span>Besnik Qehaja/span>
                                 </div>
                             </td>
                             <td></td>
@@ -231,68 +231,68 @@
                             <td class="day">Monday</td>
                             <td></td>
                             <td class="active">
-                                <h4>Cycling</h4>
+                                <h4>Sisteme e Bazes se te Dhenave</h4>
                                 <p>11 am - 12 pm</p>
                                 <div class="hover">
-                                    <h4>Cycling</h4>
-                                    <p>11 am - 12 pm</p> <span>Tabitha Potter</span>
+                                    <h4>Sisteme e Bazes se te Dhenave</h4>
+                                    <p>11 am - 12 pm</p> <span>Elton Boshnjaku</span>
                                 </div>
                             </td>
                             <td class="active">
-                                <h4>Karate</h4>
+                                <h4>Inxhineri e WEB</h4>
                                 <p>03 pm - 05 pm</p>
                                 <div class="hover">
-                                    <h4>Karate</h4>
-                                    <p>03 pm - 05 pm</p> <span>Lester Gray</span>
+                                    <h4>Inxhineri e WEB</h4>
+                                    <p>03 pm - 05 pm</p> <span>Greta Ahma</span>
                                 </div>
                             </td>
                             <td></td>
                             <td class="active">
-                                <h4>Crossfit</h4>
+                                <h4>Matematike 1</h4>
                                 <p>07 pm - 08 pm</p>
                                 <div class="hover">
-                                    <h4>Crossfit</h4>
-                                    <p>07 pm - 08 pm</p> <span>Candi Yip</span>
+                                    <h4>Matematike 1</h4>
+                                    <p>07 pm - 08 pm</p> <span>Hizer Leka</span>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td class="day">Tuesday</td>
                             <td class="active">
-                                <h4>Spinning</h4>
+                                <h4>Hyrje ne Algoritme</h4>
                                 <p>10 am - 11 am</p>
                                 <div class="hover">
-                                    <h4>Spinning</h4>
-                                    <p>10 am - 11 am</p> <span>Mary Cass</span>
+                                    <h4>Hyrje ne Algoritme</h4>
+                                    <p>10 am - 11 am</p> <span>Shkelqim Berisha</span>
                                 </div>
                             </td>
                             <td></td>
                             <td></td>
                             <td class="active">
-                                <h4>Bootcamp</h4>
+                                <h4>AOK</h4>
                                 <p>05 pm - 06 pm</p>
                                 <div class="hover">
-                                    <h4>Bootcamp</h4>
-                                    <p>05 pm - 06 pm</p> <span>Brenda Mastropietro</span>
+                                    <h4>AOK</h4>
+                                    <p>05 pm - 06 pm</p> <span>Valdrin Haxhiu</span>
                                 </div>
                             </td>
                             <td class="active">
-                                <h4>Boxercise</h4>
+                                <h4>Qarqet Digjitale</h4>
                                 <p>07 pm - 08 pm</p>
                                 <div class="hover">
-                                    <h4>Boxercise</h4>
-                                    <p>07 pm - 08 pm</p> <span>Marlene Bruce</span>
+                                    <h4>Qarqet Digjitale</h4>
+                                    <p>07 pm - 08 pm</p> <span>Bertan Karahoda</span>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td class="day">Wednesday</td>
                             <td class="active">
-                                <h4>Body Building</h4>
+                                <h4>Matematike 2</h4>
                                 <p>10 am - 12 pm</p>
                                 <div class="hover">
-                                    <h4>Body Building</h4>
-                                    <p>10 am - 12 pm</p> <span>Brenda Hester</span>
+                                    <h4>Matematike 2</h4>
+                                    <p>10 am - 12 pm</p> <span>Hizer Leka</span>
                                 </div>
                             </td>
                             <td></td>
@@ -306,11 +306,11 @@
                             </td>
                             <td></td>
                             <td class="active">
-                                <h4>Health</h4>
+                                <h4>Shkrim Shkencor dhe Teknik</h4>
                                 <p>07 pm - 08 pm</p>
                                 <div class="hover">
-                                    <h4>Health</h4>
-                                    <p>07 pm - 08 pm</p> <span>Mark Croteau</span>
+                                    <h4>Shkrim Shkencor dhe Teknik</h4>
+                                    <p>07 pm - 08 pm</p> <span>Shejnaze Gagica</span>
                                 </div>
                             </td>
                         </tr>
@@ -318,20 +318,20 @@
                             <td class="day">Thursday</td>
                             <td></td>
                             <td class="active">
-                                <h4>Bootcamp</h4>
+                                <h4>IT, e Drejta dhe Shoqeria</h4>
                                 <p>11 am - 12 pm</p>
                                 <div class="hover">
-                                    <h4>Bootcamp</h4>
-                                    <p>1 am - 12 pm</p> <span>Elisabeth Schreck</span>
+                                    <h4>IT, e Drejta dhe Shoqeria</h4>
+                                    <p>1 am - 12 pm</p> <span>Dashmir Istrefi</span>
                                 </div>
                             </td>
                             <td></td>
                             <td class="active">
-                                <h4>Boday Building</h4>
+                                <h4>Bazat e Teknologjis Informative</h4>
                                 <p>05 pm - 06 pm</p>
                                 <div class="hover">
-                                    <h4>Boday Building</h4>
-                                    <p>05 pm - 06 pm</p> <span>Edward Garcia</span>
+                                    <h4>Bazat e Teknologjis Informative</h4>
+                                    <p>05 pm - 06 pm</p> <span>Zhilbert Tafa</span>
                                 </div>
                             </td>
                             <td></td>
@@ -339,29 +339,29 @@
                         <tr>
                             <td class="day">Friday</td>
                             <td class="active">
-                                <h4>Racing</h4>
+                                <h4>TZP</h4>
                                 <p>10 am - 11 am</p>
                                 <div class="hover">
-                                    <h4>Racing</h4>
-                                    <p>10 am - 11 am</p> <span>Jackie Potts</span>
+                                    <h4>TZP</h4>
+                                    <p>10 am - 11 am</p> <span>Vesa Morina</span>
                                 </div>
                             </td>
                             <td></td>
                             <td class="active">
-                                <h4>Energy Blast</h4>
+                                <h4>Gjuhe Angleze</h4>
                                 <p>03 pm - 05 pm</p>
                                 <div class="hover">
-                                    <h4>Energy Blast</h4>
-                                    <p>03 pm - 05 pm</p> <span>Travis Brown</span>
+                                    <h4>Gjuhe Angleze</h4>
+                                    <p>03 pm - 05 pm</p> <span>Erza Mehmeti</span>
                                 </div>
                             </td>
                             <td></td>
                             <td class="active">
-                                <h4>Jumping</h4>
+                                <h4>LAB 1</h4>
                                 <p>07 pm - 08 pm</p>
                                 <div class="hover">
-                                    <h4>Jumping</h4>
-                                    <p>07 pm - 08 pm</p> <span>Benjamin Barnett</span>
+                                    <h4>LAB 1</h4>
+                                    <p>07 pm - 08 pm</p> <span>Lavdim Menxhiqi</span>
                                 </div>
                             </td>
                         </tr>
@@ -370,19 +370,19 @@
                             <td></td>
                             <td></td>
                             <td class="active">
-                                <h4>Aerobics</h4>
+                                <h4>Nderveprim Kompjuter-Njeri</h4>
                                 <p>03 pm - 04 pm</p>
                                 <div class="hover">
-                                    <h4>Aerobics</h4>
-                                    <p>03 pm - 04 pm</p> <span>Andre Walls</span>
+                                    <h4>Nderveprim Kompjuter-Njeri</h4>
+                                    <p>03 pm - 04 pm</p> <span>Vesa Morina</span>
                                 </div>
                             </td>
                             <td class="active">
-                                <h4>Cycling</h4>
+                                <h4>Sisteme Operative</h4>
                                 <p>05 pm - 06 pm</p>
                                 <div class="hover">
-                                    <h4>Cycling</h4>
-                                    <p>05 pm - 06 pm</p> <span>Margaret Thomas</span>
+                                    <h4>Sisteme Operative</h4>
+                                    <p>05 pm - 06 pm</p> <span>Osman Osmani</span>
                                 </div>
                             </td>
                             <td></td>
