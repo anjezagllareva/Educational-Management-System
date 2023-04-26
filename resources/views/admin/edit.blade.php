@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{asset('admin/img/favicon.ico')}}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,26 +59,25 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="{{ url('/admin/admin')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
+                        <a href="{{ url('/admin/users') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Users</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" class="dropdown-item">Buttons</a>
-                            <a href="typography.html" class="dropdown-item">Typography</a>
-                            <a href="element.html" class="dropdown-item">Other Elements</a>
+                            <a href="{{ url('/admin/students') }}" class="dropdown-item">Students</a>
+                            <a href="{{ url('/admin/professors') }}" class="dropdown-item">Professors</a>
                         </div>
                     </div>
-                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
-                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
-                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                    <a href="{{ url('/admin/widget') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
+                    <a href="{{ url('/admin/form') }}" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                    <a href="{{ url('/admin/table') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
+                    <a href="{{ url('/admin/chart') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="signin.html" class="dropdown-item">Sign In</a>
                             <a href="signup.html" class="dropdown-item">Sign Up</a>
                             <a href="404.html" class="dropdown-item">404 Error</a>
-                            <a href="blank.html" class="dropdown-item active">Blank Page</a>
+                            <a href="blank.html" class="dropdown-item">Blank Page</a>
                         </div>
                     </div>
                 </div>
@@ -179,20 +178,70 @@
             </nav>
             <!-- Navbar End -->
 
-
-            <!-- Blank Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row vh-100 bg-light rounded align-items-center justify-content-center mx-0">
-                    <div class="col-md-6 text-center">
-                        <h3>This is blank page</h3>
+            <!-- form start -->
+            <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4 mt-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form6Example1" class="form-control" />
+                      <label class="form-label" for="form6Example1">First name</label>
                     </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form6Example2" class="form-control" />
+                      <label class="form-label" for="form6Example2">Last name</label>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <!-- Blank End -->
+              
+                <!-- Text input -->
+                <div class="form-outline mb-4 m-4">
+                  <input type="text" id="form6Example3" class="form-control" />
+                  <label class="form-label" for="form6Example3">Country</label>
+                </div>
+              
+                <!-- Text input -->
+                <div class="form-outline mb-4 m-4">
+                  <input type="text" id="form6Example4" class="form-control" />
+                  <label class="form-label" for="form6Example4">Address</label>
+                </div>
+              
+                <!-- Email input -->
+                <div class="form-outline mb-4 m-4">
+                  <input type="email" id="form6Example5" class="form-control" />
+                  <label class="form-label" for="form6Example5">Email</label>
+                </div>
+              
+                <!-- Number input -->
+                <div class="form-outline mb-4 m-4">
+                  <input type="number" id="form6Example6" class="form-control" />
+                  <label class="form-label" for="form6Example6">Phone</label>
+                </div>
+              
+                <!-- Message input -->
+                <div class="form-outline mb-4 m-4">
+                  <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                  <label class="form-label" for="form6Example7">Additional information</label>
+                </div>
+              
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+                  <label class="form-check-label" for="form6Example8"> Create an account? </label>
+                </div>
+              
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+              </form>
+            <!-- form End -->
 
+
+          
 
             <!-- Footer Start -->
-            <div class="container-fluid pt-4 px-4">
+            <div class="container-fluid pt-4 px-4 position-absolute bottom-0 start-50 translate-middle-x ">
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
@@ -201,6 +250,8 @@
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                        </br>
+                        Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
                         </div>
                     </div>
                 </div>
