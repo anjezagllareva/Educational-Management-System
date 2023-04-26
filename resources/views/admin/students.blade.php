@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <a href="{{ url('/admin/schedule') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Schedule</a>
-                    <a href="{{ url('/admin/form') }}" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                    <a href="{{ url('/admin/transcripts') }}" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Transcripts</a>
                     <a href="{{ url('/admin/table') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
                     <a href="{{ url('/admin/chart') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                     <div class="nav-item dropdown">
