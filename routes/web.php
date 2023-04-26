@@ -60,14 +60,14 @@ Route::get('admin/404', function () {
 Route::get('admin/blank', function () {
     return view('admin/blank');
 });
-Route::get('admin/button', function () {
-    return view('admin/button');
+Route::get('admin/students', function () {
+    return view('admin/students');
 });
 Route::get('admin/chart', function () {
     return view('admin/chart');
 });
-Route::get('admin/element', function () {
-    return view('admin/element');
+Route::get('admin/users', function () {
+    return view('admin/users');
 });
 Route::get('admin/form', function () {
     return view('admin/form');
@@ -75,8 +75,8 @@ Route::get('admin/form', function () {
 Route::get('admin/table', function () {
     return view('admin/table');
 });
-Route::get('admin/typography', function () {
-    return view('admin/typography');
+Route::get('admin/professors', function () {
+    return view('admin/professors');
 });
 Route::get('admin/widget', function () {
     return view('admin/widget');
