@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{{asset('admin/img/favicon.ico')}}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-     <!-- Libraries Stylesheet -->
-   <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -59,19 +59,18 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="{{ url('/admin/admin')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
+                        <a href="{{ url('/admin/users') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Users</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" class="dropdown-item active">Buttons</a>
-                            <a href="typography.html" class="dropdown-item">Typography</a>
-                            <a href="element.html" class="dropdown-item">Other Elements</a>
+                            <a href="{{ url('/admin/students') }}" class="dropdown-item">Students</a>
+                            <a href="{{ url('/admin/professors') }}" class="dropdown-item">Professors</a>
                         </div>
                     </div>
-                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
-                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
-                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                    <a href="{{ url('/admin/widget') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
+                    <a href="{{ url('/admin/form') }}" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                    <a href="{{ url('/admin/table') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
+                    <a href="{{ url('/admin/chart') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
                         <div class="dropdown-menu bg-transparent border-0">
@@ -179,71 +178,71 @@
             </nav>
             <!-- Navbar End -->
 
-
-            <!-- Table Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                   
-                    <div class="col-12">
-                        <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Responsive Table</h6>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First Name</th>
-                                            <th scope="col">Last Name</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Country</th>
-                                            <th scope="col">ZIP</th>
-                                            <th scope="col">Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>jhon@email.com</td>
-                                            <td>USA</td>
-                                            <td>123</td>
-                                            <td>Member</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>mark@email.com</td>
-                                            <td>UK</td>
-                                            <td>456</td>
-                                            <td>Member</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>jacob@email.com</td>
-                                            <td>AU</td>
-                                            <td>789</td>
-                                            <td>Member</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+            <!-- form start -->
+            <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4 mt-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form6Example1" class="form-control" />
+                      <label class="form-label" for="form6Example1">First name</label>
                     </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form6Example2" class="form-control" />
+                      <label class="form-label" for="form6Example2">Last name</label>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <!-- Table End -->
+              
+                <!-- Text input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="form6Example3" class="form-control" />
+                  <label class="form-label" for="form6Example3">Company name</label>
+                </div>
+              
+                <!-- Text input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="form6Example4" class="form-control" />
+                  <label class="form-label" for="form6Example4">Address</label>
+                </div>
+              
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form6Example5" class="form-control" />
+                  <label class="form-label" for="form6Example5">Email</label>
+                </div>
+              
+                <!-- Number input -->
+                <div class="form-outline mb-4">
+                  <input type="number" id="form6Example6" class="form-control" />
+                  <label class="form-label" for="form6Example6">Phone</label>
+                </div>
+              
+                <!-- Message input -->
+                <div class="form-outline mb-4">
+                  <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                  <label class="form-label" for="form6Example7">Additional information</label>
+                </div>
+              
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+                  <label class="form-check-label" for="form6Example8"> Create an account? </label>
+                </div>
+              
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+              </form>
+            <!-- form End -->
 
 
-            
-
+          
 
             <!-- Footer Start -->
-            <div class="container-fluid pt-4 px-4 mt-5">
-                <div class="bg-light rounded-top p-4 mt-5">
+            <div class="container-fluid pt-4 px-4 position-absolute bottom-0 start-50 translate-middle-x ">
+                <div class="bg-light rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
                             &copy; <a href="#">Your Site Name</a>, All Right Reserved.
@@ -251,6 +250,8 @@
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                        </br>
+                        Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
                         </div>
                     </div>
                 </div>

@@ -81,3 +81,6 @@ Route::get('admin/professors', function () {
 Route::get('admin/widget', function () {
     return view('admin/widget');
 });
+Route::get('admin/edit', function () {
+    return view('admin/edit');
+});
