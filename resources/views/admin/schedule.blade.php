@@ -221,7 +221,7 @@
                                 <p>05 pm - 06 pm</p>
                                 <div class="hover">
                                     <h4>Rrjeta Kompjuterike</h4>
-                                    <p>05 pm - 046am</p> <span>Besnik Qehaja/span>
+                                    <p>05 pm - 046am</p> <span>Besnik Qehaja</span>
                                 </div>
                             </td>
                             <td></td>
@@ -296,11 +296,11 @@
                             </td>
                             <td></td>
                             <td class="active">
-                                <h4>Dance</h4>
+                                <h4>Sisteme Operative</h4>
                                 <p>03 pm - 05 pm</p>
                                 <div class="hover">
-                                    <h4>Dance</h4>
-                                    <p>03 pm - 05 pm</p> <span>Brian Ashworth</span>
+                                    <h4>Sisteme Operative</h4>
+                                    <p>03 pm - 05 pm</p> <span>Blerina Rrmoku</span>
                                 </div>
                             </td>
                             <td></td>
