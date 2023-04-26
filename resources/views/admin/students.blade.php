@@ -60,14 +60,14 @@
                 <div class="navbar-nav w-100">
                     <a href="{{ url('/admin/admin')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/admin/users') }}" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Users</a>
+                        <a href="{{ url('/admin/users') }}" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fas fa-user me-2"></i>Users</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="{{ url('/admin/students') }}" class="dropdown-item active">Students</a>
                             <a href="{{ url('/admin/professors') }}" class="dropdown-item">Professors</a>
                         </div>
                     </div>
-                    <a href="{{ url('/admin/schedule') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Schedule</a>
-                    <a href="{{ url('/admin/transcripts') }}" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Transcripts</a>
+                    <a href="{{ url('/admin/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
+                    <a href="{{ url('/admin/transcripts') }}" class="nav-item nav-link"><i class="fas fa-list-ol me-2"></i>Transcripts</a>
                     <a href="{{ url('/admin/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
                     <a href="{{ url('/admin/calendar') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Calendar</a>
                     </div>
