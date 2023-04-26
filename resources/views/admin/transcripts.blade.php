@@ -20,15 +20,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
+   <!-- Libraries Stylesheet -->
+   <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+   <link href="{{asset('assets/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('assets/admin/css/bootstrap.min.css')}}" rel="stylesheet">
+   <!-- Customized Bootstrap Stylesheet -->
+   <link href="{{asset('assets/admin/css/bootstrap.min.css')}}" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="{{asset('assets/admin/css/style.css')}} " rel="stylesheet">
+   <!-- Template Stylesheet -->
+   <link href="{{asset('assets/admin/css/style.css')}} " rel="stylesheet">
 </head>
 
 <body>
@@ -59,26 +59,25 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="{{ url('/admin/admin')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
+                        <a href="{{ url('/admin/users')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Users</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" class="dropdown-item">Buttons</a>
-                            <a href="typography.html" class="dropdown-item">Typography</a>
-                            <a href="element.html" class="dropdown-item">Other Elements</a>
+                            <a href="{{ url('/admin/students')}}" class="dropdown-item">Students</a>
+                            <a href="{{ url('/admin/professors')}}" class="dropdown-item">Professors</a>
                         </div>
                     </div>
-                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
-                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
-                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                    <a href="{{ url('/admin/schedule')}}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Schedule</a>
+                    <a href="{{ url('/admin/transcripts')}}" class="nav-item nav-link active"><i class="fa fa-keyboard me-2"></i>Transcripts</a>
+                    <a href="{{ url('/admin/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
+                    <a href="{{ url('/admin/calendar')}}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Calendar</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="signin.html" class="dropdown-item">Sign In</a>
                             <a href="signup.html" class="dropdown-item">Sign Up</a>
                             <a href="404.html" class="dropdown-item">404 Error</a>
-                            <a href="blank.html" class="dropdown-item active">Blank Page</a>
+                            <a href="blank.html" class="dropdown-item">Blank Page</a>
                         </div>
                     </div>
                 </div>
@@ -179,16 +178,77 @@
             </nav>
             <!-- Navbar End -->
 
-
-            <!-- Blank Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row vh-100 bg-light rounded align-items-center justify-content-center mx-0">
-                    <div class="col-md-6 text-center">
-                        <h3>This is blank page</h3>
+<!-- Table Start -->
+<div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                   
+                    <div class="col-12">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h6 class="mb-4">Transcript </h6>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">First Name</th>
+                                            <th scope="col">Last Name</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Subject</th>
+                                            <th scope="col">Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Anjeza</td>
+                                            <td>Gllareva</td>
+                                            <td>anjeza@ubt-uni.com</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Erza</td>
+                                            <td>Boshnjaku</td>
+                                            <td>erza@ubt-uni.com</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Vullnet</td>
+                                            <td>Lipovica</td>
+                                            <td>vullnet@ubt-uni.com</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Ardit</td>
+                                            <td>Hoxha</td>
+                                            <td>ardit@ubt-uni.com</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                        <th scope="row">Average</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><b>7.1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Blank End -->
+            <!-- Table End -->
+
+
+            
 
 
             <!-- Footer Start -->
@@ -214,19 +274,19 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/admin/lib/chart/chart.min.js"></script>
-    <script src="/assets/admin/lib/easing/easing.min.js"></script>
-    <script src="/assets/admin/lib/waypoints/waypoints.min.js"></script>
-    <script src="/assets/admin/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="/assets/admin/lib/tempusdominus/js/moment.min.js"></script>
-    <script src="/assets/admin/lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="/assets/admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/admin/lib/chart/chart.min.js"></script>
+  <script src="/assets/admin/lib/easing/easing.min.js"></script>
+  <script src="/assets/admin/lib/waypoints/waypoints.min.js"></script>
+  <script src="/assets/admin/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="/assets/admin/lib/tempusdominus/js/moment.min.js"></script>
+  <script src="/assets/admin/lib/tempusdominus/js/moment-timezone.min.js"></script>
+  <script src="/assets/admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="/assets/admin/js/main.js"></script>
+  <!-- Template Javascript -->
+  <script src="/assets/admin/js/main.js"></script>
 </body>
 
 </html>
