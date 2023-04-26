@@ -78,6 +78,6 @@ Route::get('admin/table', function () {
 Route::get('admin/professors', function () {
     return view('admin/professors');
 });
-Route::get('admin/widget', function () {
-    return view('admin/widget');
+Route::get('admin/schedule', function () {
+    return view('admin/schedule');
 });

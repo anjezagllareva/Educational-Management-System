@@ -179,154 +179,221 @@
             </nav>
             <!-- Navbar End -->
 
-
-            <!-- Chart Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-light rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <h6 class="mb-0">Messages</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                    <span>Short message goes here...</span>
+            <div class="container">
+    <div class="w-95 w-md-75 w-lg-60 w-xl-55 mx-auto mb-6 text-center">
+        <h2 class="display-18 display-md-16 display-lg-14 mb-0">Schedule</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="schedule-table">
+                <table class="table bg-white">
+                    <thead>
+                        <tr>
+                            <th>Routine</th>
+                            <th>10 am</th>
+                            <th>11 am</th>
+                            <th>03 pm</th>
+                            <th>05 pm</th>
+                            <th class="last">07 pm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="day">Sunday</td>
+                            <td class="active">
+                                <h4>Weight Loss</h4>
+                                <p>10 am - 11 am</p>
+                                <div class="hover">
+                                    <h4>Weight Loss</h4>
+                                    <p>10 am - 11 am</p> <span>Wayne Ponce</span>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                    <span>Short message goes here...</span>
+                            </td>
+                            <td></td>
+                            <td class="active">
+                                <h4>Yoga</h4>
+                                <p>03 pm - 04 pm</p>
+                                <div class="hover">
+                                    <h4>Yoga</h4>
+                                    <p>03 pm - 04 pm</p> <span>Francisco Watt</span>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                    <span>Short message goes here...</span>
+                            </td>
+                            <td class="active">
+                                <h4>Boxing</h4>
+                                <p>05 pm - 06 pm</p>
+                                <div class="hover">
+                                    <h4>Boxing</h4>
+                                    <p>05 pm - 046am</p> <span>Charles King</span>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center pt-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                    <span>Short message goes here...</span>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="day">Monday</td>
+                            <td></td>
+                            <td class="active">
+                                <h4>Cycling</h4>
+                                <p>11 am - 12 pm</p>
+                                <div class="hover">
+                                    <h4>Cycling</h4>
+                                    <p>11 am - 12 pm</p> <span>Tabitha Potter</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-light rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Calender</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <div id="calender"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-light rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">To Do List</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <input class="form-control bg-transparent" type="text" placeholder="Enter task">
-                                <button type="button" class="btn btn-primary ms-2">Add</button>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                    </div>
+                            </td>
+                            <td class="active">
+                                <h4>Karate</h4>
+                                <p>03 pm - 05 pm</p>
+                                <div class="hover">
+                                    <h4>Karate</h4>
+                                    <p>03 pm - 05 pm</p> <span>Lester Gray</span>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                    </div>
+                            </td>
+                            <td></td>
+                            <td class="active">
+                                <h4>Crossfit</h4>
+                                <p>07 pm - 08 pm</p>
+                                <div class="hover">
+                                    <h4>Crossfit</h4>
+                                    <p>07 pm - 08 pm</p> <span>Candi Yip</span>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox" checked>
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span><del>Short task goes here...</del></span>
-                                        <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
-                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="day">Tuesday</td>
+                            <td class="active">
+                                <h4>Spinning</h4>
+                                <p>10 am - 11 am</p>
+                                <div class="hover">
+                                    <h4>Spinning</h4>
+                                    <p>10 am - 11 am</p> <span>Mary Cass</span>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                    </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td class="active">
+                                <h4>Bootcamp</h4>
+                                <p>05 pm - 06 pm</p>
+                                <div class="hover">
+                                    <h4>Bootcamp</h4>
+                                    <p>05 pm - 06 pm</p> <span>Brenda Mastropietro</span>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center pt-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
-                                    </div>
+                            </td>
+                            <td class="active">
+                                <h4>Boxercise</h4>
+                                <p>07 pm - 08 pm</p>
+                                <div class="hover">
+                                    <h4>Boxercise</h4>
+                                    <p>07 pm - 08 pm</p> <span>Marlene Bruce</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Testimonial</h6>
-                            <div class="owl-carousel testimonial-carousel">
-                                <div class="testimonial-item text-center">
-                                    <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;">
-                                    <h5 class="mb-1">Client Name</h5>
-                                    <p>Profession</p>
-                                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="day">Wednesday</td>
+                            <td class="active">
+                                <h4>Body Building</h4>
+                                <p>10 am - 12 pm</p>
+                                <div class="hover">
+                                    <h4>Body Building</h4>
+                                    <p>10 am - 12 pm</p> <span>Brenda Hester</span>
                                 </div>
-                                <div class="testimonial-item text-center">
-                                    <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;">
-                                    <h5 class="mb-1">Client Name</h5>
-                                    <p>Profession</p>
-                                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                            </td>
+                            <td></td>
+                            <td class="active">
+                                <h4>Dance</h4>
+                                <p>03 pm - 05 pm</p>
+                                <div class="hover">
+                                    <h4>Dance</h4>
+                                    <p>03 pm - 05 pm</p> <span>Brian Ashworth</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light rounded h-100 p-4">
-                            <iframe class="position-relative rounded w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
-                        </div>
-                    </div>
-                </div>
+                            </td>
+                            <td></td>
+                            <td class="active">
+                                <h4>Health</h4>
+                                <p>07 pm - 08 pm</p>
+                                <div class="hover">
+                                    <h4>Health</h4>
+                                    <p>07 pm - 08 pm</p> <span>Mark Croteau</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="day">Thursday</td>
+                            <td></td>
+                            <td class="active">
+                                <h4>Bootcamp</h4>
+                                <p>11 am - 12 pm</p>
+                                <div class="hover">
+                                    <h4>Bootcamp</h4>
+                                    <p>1 am - 12 pm</p> <span>Elisabeth Schreck</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td class="active">
+                                <h4>Boday Building</h4>
+                                <p>05 pm - 06 pm</p>
+                                <div class="hover">
+                                    <h4>Boday Building</h4>
+                                    <p>05 pm - 06 pm</p> <span>Edward Garcia</span>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="day">Friday</td>
+                            <td class="active">
+                                <h4>Racing</h4>
+                                <p>10 am - 11 am</p>
+                                <div class="hover">
+                                    <h4>Racing</h4>
+                                    <p>10 am - 11 am</p> <span>Jackie Potts</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td class="active">
+                                <h4>Energy Blast</h4>
+                                <p>03 pm - 05 pm</p>
+                                <div class="hover">
+                                    <h4>Energy Blast</h4>
+                                    <p>03 pm - 05 pm</p> <span>Travis Brown</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td class="active">
+                                <h4>Jumping</h4>
+                                <p>07 pm - 08 pm</p>
+                                <div class="hover">
+                                    <h4>Jumping</h4>
+                                    <p>07 pm - 08 pm</p> <span>Benjamin Barnett</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="day">Satarday</td>
+                            <td></td>
+                            <td></td>
+                            <td class="active">
+                                <h4>Aerobics</h4>
+                                <p>03 pm - 04 pm</p>
+                                <div class="hover">
+                                    <h4>Aerobics</h4>
+                                    <p>03 pm - 04 pm</p> <span>Andre Walls</span>
+                                </div>
+                            </td>
+                            <td class="active">
+                                <h4>Cycling</h4>
+                                <p>05 pm - 06 pm</p>
+                                <div class="hover">
+                                    <h4>Cycling</h4>
+                                    <p>05 pm - 06 pm</p> <span>Margaret Thomas</span>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <!-- Chart End -->
+        </div>
+    </div>
+</div>
+           
 
 
             <!-- Footer Start -->
