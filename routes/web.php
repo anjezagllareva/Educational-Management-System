@@ -63,8 +63,8 @@ Route::get('admin/blank', function () {
 Route::get('admin/students', function () {
     return view('admin/students');
 });
-Route::get('admin/chart', function () {
-    return view('admin/chart');
+Route::get('admin/calendar', function () {
+    return view('admin/calendar');
 });
 Route::get('admin/users', function () {
     return view('admin/users');
@@ -72,8 +72,8 @@ Route::get('admin/users', function () {
 Route::get('admin/transcripts', function () {
     return view('admin/transcripts');
 });
-Route::get('admin/table', function () {
-    return view('admin/table');
+Route::get('admin/subjects', function () {
+    return view('admin/subjects');
 });
 Route::get('admin/professors', function () {
     return view('admin/professors');
