@@ -171,7 +171,7 @@
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">My Profile</a>
                             <a href="#" class="dropdown-item">Settings</a>
-                            <a href="#" class="dropdown-item">Log Out</a>
+                            <a href="{{ url('/index') }}" class="dropdown-item">Log Out</a>
                         </div>
                     </div>
                 </div>
@@ -195,50 +195,50 @@
                     </div>
                   </div>
                 </div>
-              
+
                 <!-- Text input -->
                 <div class="form-outline mb-4 m-4">
                   <input type="text" id="form6Example3" class="form-control" />
                   <label class="form-label" for="form6Example3">Country</label>
                 </div>
-              
+
                 <!-- Text input -->
                 <div class="form-outline mb-4 m-4">
                   <input type="text" id="form6Example4" class="form-control" />
                   <label class="form-label" for="form6Example4">Address</label>
                 </div>
-              
+
                 <!-- Email input -->
                 <div class="form-outline mb-4 m-4">
                   <input type="email" id="form6Example5" class="form-control" />
                   <label class="form-label" for="form6Example5">Email</label>
                 </div>
-              
+
                 <!-- Number input -->
                 <div class="form-outline mb-4 m-4">
                   <input type="number" id="form6Example6" class="form-control" />
                   <label class="form-label" for="form6Example6">Phone</label>
                 </div>
-              
+
                 <!-- Message input -->
                 <div class="form-outline mb-4 m-4">
                   <textarea class="form-control" id="form6Example7" rows="4"></textarea>
                   <label class="form-label" for="form6Example7">Additional information</label>
                 </div>
-              
+
                 <!-- Checkbox -->
                 <div class="form-check d-flex justify-content-center mb-4">
                   <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
                   <label class="form-check-label" for="form6Example8"> Create an account? </label>
                 </div>
-              
+
                 <!-- Submit button -->
                 <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
               </form>
             <!-- form End -->
 
 
-          
+
 
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4 position-absolute bottom-0 start-50 translate-middle-x ">
