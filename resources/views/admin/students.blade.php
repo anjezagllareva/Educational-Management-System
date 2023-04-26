@@ -133,7 +133,7 @@
                             <span class="d-none d-lg-inline-flex">Admin</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">Log Out</a>
+                            <a href="{{ url('/index') }}" class="dropdown-item">Log Out</a>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
             <!-- Table Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-                   
+
                     <div class="col-12">
                         <div class="bg-light rounded h-100 p-4">
                             <h6 class="mb-4">Students Table</h6>
@@ -205,7 +205,7 @@
                                         </tr>
                                         <tr>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Add</a></td>
-                                            
+
                                             </tr>
                                     </tbody>
                                 </table>
