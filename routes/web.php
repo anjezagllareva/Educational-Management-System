@@ -69,8 +69,8 @@ Route::get('admin/chart', function () {
 Route::get('admin/users', function () {
     return view('admin/users');
 });
-Route::get('admin/form', function () {
-    return view('admin/form');
+Route::get('admin/transcripts', function () {
+    return view('admin/transcripts');
 });
 Route::get('admin/table', function () {
     return view('admin/table');

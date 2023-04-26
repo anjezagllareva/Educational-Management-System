@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="{{asset('assets/admin/img/favicon.ico')}}" rel="icon">
+    <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,15 +20,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
+   <!-- Libraries Stylesheet -->
+   <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+   <link href="{{asset('assets/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('assets/admin/css/bootstrap.min.css')}}" rel="stylesheet">
+   <!-- Customized Bootstrap Stylesheet -->
+   <link href="{{asset('assets/admin/css/bootstrap.min.css')}}" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="{{asset('assets/admin/css/style.css')}} " rel="stylesheet">
+   <!-- Template Stylesheet -->
+   <link href="{{asset('assets/admin/css/style.css')}} " rel="stylesheet">
 </head>
 
 <body>
@@ -50,7 +50,7 @@
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
-                        <img class="rounded-circle" src="{{asset('assets/admin/img/user.jpg')}}" alt="" style="width: 40px; height: 40px;">
+                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
@@ -61,18 +61,18 @@
                 <div class="navbar-nav w-100">
                     <a href="{{ url('/admin/admin')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/admin/users')}}" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Users</a>
+                        <a href="{{ url('/admin/users')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Users</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="{{ url('/admin/students')}}" class="dropdown-item">Students</a>
-                            <a href="{{ url('/admin/professors')}}" class="dropdown-item active">Professors</a>
+                            <a href="{{ url('/admin/professors')}}" class="dropdown-item">Professors</a>
                         </div>
                     </div>
                     <a href="{{ url('/admin/schedule')}}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Schedule</a>
-                    <a href="{{ url('/admin/transcripts')}}" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Transcripts</a>
-                    <a href="{{ url('/admin/table')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
-                    <a href="{{ url('/admin/chart')}}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                    <a href="{{ url('/admin/transcripts')}}" class="nav-item nav-link active"><i class="fa fa-keyboard me-2"></i>Transcripts</a>
+                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
+                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/admin/admin')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="signin.html" class="dropdown-item">Sign In</a>
                             <a href="signup.html" class="dropdown-item">Sign Up</a>
@@ -108,7 +108,7 @@
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('assets/admin/img/user.jpg')}}" alt="" style="width: 40px; height: 40px;">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
                                         <h6 class="fw-normal mb-0">Jhon send you a message</h6>
                                         <small>15 minutes ago</small>
@@ -118,7 +118,7 @@
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('assets/admin/img/user.jpg')}}" alt="" style="width: 40px; height: 40px;">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
                                         <h6 class="fw-normal mb-0">Jhon send you a message</h6>
                                         <small>15 minutes ago</small>
@@ -128,7 +128,7 @@
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item">
                                 <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('assets/admin/img/user.jpg')}}" alt="" style="width: 40px; height: 40px;">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
                                         <h6 class="fw-normal mb-0">Jhon send you a message</h6>
                                         <small>15 minutes ago</small>
@@ -165,7 +165,7 @@
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img class="rounded-circle me-lg-2" src="{{asset('assets/admin/img/user.jpg')}}" alt="" style="width: 40px; height: 40px;">
+                            <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
                             <span class="d-none d-lg-inline-flex">John Doe</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
@@ -178,14 +178,13 @@
             </nav>
             <!-- Navbar End -->
 
-
-            <!-- Table Start -->
-            <div class="container-fluid pt-4 px-4">
+<!-- Table Start -->
+<div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                    
                     <div class="col-12">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Professors Table</h6>
+                            <h6 class="mb-4">Transcript </h6>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
@@ -194,47 +193,50 @@
                                             <th scope="col">First Name</th>
                                             <th scope="col">Last Name</th>
                                             <th scope="col">Email</th>
-                                            <th scope="col">City</th>
-                                            <th scope="col">Lenda</th>
-                                            <th scope="col">Status</th>
+                                            <th scope="col">Subject</th>
+                                            <th scope="col">Grade</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
+                                        <tr>
                                             <th scope="row">1</th>
-                                            <td>Vesa</td>
-                                            <td>Morina</td>
-                                            <td>vesa@ubt-uni.com</td>
-                                            <td>Prishtine</td>
-                                            <td>TZP</td>
-                                            <td>Professor</td>
+                                            <td>Anjeza</td>
+                                            <td>Gllareva</td>
+                                            <td>anjeza@ubt-uni.com</td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
-                                            <td>Lavdim</td>
-                                            <td>Menxhiqi</td>
-                                            <td>lavdim@ubt-uni.com</td>
-                                            <td>Prishtine</td>
-                                            <td>SHKI</td>
-                                            <td>Professor</td>
+                                            <td>Erza</td>
+                                            <td>Boshnjaku</td>
+                                            <td>erza@ubt-uni.com</td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
-                                            <td>Blerim</td>
-                                            <td>Zylfiu</td>
-                                            <td>blerim@ubt-uni.com</td>
-                                            <td>Prishtine</td>
-                                            <td>SHKI</td>
-                                            <td>Professor</td>
+                                            <td>Vullnet</td>
+                                            <td>Lipovica</td>
+                                            <td>vullnet@ubt-uni.com</td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">4</th>
-                                            <td>Dion</td>
-                                            <td>Kuka</td>
-                                            <td>dion@ubt-uni.com</td>
-                                            <td>Prishtine</td>
-                                            <td>SHKI</td>
-                                            <td>Asistent</td>
+                                            <td>Ardit</td>
+                                            <td>Hoxha</td>
+                                            <td>ardit@ubt-uni.com</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                        <th scope="row">Average</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><b>7.1</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -245,6 +247,8 @@
             </div>
             <!-- Table End -->
 
+
+            
 
 
             <!-- Footer Start -->
@@ -270,19 +274,19 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-   <!-- JavaScript Libraries -->
-   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="/assets/admin/lib/chart/chart.min.js"></script>
-   <script src="/assets/admin/lib/easing/easing.min.js"></script>
-   <script src="/assets/admin/lib/waypoints/waypoints.min.js"></script>
-   <script src="/assets/admin/lib/owlcarousel/owl.carousel.min.js"></script>
-   <script src="/assets/admin/lib/tempusdominus/js/moment.min.js"></script>
-   <script src="/assets/admin/lib/tempusdominus/js/moment-timezone.min.js"></script>
-   <script src="/assets/admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/admin/lib/chart/chart.min.js"></script>
+  <script src="/assets/admin/lib/easing/easing.min.js"></script>
+  <script src="/assets/admin/lib/waypoints/waypoints.min.js"></script>
+  <script src="/assets/admin/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="/assets/admin/lib/tempusdominus/js/moment.min.js"></script>
+  <script src="/assets/admin/lib/tempusdominus/js/moment-timezone.min.js"></script>
+  <script src="/assets/admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-   <!-- Template Javascript -->
-   <script src="/assets/admin/js/main.js"></script>
+  <!-- Template Javascript -->
+  <script src="/assets/admin/js/main.js"></script>
 </body>
 
 </html>
