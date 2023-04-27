@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Admin</title>
+    <title>Studnet</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -46,7 +46,7 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
-                <h3 class="text-primary">Admin</h3>
+                <h3 class="text-primary">Student</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -54,17 +54,16 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Admin</h6>
+                        <h6 class="mb-0">Student</h6>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="{{ url('/student/admin')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/student/exams')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-penfas fa-pen me-2"></i>Exams</a>
+                        <a href="{{ url('/student/users')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user me-2"></i>Users</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ url('/student/1stYear')}}" class="dropdown-item">1st Year</a>
-                            <a href="{{ url('/student/2ndYear')}}" class="dropdown-item">2nd Year</a>
-                            <a href="{{ url('/student/3rdYear')}}" class="dropdown-item">3rd Year</a>
+                            <a href="{{ url('/student/students')}}" class="dropdown-item">Students</a>
+                            <a href="{{ url('/student/professors')}}" class="dropdown-item">Professors</a>
                         </div>
                     </div>
                     <a href="{{ url('/student/schedule')}}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
@@ -99,7 +98,7 @@
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <h6 class="fw-normal mb-0">Student send you a message</h6>
                                         <small>15 minutes ago</small>
                                     </div>
                                 </div>
@@ -109,7 +108,7 @@
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <h6 class="fw-normal mb-0">Student send you a message</h6>
                                         <small>15 minutes ago</small>
                                     </div>
                                 </div>
@@ -119,7 +118,7 @@
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <h6 class="fw-normal mb-0">Student send you a message</h6>
                                         <small>15 minutes ago</small>
                                     </div>
                                 </div>
@@ -131,7 +130,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">Admin</span>
+                            <span class="d-none d-lg-inline-flex">Student</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="{{ url('/index') }}" class="dropdown-item">Log Out</a>
@@ -153,6 +152,9 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">ID</th>
+                                            <th scope="col">First Name</th>
+                                            <th scope="col">Last Name</th>
+                                            <th scope="col">Email</th>
                                             <th scope="col">Subject</th>
                                             <th scope="col">Grade</th>
                                         </tr>
@@ -160,36 +162,43 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row">1</th>
-                                            <td>Bazat e Teknologjise Informative</td>
-                                            <td>8</td>
+                                            <td>Anjeza</td>
+                                            <td>Gllareva</td>
+                                            <td>anjeza@ubt-uni.com</td>
                                             <td></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
-                                            <td>Teknikat e Zgjidhjes se Problemeve</td>
-                                            <td>10</td>
+                                            <td>Erza</td>
+                                            <td>Boshnjaku</td>
+                                            <td>erza@ubt-uni.com</td>
                                             <td></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
-                                            <td>Qarqet Digjitale dhe Sinjalet</td>
-                                            <td>7</td>
+                                            <td>Vullnet</td>
+                                            <td>Lipovica</td>
+                                            <td>vullnet@ubt-uni.com</td>
                                             <td></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">4</th>
-                                            <td>Hyrje ne Algoritme</td>
-                                            <td>9</td>
+                                            <td>Ardit</td>
+                                            <td>Hoxha</td>
+                                            <td>ardit@ubt-uni.com</td>
                                             <td></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                         <th scope="row">Average</th>
                                         <td></td>
-                                        <td><b>8.5</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><b>7.1</td>
                                         </tr>
                                     </tbody>
                                 </table>
