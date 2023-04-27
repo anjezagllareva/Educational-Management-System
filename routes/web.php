@@ -89,14 +89,14 @@ Route::get('admin/edit', function () {
 Route::get('student/admin', function () {
     return view('student/admin');
 });
-Route::get('student/students', function () {
-    return view('student/students');
+Route::get('student/1stYear', function () {
+    return view('student/1stYear');
 });
 Route::get('student/calendar', function () {
     return view('student/calendar');
 });
-Route::get('student/users', function () {
-    return view('student/users');
+Route::get('student/exams', function () {
+    return view('student/exams');
 });
 Route::get('student/transcripts', function () {
     return view('student/transcripts');
@@ -104,8 +104,8 @@ Route::get('student/transcripts', function () {
 Route::get('student/subjects', function () {
     return view('student/subjects');
 });
-Route::get('student/professors', function () {
-    return view('student/professors');
+Route::get('student/2ndYear', function () {
+    return view('student/2ndYear');
 });
 Route::get('student/schedule', function () {
     return view('student/schedule');
