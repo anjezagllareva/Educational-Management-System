@@ -148,7 +148,7 @@
 
                     <div class="col-12">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">1st Year Subjects</h6>
+                            <h6 class="mb-4">3rd Year Subjects</h6>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
@@ -164,31 +164,31 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row">1</th>
-                                            <td>Gjuhe Angleze per Inxhinieri</td>
+                                            <td>Zhvillimi dhe Dizajnimi i Ueb</td>
                                             <td>Obligatory</td>
-                                            <td>Erza Mehmeti</td>
+                                            <td>Betim Gashi</td>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
-                                            <td>Teknikat e Zgjidhjes se Problemeve</td>
+                                            <td>Rrjeta Kompjuterike II</td>
+                                            <td>Obligatory</td>
+                                            <td>Zhilbert Tafa</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Programimi i Lojërave</td>
                                             <td>Obligatory</td>
                                             <td>Vesa Morina</td>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">3</th>
-                                            <td>Matematike 1</td>
-                                            <td>Obligatory</td>
-                                            <td>Hizer Leka</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
                                             <th scope="row">4</th>
-                                            <td>IT, E Drejta dhe Shoqeria</td>
+                                            <td>Nderrmarresi dhe Inovacion</td>
                                             <td>Obligatory</td>
                                             <td>Dashmir Istrefi</td>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
@@ -196,41 +196,41 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">5</th>
-                                            <td>Bazat e Teknologjise Informative</td>
+                                            <td>Kriptografia</td>
                                             <td>Obligatory</td>
-                                            <td>Zhilbert Tafa</td>
+                                            <td>Gazmend Krasniqi</td>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">6</th>
-                                            <td>Bazat e Inxhinierise Elektronike / Elektrike</td>
+                                            <td>Dizajnimi i Softuerit</td>
                                             <td>Obligatory</td>
-                                            <td>Bertan Karahoda</td>
+                                            <td>Edmond Jajaga</td>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">7</th>
-                                            <td>Shkenca Kompjuterike 1</td>
+                                            <td>Lëndë Laboratorike 2 (Programim)</td>
                                             <td>Obligatory</td>
-                                            <td>Lavdim Menxhiqi</td>
+                                            <td>Elton Boshnjaku</td>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">8</th>
-                                            <td>Qarqet Digjitale dhe Sinjalet</td>
+                                            <td>Ueb Multimedia</td>
                                             <td>Obligatory</td>
-                                            <td>Bertan Karahoda</td>
+                                            <td>Betim Gashi</td>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">9</th>
-                                            <td>Hyrje ne Algoritme</td>
+                                            <td>Arkitekturë Softuerike</td>
                                             <td>Obligatory</td>
-                                            <td>Shkelqim Berisha</td>
+                                            <td>Xhelal Jashari</td>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>

@@ -50,7 +50,7 @@
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
-                        <img class="rounded-circle" src="{{asset('assets/student/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
+                        <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
@@ -60,10 +60,11 @@
                 <div class="navbar-nav w-100">
                     <a href="{{ url('/student/admin')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/student/users') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user me-2"></i>Users</a>
+                        <a href="{{ url('/student/users') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Exams</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ url('/student/students') }}" class="dropdown-item">Students</a>
-                            <a href="{{ url('/student/professors') }}" class="dropdown-item">Professors</a>
+                            <a href="{{ url('/student/students') }}" class="dropdown-item">1st Year</a>
+                            <a href="{{ url('/student/professors') }}" class="dropdown-item">2nd Year</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">3rd Year</a>
                         </div>
 
                     </div>
