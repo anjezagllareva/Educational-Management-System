@@ -124,21 +124,16 @@
                                 <div class="properties__caption">
                                     <p>User Experience</p>
                                     <h3><a href="#">Fundamental of Java</a></h3>
-                                    <p>Popular for its versatility and ability to create a wide variety of applications, learning Java opens up your possibilities when coding.
+                                    <p>The language's versatility allows developers to create sophisticated applications and simple game scripts. On top of that, its compatibility across various platforms is another major factor why enterprises are increasingly turning towards Java-based solutions. Companies such as Amazon, IBM, and Oracle have all adopted the programming language for their internal projects.
+If you want to take advantage of the popularity of Java, then enroll in a Java Certification Course at TOPS Technologies and start learning about Java. With the help of our Best Java Tutorial, you will be able to learn about the different features of Java and how to use them to create practical applications. Enrolling in a Java Training course will also help you get hands-on experience with the language to become more confident in using it.
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
-                                            <div class="rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half"></i>
-                                            </div>
-                                            <p><span>(4.5)</span> based on 120</p>
+                                            
+                                
                                         </div>
                                     </div>
-                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -152,22 +147,17 @@
                                 <div class="properties__caption">
                                     <p>User Experience</p>
                                     <h3><a href="#">Fundamental of Python</a></h3>
-                                    <p>Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because Python code is concise and easy to read.
-
+                                    <p>Python is one of the easiest languages that you can learn and work with. You can use it for software development, server side of web development, machine learning, mathematics, and any type of scripting that you can think of.
+The good thing about Python is that it is widely used and accepted by many companies and academic institutions. This makes it a really good choice, especially if you are just starting your coding journey.
+Python also has a large community of developers that use it and are willing to help you if you get stuck or have questions. This community has already published many open source libraries that you can start using. They also actively keep improving them.
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
-                                            <div class="rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half"></i>
-                                            </div>
-                                            <p><span>(4.5)</span> based on 120</p>
+                                            
+                                          
                                         </div>
                                     </div>
-                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
+                                    
                                 </div>
 
                             </div>
@@ -182,22 +172,14 @@
                                 <div class="properties__caption">
                                     <p>User Experience</p>
                                     <h3><a href="#">Fundamental of C++</a></h3>
-                                    <p>Learn C++ — a versatile programming language that’s important for developing software, games, databases, and more.
-
+                                    <p>Software development in C++ notoriously has a steep learning curve, but taking the time to learn this language will do wonders for your career and will set you apart from other developers. You’ll have an easier time picking up new languages, you’ll form real problem-solving skills, and build a solid foundation on the fundamentals of programming and software engineering.A great way to get started with C++ is to learn about its history. C++ is one of the oldest programming languages, so there are many different versions. Having a sense of this history will situate you in the community of C++ programmers and give you a sense of its capabilities.
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
-                                            <div class="rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half"></i>
-                                            </div>
-                                            <p><span>(4.5)</span> based on 120</p>
+                                            
+                
                                         </div>
                                     </div>
-                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
                                 </div>
 
                             </div>
@@ -217,17 +199,11 @@
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
-                                            <div class="rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half"></i>
-                                            </div>
-                                            <p><span>(4.5)</span> based on 120</p>
+                                            
+                                            
                                         </div>
                                     </div>
-                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
+                                    
                                 </div>
 
                             </div>
