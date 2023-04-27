@@ -60,10 +60,11 @@
                 <div class="navbar-nav w-100">
                     <a href="{{ url('/student/admin')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/student/users')}}" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fas fa-user me-2"></i>Users</a>
+                        <a href="{{ url('/student/users')}}" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Exams</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ url('/student/students')}}" class="dropdown-item">Students</a>
-                            <a href="{{ url('/student/professors')}}" class="dropdown-item active">Professors</a>
+                            <a href="{{ url('/student/students')}}" class="dropdown-item">1st Year</a>
+                            <a href="{{ url('/student/professors')}}" class="dropdown-item active">2nd Year</a>
+                            <a href="{{ url('/student/3rdYear')}}" class="dropdown-item active">3rd Year</a>
                         </div>
                     </div>
                     <a href="{{ url('/student/schedule')}}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
@@ -147,56 +148,91 @@
 
                     <div class="col-12">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Professors Table</h6>
+                            <h6 class="mb-4">2nd Year Subjects</h6>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
                                             <th scope="col">ID</th>
-                                            <th scope="col">First Name</th>
-                                            <th scope="col">Last Name</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">City</th>
-                                            <th scope="col">Lenda</th>
-                                            <th scope="col">Status</th>
+                                            <th scope="col">Subject</th>
+                                            <th scope="col">Category</th>
+                                            <th scope="col">Lacturer</th>
+                                            <th scope="col">Submit</th>
+                                            <th scope="col">Cancel</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
+                                        <tr>
                                             <th scope="row">1</th>
-                                            <td>Vesa</td>
-                                            <td>Morina</td>
-                                            <td>vesa@ubt-uni.com</td>
-                                            <td>Prishtine</td>
-                                            <td>TZP</td>
-                                            <td>Professor</td>
+                                            <td>Shkenca Kompjuterike 2</td>
+                                            <td>Obligatory</td>
+                                            <td>Lavdim Menxhiqi</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
-                                            <td>Lavdim</td>
-                                            <td>Menxhiqi</td>
-                                            <td>lavdim@ubt-uni.com</td>
-                                            <td>Prishtine</td>
-                                            <td>SHKI</td>
-                                            <td>Professor</td>
+                                            <td>Inxhinieri e Web</td>
+                                            <td>Obligatory</td>
+                                            <td>Betim Gashi</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
-                                            <td>Blerim</td>
-                                            <td>Zylfiu</td>
-                                            <td>blerim@ubt-uni.com</td>
-                                            <td>Prishtine</td>
-                                            <td>SHKI</td>
-                                            <td>Professor</td>
+                                            <td>Struktura Diskrete I (Matematike)</td>
+                                            <td>Obligatory</td>
+                                            <td>Azir Jusufi</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">4</th>
-                                            <td>Dion</td>
-                                            <td>Kuka</td>
-                                            <td>dion@ubt-uni.com</td>
-                                            <td>Prishtine</td>
-                                            <td>SHKI</td>
-                                            <td>Asistent</td>
+                                            <td>Sistemet e Bazes se te Dhenave</td>
+                                            <td>Obligatory</td>
+                                            <td>Medina Shamolli</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>Rrjeta Kompjuterike dhe Komunikimi</td>
+                                            <td>Obligatory</td>
+                                            <td>Besnik Qehaja</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td>Algortimet dhe Struktura e te Dhenave</td>
+                                            <td>Obligatory</td>
+                                            <td>Vesa Morina</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td>Lëndë Laboratorike 1 (Programim)</td>
+                                            <td>Obligatory</td>
+                                            <td>Blerim Zylfiu</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td>Inxhinieri Softuerike</td>
+                                            <td>Obligatory</td>
+                                            <td>Blerina Rrmoku</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td>Hyrje në Siguri të Informacionit</td>
+                                            <td>Obligatory</td>
+                                            <td>Shkelqim Berisha</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
