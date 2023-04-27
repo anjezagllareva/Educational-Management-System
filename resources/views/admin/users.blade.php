@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DASHMIN - Bootstrap Admin Template</title>
+    <title>Admin</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -71,7 +71,7 @@
                     <a href="widget.html" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Widgets</a>
                     <a href="form.html" class="nav-item nav-link"><i class="fas fa-list-ol me-2"></i>Forms</a>
                     <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                    <a href="chart.html" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Charts</a>
                     </div>
                 </div>
             </nav>

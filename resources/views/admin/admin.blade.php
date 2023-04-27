@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ADMIN</title>
+    <title>DASHMIN - Bootstrap Admin Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -65,12 +65,12 @@
                             <a href="{{ url('/admin/students') }}" class="dropdown-item">Students</a>
                             <a href="{{ url('/admin/professors') }}" class="dropdown-item">Professors</a>
                         </div>
-                        
+
                     </div>
                     <a href="{{ url('/admin/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
                     <a href="{{ url('/admin/transcripts') }}" class="nav-item nav-link"><i class="fas fa-list-ol me-2"></i>Transcripts</a>
                     <a href="{{ url('/admin/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
-                    <a href="{{ url('/admin/calendar') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Calendar</a>
+                    <a href="{{ url('/admin/calendar') }}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     </div>
                 </div>
             </nav>
@@ -140,6 +140,53 @@
                 </div>
             </nav>
             <!-- Navbar End -->
+
+
+            <!-- Table Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h6 class="mb-4">Basic Table</h6>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>jhon@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>mark@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>jacob@email.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Table End -->
+
+            </div>
+        <!-- Content End -->
+          
 
 
         <!-- Back to Top -->
