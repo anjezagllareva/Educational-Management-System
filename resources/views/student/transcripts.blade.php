@@ -60,7 +60,7 @@
                 <div class="navbar-nav w-100">
                     <a href="{{ url('/student/admin')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/student/users')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user me-2"></i>Users</a>
+                        <a href="{{ url('/student/users')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen me-2"></i>Users</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="{{ url('/student/students')}}" class="dropdown-item">Students</a>
                             <a href="{{ url('/student/professors')}}" class="dropdown-item">Professors</a>
@@ -152,9 +152,6 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">ID</th>
-                                            <th scope="col">First Name</th>
-                                            <th scope="col">Last Name</th>
-                                            <th scope="col">Email</th>
                                             <th scope="col">Subject</th>
                                             <th scope="col">Grade</th>
                                         </tr>
@@ -162,43 +159,36 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row">1</th>
-                                            <td>Anjeza</td>
-                                            <td>Gllareva</td>
-                                            <td>anjeza@ubt-uni.com</td>
+                                            <td>Teknikat e Zgjidhjes se Problemeve</td>
+                                            <td>10</td>
                                             <td></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
-                                            <td>Erza</td>
-                                            <td>Boshnjaku</td>
-                                            <td>erza@ubt-uni.com</td>
+                                            <td>Bazat e Teknologjise Informative</td>
+                                            <td>7</td>
                                             <td></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
-                                            <td>Vullnet</td>
-                                            <td>Lipovica</td>
-                                            <td>vullnet@ubt-uni.com</td>
+                                            <td>Shkenca Kompjuterike 1</td>
+                                            <td>9</td>
                                             <td></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">4</th>
-                                            <td>Ardit</td>
-                                            <td>Hoxha</td>
-                                            <td>ardit@ubt-uni.com</td>
+                                            <td>Qarqet Digjitale dhe Sinjalet</td>
+                                            <td>8</td>
                                             <td></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                         <th scope="row">Average</th>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td><b>7.1</td>
+                                        <td><b>8.5</td>
                                         </tr>
                                     </tbody>
                                 </table>
