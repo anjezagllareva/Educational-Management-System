@@ -410,7 +410,7 @@
                                 <img src="assets/img/gallery/topic5.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Java</a></h3>
+                                        <h3><a href="{{ url('/courses') }}">Java</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -422,7 +422,7 @@
                                 <img src="assets/img/gallery/topic6.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Java Script</a></h3>
+                                        <h3><a href="{{ url('/courses') }}">Java Script</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -434,7 +434,7 @@
                                 <img src="assets/img/gallery/topic7.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">React</a></h3>
+                                        <h3><a href="{{ url('/courses') }}">React</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -446,7 +446,7 @@
                                 <img src="assets/img/gallery/topic8.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Node Js</a></h3>
+                                        <h3><a href="{{ url('/courses') }}">Node Js</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -587,7 +587,6 @@
                                 and professional goals
                             with us.</h2>
                             <p>We offer professional courses.</p>
-                            <a href="#" class="btn">Join now for Free</a>
                         </div>
                     </div>
                 </div>
