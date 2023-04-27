@@ -84,3 +84,32 @@ Route::get('admin/schedule', function () {
 Route::get('admin/edit', function () {
     return view('admin/edit');
 });
+
+
+Route::get('student/admin', function () {
+    return view('student/admin');
+});
+Route::get('student/students', function () {
+    return view('student/students');
+});
+Route::get('student/calendar', function () {
+    return view('student/calendar');
+});
+Route::get('student/users', function () {
+    return view('student/users');
+});
+Route::get('student/transcripts', function () {
+    return view('student/transcripts');
+});
+Route::get('student/subjects', function () {
+    return view('student/subjects');
+});
+Route::get('student/professors', function () {
+    return view('student/professors');
+});
+Route::get('student/schedule', function () {
+    return view('student/schedule');
+});
+Route::get('student/edit', function () {
+    return view('student/edit');
+});
