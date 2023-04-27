@@ -125,15 +125,15 @@
                                     <p>User Experience</p>
                                     <h3><a href="#">Fundamental of Java</a></h3>
                                     <p>The language's versatility allows developers to create sophisticated applications and simple game scripts. On top of that, its compatibility across various platforms is another major factor why enterprises are increasingly turning towards Java-based solutions. Companies such as Amazon, IBM, and Oracle have all adopted the programming language for their internal projects.
-If you want to take advantage of the popularity of Java, then enroll in a Java Certification Course at TOPS Technologies and start learning about Java. With the help of our Best Java Tutorial, you will be able to learn about the different features of Java and how to use them to create practical applications. Enrolling in a Java Training course will also help you get hands-on experience with the language to become more confident in using it.
+If you want to take advantage of the popularity of Java, then enroll in a Java Certification Course at TOPS Technologies and start learning about Java. With the help of our Best Java Tutorial, you will be able to learn about the different features of Java and how to use them to create practical applications.
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
-                                            
-                                
+
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -153,11 +153,11 @@ Python also has a large community of developers that use it and are willing to h
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
-                                            
-                                          
+
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
 
                             </div>
@@ -176,8 +176,8 @@ Python also has a large community of developers that use it and are willing to h
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
-                                            
-                
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -194,16 +194,22 @@ Python also has a large community of developers that use it and are willing to h
                                 <div class="properties__caption">
                                     <p>User Experience</p>
                                     <h3><a href="#">Fundamental of Java Script</a></h3>
-                                    <p>Learn how to use JavaScript — a powerful and flexible programming language for adding website interactivity.
+                                    <p>JavaScript (JS) is a computer programming language used to make websites and applications dynamic and interactive.
+
+It’s unique because it can run directly in your browser, not just on a server.
+
+Along with hypertext markup language (HTML) and cascading style sheets (CSS), JavaScript is one of the most commonly used programming languages of the internet.
+JavaScript, CSS, and HTML work together to make up the user-facing elements of most websites and online applications.
+JavaScript is used to make dynamic websites, web and mobile apps, games, web servers, back-end infrastructures, and more.
 
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
-                                            
-                                            
+
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
 
                             </div>
@@ -219,21 +225,18 @@ Python also has a large community of developers that use it and are willing to h
                                     <p>User Experience</p>
                                     <h3><a href="#">Fundamental of HTML</a></h3>
                                     <p>
-                                    Start at the beginning by learning HTML basics — an important foundation for building and editing web pages.
+                                    HTML, or hypertext markup language, is a markup language used to create the frontend of websites. It is written to include the structure of a web page and rendered by web browsers into the websites that we see online. HTML, usually coupled with CSS, or cascading style sheets, enables websites to look the way that we want them to on the web. This includes visual items such as color, font size, text order and more. In contrast, website builders that use What You See is What You Get (WYSIWYG) software do not require the user to enter HTML or description codes - it's all built into the platform.
+
+
+HTML is written in blocks of elements and tags. These tags indicate the structure of the page and denote the type of text that a viewer sees.
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
-                                            <div class="rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half"></i>
-                                            </div>
-                                            <p><span>(4.5)</span> based on 120</p>
+
+
                                         </div>
                                     </div>
-                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
+
                                 </div>
 
                             </div>
@@ -248,21 +251,18 @@ Python also has a large community of developers that use it and are willing to h
                                 <div class="properties__caption">
                                     <p>User Experience</p>
                                     <h3><a href="#">Fundamental of React</a></h3>
-                                    <p>In this React course, you’ll build powerful interactive applications with one of the most popular JavaScript libraries.
+                                    <p>React lets you build user interfaces out of individual pieces called components. Create your own React components like Thumbnail, LikeButton, and Video. Then combine them into entire screens, pages, and apps.
+                                    Whether you work on your own or with thousands of other developers, using React feels the same. It is designed to let you seamlessly combine components written by independent people, teams, and organizations.
+                                    React components are JavaScript functions.
+                                    This markup syntax is called JSX. It is a JavaScript syntax extension popularized by React.
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
-                                            <div class="rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half"></i>
-                                            </div>
-                                            <p><span>(4.5)</span> based on 120</p>
+
+
                                         </div>
                                     </div>
-                                    <a href="{{ url('/login') }}" class="border-btn border-btn2">Find out more</a>
+
                                 </div>
                             </div>
                         </div>

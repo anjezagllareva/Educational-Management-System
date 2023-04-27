@@ -183,7 +183,7 @@
                                         <span></span>
                                     </div>
                                 </div>
-                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                                <a href="{{ url('/courses') }}" class="border-btn border-btn2">Find out more</a>
                             </div>
 
                         </div>
@@ -215,7 +215,7 @@
                                         <span></span>
                                     </div>
                                 </div>
-                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                                <a href="{{ url('/courses') }}" class="border-btn border-btn2">Find out more</a>
                             </div>
                         </div>
                     </div>
@@ -247,7 +247,7 @@
                                         <span></span>
                                     </div>
                                 </div>
-                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                                <a href="{{ url('/courses') }}" class="border-btn border-btn2">Find out more</a>
                             </div>
 
                         </div>
@@ -280,7 +280,7 @@
                                         <span></span>
                                     </div>
                                 </div>
-                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                                <a href="{{ url('/courses') }}" class="border-btn border-btn2">Find out more</a>
                             </div>
 
                         </div>
@@ -362,7 +362,7 @@
                                 <img src="assets/img/gallery/topic1.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">HTML</a></h3>
+                                        <h3><a href="{{ url('/courses') }}">HTML</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -374,7 +374,7 @@
                                 <img src="assets/img/gallery/topic2.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">CSS</a></h3>
+                                        <h3><a href="{{ url('/courses') }}">CSS</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -386,7 +386,7 @@
                                 <img src="assets/img/gallery/topic3.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">C++</a></h3>
+                                        <h3><a href="{{ url('/courses') }}">C++</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -398,7 +398,7 @@
                                 <img src="assets/img/gallery/topic4.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Python</a></h3>
+                                        <h3><a href="{{ url('/courses') }}">Python</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -456,7 +456,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-12">
                         <div class="section-tittle text-center mt-20">
-                            <a href="courses.html" class="border-btn">View More Subjects</a>
+
                         </div>
                     </div>
                 </div>
