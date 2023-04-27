@@ -86,8 +86,8 @@ Route::get('admin/edit', function () {
 });
 
 
-Route::get('student/admin', function () {
-    return view('student/admin');
+Route::get('student/courses', function () {
+    return view('student/courses');
 });
 Route::get('student/1stYear', function () {
     return view('student/1stYear');

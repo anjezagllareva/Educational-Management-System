@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="{{ url('/student/admin')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="{{ url('/student/courses')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Courses</a>
                     <div class="nav-item dropdown">
                         <a href="{{ url('/student/exams')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen me-2"></i>Exams</a>
                         <div class="dropdown-menu bg-transparent border-0">
@@ -89,45 +89,6 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-envelope me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Message</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Student send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Student send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Student send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all message</a>
-                        </div>
-                    </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
@@ -162,29 +123,21 @@
                                             <th scope="row">1</th>
                                             <td>Teknikat e Zgjidhjes se Problemeve</td>
                                             <td>10</td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
                                             <td>Bazat e Teknologjise Informative</td>
                                             <td>7</td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
                                             <td>Shkenca Kompjuterike 1</td>
                                             <td>9</td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">4</th>
                                             <td>Qarqet Digjitale dhe Sinjalet</td>
                                             <td>8</td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                         <tr>
                                         <th scope="row">Average</th>
