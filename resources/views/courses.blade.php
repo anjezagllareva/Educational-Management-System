@@ -125,7 +125,7 @@
                                     <p>User Experience</p>
                                     <h3><a href="#">Fundamental of Java</a></h3>
                                     <p>The language's versatility allows developers to create sophisticated applications and simple game scripts. On top of that, its compatibility across various platforms is another major factor why enterprises are increasingly turning towards Java-based solutions. Companies such as Amazon, IBM, and Oracle have all adopted the programming language for their internal projects.
-If you want to take advantage of the popularity of Java, then enroll in a Java Certification Course at TOPS Technologies and start learning about Java. With the help of our Best Java Tutorial, you will be able to learn about the different features of Java and how to use them to create practical applications.
+If you want to take advantage of the popularity of Java, then enroll in a Java Certification Course at TOPS Technologies and start learning about Java. With the help of our Best Java Tutorial, you will be able to learn about the different features of Java and how to use them to create practical applications. Enrolling in a Java Training course will also help you get hands-on experience with the language to become more confident in using it.
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
@@ -254,7 +254,7 @@ HTML is written in blocks of elements and tags. These tags indicate the structur
                                     <p>React lets you build user interfaces out of individual pieces called components. Create your own React components like Thumbnail, LikeButton, and Video. Then combine them into entire screens, pages, and apps.
                                     Whether you work on your own or with thousands of other developers, using React feels the same. It is designed to let you seamlessly combine components written by independent people, teams, and organizations.
                                     React components are JavaScript functions.
-                                    This markup syntax is called JSX. It is a JavaScript syntax extension popularized by React.
+
                                     </p>
                                     <div class="properties__footer d-flex justify-content-between align-items-center">
                                         <div class="restaurant-name">
@@ -277,123 +277,7 @@ HTML is written in blocks of elements and tags. These tags indicate the structur
             </div>
         </div>
         <!-- Courses area End -->
-        <!--? top subjects Area Start -->
-        <div class="topic-area">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-8">
-                        <div class="section-tittle text-center mb-55">
-                            <h2>Explore top subjects</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic1.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">HTML</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic2.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">CSS</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic3.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">C++</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic4.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Python</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic5.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Java</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic6.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Java Script</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic7.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">React</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-topic text-center mb-30">
-                            <div class="topic-img">
-                                <img src="assets/img/gallery/topic8.png" alt="">
-                                <div class="topic-content-box">
-                                    <div class="topic-content">
-                                        <h3><a href="#">Node JS</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-12">
-                        <div class="section-tittle text-center mt-20">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- top subjects End -->
+
         <!-- ? services-area -->
         <div class="services-area services-area2 section-padding40">
             <div class="container">
