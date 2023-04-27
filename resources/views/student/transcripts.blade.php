@@ -60,7 +60,7 @@
                 <div class="navbar-nav w-100">
                     <a href="{{ url('/student/admin')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/student/exams')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user me-2"></i>Exams</a>
+                        <a href="{{ url('/student/exams')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-penfas fa-pen me-2"></i>Exams</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="{{ url('/student/1stYear')}}" class="dropdown-item">1st Year</a>
                             <a href="{{ url('/student/2ndYear')}}" class="dropdown-item">2nd Year</a>
