@@ -113,3 +113,6 @@ Route::get('student/schedule', function () {
 Route::get('student/edit', function () {
     return view('student/edit');
 });
+Route::get('student/3rdYear', function () {
+    return view('student/3rdYear');
+});
