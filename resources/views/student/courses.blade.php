@@ -103,9 +103,132 @@
                 </div>
             </nav>
             <!-- Navbar End -->
+             <!-- courses start -->
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+	<div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/shk1.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Shkenca Kompjuterike 1</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+	<div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/math.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Matematike 1</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+	<div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/english.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Gjuhe Angleze per Inxhinieri</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+	<div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/java.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Teknikat e Zgjidhjes se Problemeve</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+	<div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/it.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">IT, E Drejta dhe Shoqeria</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+	<div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/cpu.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Bazat e Teknologjise Informative</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+    <div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/Hyrje.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Hyrje në Siguri të Informacionit</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+    <div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/web.png')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Inxhinieri e Web</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+    <div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/Rrjeta.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Rrjeta Kompjuterike dhe Komunikimi</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+    <div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/lab.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Lëndë Laboratorike 1 (Programim)</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+    <div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/Inxhineri.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Inxhinieri Softuerike</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+    <div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/loja.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Programimi i Lojërave</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+    <div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/kriptografia.jpg')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Kriptografia</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+    <div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/dizajni.png')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Dizajnimi i Softuerit</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
+    <div class="col">
+		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/arktiektura.png')}}" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Arkitekturë Softuerike</h5>
+			</div>
+            <button class="btn btn-primary" type="submit">enroll</button>
+		</div>
+	</div>
 
-
-            
+</div>
+  <!-- courses end -->
+           
             </div>
         <!-- Content End -->
           
