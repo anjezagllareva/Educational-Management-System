@@ -110,6 +110,9 @@ Route::get('student/edit', function () {
 Route::get('student/3rdYear', function () {
     return view('student/3rdYear');
 });
+Route::get('student/messages', function () {
+    return view('student/messages');
+});
 
 
 
@@ -202,4 +205,7 @@ Route::get('professor/edit', function () {
 });
 Route::get('professor/3rdYear', function () {
     return view('professor/3rdYear');
+});
+Route::get('professor/messages', function () {
+    return view('professor/messages');
 });
