@@ -58,12 +58,12 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="{{ url('/admin/admin')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="{{ url('/professor/admin')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/admin/users') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user me-2"></i>Users</a>
+                        <a href="{{ url('/professor/users') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user me-2"></i>Users</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ url('/admin/students') }}" class="dropdown-item">Students</a>
-                            <a href="{{ url('/admin/professors') }}" class="dropdown-item">Professors</a>
+                            <a href="{{ url('/professor/students') }}" class="dropdown-item">Students</a>
+                            <a href="{{ url('/professor/professors') }}" class="dropdown-item">Professors</a>
                         </div>
                         
                     </div>

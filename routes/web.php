@@ -54,12 +54,6 @@ Route::get('register', function () {
 Route::get('admin/admin', function () {
     return view('admin/admin');
 });
-Route::get('admin/404', function () {
-    return view('admin/404');
-});
-Route::get('admin/blank', function () {
-    return view('admin/blank');
-});
 Route::get('admin/students', function () {
     return view('admin/students');
 });
@@ -115,4 +109,37 @@ Route::get('student/edit', function () {
 });
 Route::get('student/3rdYear', function () {
     return view('student/3rdYear');
+});
+
+
+
+Route::get('professor/admin', function () {
+    return view('professor/admin');
+});
+Route::get('professor/1stYear', function () {
+    return view('professor/1stYear');
+});
+Route::get('professor/calendar', function () {
+    return view('professor/calendar');
+});
+Route::get('professor/exams', function () {
+    return view('professor/exams');
+});
+Route::get('professor/transcripts', function () {
+    return view('professor/transcripts');
+});
+Route::get('professor/subjects', function () {
+    return view('professor/subjects');
+});
+Route::get('professor/2ndYear', function () {
+    return view('professor/2ndYear');
+});
+Route::get('professor/schedule', function () {
+    return view('professor/schedule');
+});
+Route::get('professor/edit', function () {
+    return view('professor/edit');
+});
+Route::get('professor/3rdYear', function () {
+    return view('professor/3rdYear');
 });
