@@ -116,6 +116,66 @@ Route::get('student/3rdYear', function () {
 Route::get('professor/admin', function () {
     return view('professor/admin');
 });
+
+Route::get('professor/algo', function () {
+    return view('professor/algo');
+});
+
+Route::get('professor/arkitektur', function () {
+    return view('professor/arkitektur');
+});
+
+Route::get('professor/bti', function () {
+    return view('professor/bti');
+});
+
+Route::get('professor/databaze', function () {
+    return view('professor/databaze');
+});
+
+Route::get('professor/dizajn', function () {
+    return view('professor/dizajn');
+});
+
+Route::get('professor/english', function () {
+    return view('professor/english');
+});
+
+Route::get('professor/gaming', function () {
+    return view('professor/gaming');
+});
+
+Route::get('professor/kripto', function () {
+    return view('professor/kripto');
+});
+
+Route::get('professor/lab1', function () {
+    return view('professor/lab1');
+});
+
+Route::get('professor/lab2', function () {
+    return view('professor/lab2');
+});
+
+Route::get('professor/math', function () {
+    return view('professor/math');
+});
+
+Route::get('professor/rrjeta', function () {
+    return view('professor/rrjeta');
+});
+
+Route::get('professor/shk1', function () {
+    return view('professor/shk1');
+});
+
+Route::get('professor/shk2', function () {
+    return view('professor/shk2');
+});
+
+Route::get('professor/web', function () {
+    return view('professor/web');
+});
 Route::get('professor/students', function () {
     return view('professor/students');
 });

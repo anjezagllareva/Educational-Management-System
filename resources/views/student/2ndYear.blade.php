@@ -140,14 +140,6 @@
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">3</th>
-                                            <td>Struktura Diskrete I (Matematike)</td>
-                                            <td>Obligatory</td>
-                                            <td>Azir Jusufi</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
                                             <th scope="row">4</th>
                                             <td>Sistemet e Bazes se te Dhenave</td>
                                             <td>Obligatory</td>
@@ -164,34 +156,10 @@
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">6</th>
-                                            <td>Algortimet dhe Struktura e te Dhenave</td>
-                                            <td>Obligatory</td>
-                                            <td>Vesa Morina</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
                                             <th scope="row">7</th>
                                             <td>Lëndë Laboratorike 1 (Programim)</td>
                                             <td>Obligatory</td>
                                             <td>Blerim Zylfiu</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">8</th>
-                                            <td>Inxhinieri Softuerike</td>
-                                            <td>Obligatory</td>
-                                            <td>Blerina Rrmoku</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">9</th>
-                                            <td>Hyrje në Siguri të Informacionit</td>
-                                            <td>Obligatory</td>
-                                            <td>Shkelqim Berisha</td>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>

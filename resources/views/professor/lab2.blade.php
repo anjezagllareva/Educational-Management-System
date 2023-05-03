@@ -60,13 +60,24 @@
                 <div class="navbar-nav w-100">
                     <a href="{{ url('/student/courses')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Courses</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/student/exams') }}" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fas fa-pen me-2"></i>Exams</a>
+                    <a href="{{ url('/professor/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ url('/student/1stYear') }}" class="dropdown-item active">1st Year</a>
-                            <a href="{{ url('/student/2ndYear') }}" class="dropdown-item">2nd Year</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">3rd Year</a>
+                            <a href="{{ url('/professor/english') }}" class="dropdown-item">Gjuhe Angleze per Inxhinieri</a>
+                            <a href="{{ url('/professor/math') }}" class="dropdown-item">Matematike 1</a>
+                            <a href="{{ url('/professor/bti') }}" class="dropdown-item">Bazat e Teknologjise Informative</a>
+                            <a href="{{ url('/professor/shk1') }}" class="dropdown-item">Shkenca Kompjuterike 1</a>
+                            <a href="{{ url('/professor/algo') }}" class="dropdown-item">Hyrje ne Algoritme</a>
+                            <a href="{{ url('/professor/shk2') }}" class="dropdown-item">Shkenca Kompjuterike 2</a>
+                            <a href="{{ url('/professor/web') }}" class="dropdown-item">Inxhinieri e Web</a>
+                            <a href="{{ url('/professor/databaze') }}" class="dropdown-item">Sistemet e Bazes se te Dhenave</a>
+                            <a href="{{ url('/professor/rrjeta') }}" class="dropdown-item">Rrjeta Kompjuterike dhe Komunikimi</a>
+                            <a href="{{ url('/professor/lab1') }}" class="dropdown-item">Lëndë Laboratorike 1 (Programim)</a>
+                            <a href="{{ url('/professor/gaming') }}" class="dropdown-item">Programimi i Lojërave</a>
+                            <a href="{{ url('/professor/kripto') }}" class="dropdown-item">Kriptografia</a>
+                            <a href="{{ url('/professor/dizajn') }}" class="dropdown-item">Dizajnimi i Softuerit</a>
+                            <a href="{{ url('/professor/lab2') }}" class="dropdown-item">Lëndë Laboratorike 2 (Programim)</a>
+                            <a href="{{ url('/professor/arkitektur') }}" class="dropdown-item">Arkitekturë Softuerike</a>
                         </div>
-                    </div>
                     <a href="{{ url('/student/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
                     <a href="{{ url('/student/transcripts') }}" class="nav-item nav-link"><i class="fas fa-list-ol me-2"></i>Transcripts</a>
                     <a href="{{ url('/student/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
@@ -103,74 +114,49 @@
             <!-- Navbar End -->
 
 
+       
             <!-- Table Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-
-                    <div class="col-12">
+                    <div class="col-sm-12 col-xl-6">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">3rd Year Subjects</h6>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">ID</th>
-                                            <th scope="col">Subject</th>
-                                            <th scope="col">Category</th>
-                                            <th scope="col">Lacturer</th>
-                                            <th scope="col">Submit</th>
-                                            <th scope="col">Cancel</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Programimi i Lojërave</td>
-                                            <td>Obligatory</td>
-                                            <td>Vesa Morina</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">5</th>
-                                            <td>Kriptografia</td>
-                                            <td>Obligatory</td>
-                                            <td>Gazmend Krasniqi</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">6</th>
-                                            <td>Dizajnimi i Softuerit</td>
-                                            <td>Obligatory</td>
-                                            <td>Edmond Jajaga</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">7</th>
-                                            <td>Lëndë Laboratorike 2 (Programim)</td>
-                                            <td>Obligatory</td>
-                                            <td>Elton Boshnjaku</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">9</th>
-                                            <td>Arkitekturë Softuerike</td>
-                                            <td>Obligatory</td>
-                                            <td>Xhelal Jashari</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <h6 class="mb-4">Basic Table</h6>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>jhon@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>mark@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>jacob@email.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Table End -->
+
         </div>
         <!-- Content End -->
 

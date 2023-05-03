@@ -63,30 +63,19 @@
                     <a href="{{ url('/professor/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="{{ url('/student/1stYear') }}" class="dropdown-item">Gjuhe Angleze per Inxhinieri</a>
-                            <a href="{{ url('/student/2ndYear') }}" class="dropdown-item">Teknikat e Zgjidhjes se Problemeve</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Matematike 1</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">IT, E Drejta dhe Shoqeria</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Bazat e Teknologjise Informative</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Bazat e Inxhinierise Elektronike / Elektrike</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Shkenca Kompjuterike 1</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Qarqet Digjitale dhe Sinjalet</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Hyrje ne Algoritme</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Shkenca Kompjuterike 2</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Inxhinieri e Web</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Struktura Diskrete I (Matematike)</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Sistemet e Bazes se te Dhenave</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Rrjeta Kompjuterike dhe Komunikimi</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Algortimet dhe Struktura e te Dhenave</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Lëndë Laboratorike 1 (Programim)</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Inxhinieri Softuerike</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Hyrje në Siguri të Informacionit</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Zhvillimi dhe Dizajnimi i Ueb</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Rrjeta Kompjuterike II</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Programimi i Lojërave</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Nderrmarresi dhe Inovacion</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Kriptografia</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Dizajnimi i Softuerit</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Lëndë Laboratorike 2 (Programim)</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Ueb Multimedia</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Arkitekturë Softuerike</a>
                         </div>
                     <a href="{{ url('/professor/students') }}" class="nav-item nav-link"><i class="fas fa-user me-2"></i>Students</a>

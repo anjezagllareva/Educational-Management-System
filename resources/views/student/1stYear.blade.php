@@ -132,26 +132,11 @@
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">2</th>
-                                            <td>Teknikat e Zgjidhjes se Problemeve</td>
-                                            <td>Obligatory</td>
-                                            <td>Vesa Morina</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
                                         <tr>
                                             <th scope="row">3</th>
                                             <td>Matematike 1</td>
                                             <td>Obligatory</td>
                                             <td>Hizer Leka</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>IT, E Drejta dhe Shoqeria</td>
-                                            <td>Obligatory</td>
-                                            <td>Dashmir Istrefi</td>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
@@ -164,26 +149,10 @@
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">6</th>
-                                            <td>Bazat e Inxhinierise Elektronike / Elektrike</td>
-                                            <td>Obligatory</td>
-                                            <td>Bertan Karahoda</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
                                             <th scope="row">7</th>
                                             <td>Shkenca Kompjuterike 1</td>
                                             <td>Obligatory</td>
                                             <td>Lavdim Menxhiqi</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">8</th>
-                                            <td>Qarqet Digjitale dhe Sinjalet</td>
-                                            <td>Obligatory</td>
-                                            <td>Bertan Karahoda</td>
                                             <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Submit</a></td>
                                             <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Cancel</a></td>
                                         </tr>
