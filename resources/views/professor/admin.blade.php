@@ -60,7 +60,7 @@
                 <div class="navbar-nav w-100">
                     <a href="{{ url('/professor/admin')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                    <a href="{{ url('/student/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
+                    <a href="{{ url('/professor/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="{{ url('/student/1stYear') }}" class="dropdown-item">Gjuhe Angleze per Inxhinieri</a>
                             <a href="{{ url('/student/2ndYear') }}" class="dropdown-item">Teknikat e Zgjidhjes se Problemeve</a>
