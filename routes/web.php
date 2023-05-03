@@ -116,8 +116,8 @@ Route::get('student/3rdYear', function () {
 Route::get('professor/admin', function () {
     return view('professor/admin');
 });
-Route::get('professor/1stYear', function () {
-    return view('professor/1stYear');
+Route::get('professor/students', function () {
+    return view('professor/students');
 });
 Route::get('professor/calendar', function () {
     return view('professor/calendar');

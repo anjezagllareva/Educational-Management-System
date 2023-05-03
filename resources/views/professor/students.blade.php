@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="{{asset('assets/admin/img/favicon.ico')}}" rel="icon">
+    <link href="{{asset('admin/img/favicon.ico')}}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-     <!-- Libraries Stylesheet -->
-   <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -45,8 +45,8 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="index.html" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Professor</h3>
+                <a href="{{ url('/admin/admin')}}" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary">Professor</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -54,22 +54,16 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Admin</h6>
+                        <h6 class="mb-0">Professor</h6>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="{{ url('/admin/admin')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <div class="nav-item dropdown">
-                        <a href="{{ url('/admin/users') }}" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Users</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ url('/admin/students') }}" class="dropdown-item active">Students</a>
-                            <a href="{{ url('/admin/professors') }}" class="dropdown-item">Professors</a>
-                        </div>
-                    </div>
-                    <a href="{{ url('/admin/schedule') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Schedule</a>
-                    <a href="{{ url('/admin/transcripts') }}" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Transcripts</a>
-                    <a href="{{ url('/admin/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
-                    <a href="{{ url('/admin/calendar') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Calendar</a>
+                    <a href="{{ url('/professor/admin')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="{{ url('/professor/schedule') }}" class="nav-item nav-link"><i class="fas fa-user me-2"></i>Students</a>
+                    <a href="{{ url('/professor/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
+                    <a href="{{ url('/professor/transcripts') }}" class="nav-item nav-link"><i class="fas fa-list-ol me-2"></i>Messages</a>
+                    <a href="{{ url('/professor/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
+                    <a href="{{ url('/professor/calendar') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Calendar</a>
                     </div>
                 </div>
             </nav>
@@ -88,7 +82,6 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item dropdown">
 
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -107,79 +100,48 @@
             <!-- Table Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-
-                    <div class="col-12">
+                    <div class="col-sm-12 col-xl-6">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Students Table</h6>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">ID</th>
-                                            <th scope="col">First Name</th>
-                                            <th scope="col">Last Name</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">City</th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Edit</th>
-                                            <th scope="col">Delete</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Anjeza</td>
-                                            <td>Gllareva</td>
-                                            <td>anjeza@ubt-uni.com</td>
-                                            <td>Prishtine</td>
-                                            <td>Student</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Erza</td>
-                                            <td>Boshnjaku</td>
-                                            <td>erza@ubt-uni.com</td>
-                                            <td>Mitrovica</td>
-                                            <td>Student</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Vullnet</td>
-                                            <td>Lipovica</td>
-                                            <td>vullnet@ubt-uni.com</td>
-                                            <td>Gjilan</td>
-                                            <td>Student</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">4</th>
-                                            <td>Ardit</td>
-                                            <td>Hoxha</td>
-                                            <td>ardit@ubt-uni.com</td>
-                                            <td>Lipjan</td>
-                                            <td>Student</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Add</a></td>
-
-                                            </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <h6 class="mb-4">Basic Table</h6>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                        <td>jhon@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>mark@email.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>jacob@email.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Table End -->
-        </div>
+
+            </div>
         <!-- Content End -->
+
 
 
         <!-- Back to Top -->

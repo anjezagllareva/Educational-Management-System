@@ -60,17 +60,40 @@
                 <div class="navbar-nav w-100">
                     <a href="{{ url('/professor/admin')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/professor/users') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user me-2"></i>Users</a>
+                    <a href="{{ url('/student/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ url('/professor/students') }}" class="dropdown-item">Students</a>
-                            <a href="{{ url('/professor/professors') }}" class="dropdown-item">Professors</a>
+                            <a href="{{ url('/student/1stYear') }}" class="dropdown-item">Gjuhe Angleze per Inxhinieri</a>
+                            <a href="{{ url('/student/2ndYear') }}" class="dropdown-item">Teknikat e Zgjidhjes se Problemeve</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Matematike 1</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">IT, E Drejta dhe Shoqeria</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Bazat e Teknologjise Informative</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Bazat e Inxhinierise Elektronike / Elektrike</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Shkenca Kompjuterike 1</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Qarqet Digjitale dhe Sinjalet</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Hyrje ne Algoritme</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Shkenca Kompjuterike 2</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Inxhinieri e Web</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Struktura Diskrete I (Matematike)</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Sistemet e Bazes se te Dhenave</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Rrjeta Kompjuterike dhe Komunikimi</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Algortimet dhe Struktura e te Dhenave</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Lëndë Laboratorike 1 (Programim)</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Inxhinieri Softuerike</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Hyrje në Siguri të Informacionit</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Zhvillimi dhe Dizajnimi i Ueb</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Rrjeta Kompjuterike II</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Programimi i Lojërave</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Nderrmarresi dhe Inovacion</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Kriptografia</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Lëndë Laboratorike 2 (Programim)</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Ueb Multimedia</a>
+                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">Arkitekturë Softuerike</a>
                         </div>
-
-                    </div>
-                    <a href="{{ url('/admin/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
-                    <a href="{{ url('/admin/transcripts') }}" class="nav-item nav-link"><i class="fas fa-list-ol me-2"></i>Transcripts</a>
-                    <a href="{{ url('/admin/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
-                    <a href="{{ url('/admin/calendar') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Calendar</a>
+                    <a href="{{ url('/professor/students') }}" class="nav-item nav-link"><i class="fas fa-user me-2"></i>Students</a>
+                    <a href="{{ url('/professor/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
+                    <a href="{{ url('/professor/transcripts') }}" class="nav-item nav-link"><i class="fas fa-list-ol me-2"></i>Messages</a>
+                    <a href="{{ url('/professor/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
+                    <a href="{{ url('/professor/calendar') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Calendar</a>
                     </div>
                 </div>
             </nav>
