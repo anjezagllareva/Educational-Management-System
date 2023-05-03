@@ -130,38 +130,6 @@
             <button class="btn btn-primary" type="submit">enroll</button>
 		</div>
 	</div>
-	<div class="col">
-		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/java.jpg')}}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Teknikat e Zgjidhjes se Problemeve</h5>
-			</div>
-            <button class="btn btn-primary" type="submit">enroll</button>
-		</div>
-	</div>
-	<div class="col">
-		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/it.jpg')}}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">IT, E Drejta dhe Shoqeria</h5>
-			</div>
-            <button class="btn btn-primary" type="submit">enroll</button>
-		</div>
-	</div>
-	<div class="col">
-		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/cpu.jpg')}}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Bazat e Teknologjise Informative</h5>
-			</div>
-            <button class="btn btn-primary" type="submit">enroll</button>
-		</div>
-	</div>
-    <div class="col">
-		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/Hyrje.jpg')}}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Hyrje në Siguri të Informacionit</h5>
-			</div>
-            <button class="btn btn-primary" type="submit">enroll</button>
-		</div>
-	</div>
     <div class="col">
 		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/web.png')}}" class="card-img-top" alt="...">
 			<div class="card-body">
@@ -182,14 +150,6 @@
 		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/lab.jpg')}}" class="card-img-top" alt="...">
 			<div class="card-body">
 				<h5 class="card-title">Lëndë Laboratorike 1 (Programim)</h5>
-			</div>
-            <button class="btn btn-primary" type="submit">enroll</button>
-		</div>
-	</div>
-    <div class="col">
-		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/Inxhineri.jpg')}}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Inxhinieri Softuerike</h5>
 			</div>
             <button class="btn btn-primary" type="submit">enroll</button>
 		</div>
