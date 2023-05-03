@@ -91,7 +91,7 @@
                         </div>
                     <a href="{{ url('/professor/students') }}" class="nav-item nav-link"><i class="fas fa-user me-2"></i>Students</a>
                     <a href="{{ url('/professor/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
-                    <a href="{{ url('/professor/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
+                    <a href="{{ url('/professor/transcripts') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
                     <a href="{{ url('/professor/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
                     <a href="{{ url('/professor/calendar') }}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     </div>
@@ -126,7 +126,7 @@
             </nav>
             <!-- Navbar End -->
 
-
+            
             <!-- Table Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
@@ -140,6 +140,7 @@
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
                                         <th scope="col">Email</th>
+                                        <th scope="col">Message</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -148,18 +149,21 @@
                                         <td>John</td>
                                         <td>Doe</td>
                                         <td>jhon@email.com</td>
+                                        <td>...</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
                                         <td>Mark</td>
                                         <td>Otto</td>
                                         <td>mark@email.com</td>
+                                        <td>...</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
                                         <td>Jacob</td>
                                         <td>Thornton</td>
                                         <td>jacob@email.com</td>
+                                        <td>...</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -168,6 +172,8 @@
                 </div>
             </div>
             <!-- Table End -->
+
+
 
             </div>
         <!-- Content End -->
