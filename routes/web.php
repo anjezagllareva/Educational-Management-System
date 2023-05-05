@@ -179,14 +179,8 @@ Route::get('professor/shk2', function () {
 Route::get('professor/web', function () {
     return view('professor/web');
 });
-Route::get('professor/students', function () {
-    return view('professor/students');
-});
 Route::get('professor/calendar', function () {
     return view('professor/calendar');
-});
-Route::get('professor/exams', function () {
-    return view('professor/exams');
 });
 Route::get('professor/transcripts', function () {
     return view('professor/transcripts');
@@ -194,17 +188,11 @@ Route::get('professor/transcripts', function () {
 Route::get('professor/subjects', function () {
     return view('professor/subjects');
 });
-Route::get('professor/2ndYear', function () {
-    return view('professor/2ndYear');
-});
 Route::get('professor/schedule', function () {
     return view('professor/schedule');
 });
 Route::get('professor/edit', function () {
     return view('professor/edit');
-});
-Route::get('professor/3rdYear', function () {
-    return view('professor/3rdYear');
 });
 Route::get('professor/messages', function () {
     return view('professor/messages');

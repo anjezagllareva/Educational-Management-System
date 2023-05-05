@@ -67,7 +67,6 @@
                         </div>
                     </div>
                     <a href="{{ url('/admin/schedule')}}" class="nav-item nav-link active"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
-                    <a href="{{ url('/admin/transcripts')}}" class="nav-item nav-link"><i class="fas fa-list-ol me-2"></i>Transcripts</a>
                     <a href="{{ url('/admin/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
                     <a href="{{ url('/admin/calendar')}}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     </div>
