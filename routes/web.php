@@ -197,3 +197,6 @@ Route::get('professor/edit', function () {
 Route::get('professor/messages', function () {
     return view('professor/messages');
 });
+Route::get('professor/students', function () {
+    return view('professor/students');
+});
