@@ -46,7 +46,7 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="{{ url('/professor/students')}}" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Professor</h3>
+                <h3 class="text-primary">Professor</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -77,10 +77,10 @@
                             <a href="{{ url('/professor/lab2') }}" class="dropdown-item">Lëndë Laboratorike 2 (Programim)</a>
                             <a href="{{ url('/professor/arkitektur') }}" class="dropdown-item">Arkitekturë Softuerike</a>
                         </div>
-                    <a href="{{ url('/admin/schedule')}}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Schedule</a>
-                    <a href="{{ url('/admin/transcripts')}}" class="nav-item nav-link active"><i class="fa fa-keyboard me-2"></i>Transcripts</a>
-                    <a href="{{ url('/admin/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
-                    <a href="{{ url('/admin/calendar')}}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
+                    <a href="{{ url('/professor/schedule')}}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Schedule</a>
+                    <a href="{{ url('/professor/transcripts')}}" class="nav-item nav-link active"><i class="fa fa-keyboard me-2"></i>Transcripts</a>
+                    <a href="{{ url('/professor/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
+                    <a href="{{ url('/professor/calendar')}}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     </div>
                 </div>
             </nav>
