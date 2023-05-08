@@ -158,6 +158,8 @@
                                             <th scope="col">City</th>
                                             <th scope="col">Lenda</th>
                                             <th scope="col">Status</th>
+                                            <th scope="col">Edit</th>
+                                            <th scope="col">Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -169,6 +171,8 @@
                                             <td>Prishtine</td>
                                             <td>TZP</td>
                                             <td>Professor</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
@@ -178,6 +182,8 @@
                                             <td>Prishtine</td>
                                             <td>SHKI</td>
                                             <td>Professor</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
@@ -187,6 +193,8 @@
                                             <td>Prishtine</td>
                                             <td>SHKI</td>
                                             <td>Professor</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">4</th>
@@ -196,7 +204,13 @@
                                             <td>Prishtine</td>
                                             <td>SHKI</td>
                                             <td>Asistent</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
                                         </tr>
+                                        <tr>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Add</a></td>
+
+                                            </tr>
                                     </tbody>
                                 </table>
                             </div>

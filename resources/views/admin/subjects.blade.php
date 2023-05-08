@@ -153,6 +153,8 @@
                                         <th scope="col">Subject</th>
                                         <th scope="col">Lecturer</th>
                                         <th scope="col">Email</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -161,25 +163,37 @@
                                         <td>Lavdim</td>
                                         <td>Shkenca Kompjuterike 1</td>
                                         <td>lavdim@ubt-uni.com</td>
+                                        <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
+                                        <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
                                         <td>Vesa</td>
                                         <td>TZP</td>
                                         <td>vesa@ubt-uni.com</td>
+                                        <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
+                                        <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
                                         <td>Hizer</td>
                                         <td>Matematika 1</td>
                                         <td>hizer@ubt-uni.com</td>
+                                        <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
+                                        <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">4</th>
                                         <td>Ramiz</td>
                                         <td>Inxhinieri e Web</td>
                                         <td>ramiz@ubt-uni.com</td>
+                                        <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
+                                        <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
                                     </tr>
+                                    <tr>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Add</a></td>
+
+                                            </tr>
                                 </tbody>
                             </table>
                         </div>

@@ -347,6 +347,10 @@
                             </td>
                             <td></td>
                         </tr>
+                     <tr>
+                       <td><a href="/admin/edit" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Edit</a></td>
+
+                    </tr>
                     </tbody>
                 </table>
             </div>
