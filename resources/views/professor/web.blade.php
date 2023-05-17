@@ -117,7 +117,7 @@
           <!-- Table Start -->
           <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
+                    <div class="col-sm-12 col-xl-8">
                         <div class="bg-light rounded h-100 p-4">
                             <h6 class="mb-4"></h6>
                             <table class="table">
@@ -127,7 +127,19 @@
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
                                         <th scope="col">Email</th>
+                                        <th scope="col">Grade</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
                                     </tr>
+                                    <tr>
+                                            <th scope="row">1</th>
+                                            <td>filan</td>
+                                            <td>fisteku</td>
+                                            <td>filani@ubt-uni.com</td>
+                                            <td>example</td>
+                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
+                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
+                                        </tr>
                                 </thead>
                             </table>
                         </div>
