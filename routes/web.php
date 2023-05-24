@@ -200,3 +200,6 @@ Route::get('professor/messages', function () {
 Route::get('professor/students', function () {
     return view('professor/students');
 });
+Route::get('/dbconn', function () {
+    return view('dbconn');
+});
