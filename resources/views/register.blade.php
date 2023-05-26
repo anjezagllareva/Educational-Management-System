@@ -44,8 +44,8 @@
 
 <main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
     <!-- Login Admin -->
-    <form class="form-default" action="{{ url('/login') }}" method="POST">
-        
+    <form class="form-default" action="{{ route('register.custom') }}" method="POST" novalidate="novalidate">
+    @csrf
         <div class="login-form">
             <!-- logo-login -->
             <div class="logo-login">
@@ -55,19 +55,31 @@
 
             <div class="form-input">
                 <label for="name">Full name</label>
-                <input  type="text"  class="form-control" id = "name-input" placeholder="Full name" name="name" required>
+                <input  type="text"  class="form-control" id = "name-input" placeholder="Full name" name="name" required autofocus>
+                                @if ($errors->has('name'))
+                                <span class="text-danger">{{ $errors->first('name') }}</span>
+                                @endif
             </div>
             <div class="form-input">
                 <label for="name">Email Address</label>
-                <input type="email"  class="form-control" id = "email-input" placeholder="Email Address" name="email" required>
+                <input type="email"  class="form-control" id = "email-input" placeholder="Email Address" name="email" required autofocus>
+                                @if ($errors->has('email'))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                @endif
             </div>
             <div class="form-input">
                 <label for="name">Password</label>
                 <input type="password" class="form-control" id = "password-input"  placeholder="Password" name="password" required>
+                @if ($errors->has('password'))
+                                <span class="text-danger">{{ $errors->first('password') }}</span>
+                                @endif
             </div>
             <div class="form-input">
                 <label for="name">Confirm Password</label>
-                <input type="password"  class="form-control" id = "confirm-input"  placeholder="Confirm Password" name="password" required>
+                <input type="password"  class="form-control" id = "confirm-input"  placeholder="Confirm Password" name="cpassword" required>
+                @if ($errors->has('cpassword'))
+                                <span class="text-danger">{{ $errors->first('cpassword') }}</span>
+                                @endif
             </div>
             <button type="submit" id="button" class="btn "
                 onclick="validateFormRegister()">Register</button>
@@ -76,9 +88,9 @@
             <script src="assets/js/register.js"></script>
         </div>
     </form>
+    <?php use app\Http\Controllers\CustomAuthController ?>
     <!-- /end login form -->
 </main>
-
 
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->

@@ -40,11 +40,12 @@
     </div>
     <!-- Preloader Start-->
 
-
+    @extends('app')
+    @section('content')
     <main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
         <!-- Login Admin -->
-        <form class="form-default" action="login-bg.mp4" method="POST">
-            
+        <form class="form-default" action="{{ route('login.custom') }}" method="POST">
+        @csrf
             <div class="login-form">
                 <!-- logo-login -->
                 <div class="logo-login">
@@ -53,11 +54,17 @@
                 <h2>Login Here</h2>
                 <div class="form-input">
                     <label for="name">Email</label>
-                    <input  type="email" class="form-control" id = "email-input" placeholder="Email" name="email" required>
+                    <input  type="email" class="form-control" id = "email-input" placeholder="Email" name="email" required autofocus>
+                                @if ($errors->has('email'))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                @endif
                 </div>
                 <div class="form-input">
                     <label for="name">Password</label>
                     <input type="password" class="form-control" id = "password-input" placeholder="Password" name="password" required>
+                    @if ($errors->has('email'))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                @endif
                 </div>
                 <button type="submit" id="button" class="btn "
                 onclick="validateForm()">Login</button>
@@ -69,9 +76,10 @@
                 
             </div>
         </form>
+        <?php use app\Http\Controllers\CustomAuthController ?>
         <!-- /end login form -->
     </main>
-
+    @endsection
 
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->

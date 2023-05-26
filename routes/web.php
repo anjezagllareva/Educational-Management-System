@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsFormController;
+use App\Http\Controllers\testController;
+use App\Http\Controllers\CustomAuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -206,3 +208,17 @@ Route::get('/dbconn', function () {
 });
 Route::get('/contact', [ContactUsFormController::class, 'createForm']);
 Route::post('/contact', [ContactUsFormController::class, 'ContactUsForm'])->name('contact.store');
+Route::get('/test', [testController::class, 'createTestForm']);
+Route::post('/test', [testController::class, 'TestForm'])->name('register.custom');
+Route::get('/login', [CustomAuthController::class, 'createLoginForm']);
+Route::post('/login', [CustomAuthController::class, 'customLogin'])->name('login.custom');
+
+// Route::get('/register', [CustomAuthController::class, 'createRegisterForm']);
+// Route::post('/register', [CustomAuthController::class, 'RegisterForm'])->name('register.custom');
+
+// Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
+// Route::get('login', [CustomAuthController::class, 'index'])->name('login');
+// Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
+// Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');
+// Route::post('', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
+// Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
