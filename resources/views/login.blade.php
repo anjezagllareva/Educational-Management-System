@@ -40,8 +40,7 @@
     </div>
     <!-- Preloader Start-->
 
-    @extends('app')
-    @section('content')
+
     <main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
         <!-- Login Admin -->
         <form class="form-default" action="{{ route('login.custom') }}" method="POST">
@@ -66,12 +65,10 @@
                                 <span class="text-danger">{{ $errors->first('email') }}</span>
                                 @endif
                 </div>
-                <button type="submit" id="button" class="btn "
-                onclick="validateForm()">Login</button>
+                <button type="submit" id="button" class="btn ">Login</button>
 
                 <a href="{{ url('/register')}}"> Register?</a></p>
                 
-            <script src="assets/js/login.js"></script>
                 </div>
                 
             </div>
@@ -79,7 +76,7 @@
         <?php use app\Http\Controllers\CustomAuthController ?>
         <!-- /end login form -->
     </main>
-    @endsection
+  
 
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->

@@ -81,14 +81,13 @@
                                 <span class="text-danger">{{ $errors->first('cpassword') }}</span>
                                 @endif
             </div>
-            <button type="submit" id="button" class="btn "
-                onclick="validateFormRegister()">Register</button>
+            <button type="submit" id="button" class="btn ">Register</button>
             <!-- Login -->
             <a href="{{ url('/login') }}" class="registration">login</a>
-            <script src="assets/js/register.js"></script>
+     
         </div>
     </form>
-    <?php use app\Http\Controllers\CustomAuthController ?>
+    <?php use app\Http\Controllers\testController ?>
     <!-- /end login form -->
 </main>
 
