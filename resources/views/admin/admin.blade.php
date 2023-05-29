@@ -154,6 +154,8 @@
                                         <th scope="col">Name</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Role</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -163,6 +165,12 @@
                                         <td>{{ $item->name}}</td>
                                         <td>{{ $item->email}}</td>
                                         <td>{{ $item->role == 0 ? 'Admin' : 'Student'}}</td>
+                                        <td>
+                                            <a href="{{ url('admin/edit'.$item->id)}}" class="btn btn-success">Edit</a> 
+                                        </td>
+                                        <td>
+                                            <a href="{{ url('admin/edit'.$item->id)}}" class="btn btn-danger">Delete</a> 
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
