@@ -83,6 +83,13 @@ Route::get('admin/schedule', function () {
 Route::get('admin/edit', function () {
     return view('admin/edit');
 });
+Route::get('admin/usersadd', function () {
+    return view('admin/usersadd');
+});
+Route::get('admin/usersedit', function () {
+    return view('admin/usersedit');
+});
+Route::resource("/admin", UserController::class);
 
 
 Route::get('student/courses', function () {

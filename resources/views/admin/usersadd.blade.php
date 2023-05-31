@@ -140,50 +140,28 @@
             </nav>
             <!-- Navbar End -->
 
-
-            <!-- Table Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Users</h6>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Role</th>
-                                        <th scope="col">Edit</th>
-                                        <th scope="col">Delete</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach($users as $item)
-                                    <tr>
-                                        <td>{{ $item->id}}</td>
-                                        <td>{{ $item->name}}</td>
-                                        <td>{{ $item->email}}</td>
-                                        <td>{{ $item->role == 0 ? 'Admin' : 'Student'}}</td>
-                                        <td>
-                                        <a href="{{ url('/admin/usersedit') }}" title="Edit Student"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
   
-                                        </td>
-                                        <td>
-                                            <a href="{{ url('admin/edit'.$item->id)}}" class="btn btn-danger">Delete</a> 
-                                        </td>
-                                    </tr>
-                                    @endforeach
-                                    <tr>
-                                   <a href="{{ url('/admin/usersadd') }}" class="btn btn-success btn-sm" title="Add New Student">Add</a>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Table End -->
+            <div class="card" style="margin:20px;">
+  <div class="card-header">Create New Users</div>
+  <div class="card-body">
+       
+      <form action="{{ url('admin/') }}" method="post">
+        {!! csrf_field() !!}
+        <label>Name</label></br>
+        <input type="text" name="name" id="name" class="form-control"></br>
+        <label>Email</label></br>
+        <input type="text" name="email" id="email" class="form-control"></br>
+        <label>Password</label></br>
+        <input type="password" name="password" id="password" class="form-control"></br>
+        <label>Cpassword</label></br>
+        <input type="password" name="cpassword" id="cpassword" class="form-control"></br>
+        <label>Role</label></br>
+        <input type="number" name="role" id="role" class="form-control"></br>
+        <input type="submit" value="Save" class="btn btn-success"></br>
+    </form>
+    
+  </div>
+</div>
 
             </div>
         <!-- Content End -->
