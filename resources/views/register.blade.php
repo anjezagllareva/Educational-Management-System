@@ -84,7 +84,7 @@
             <button type="submit" id="button" class="btn ">Register</button>
             <!-- Login -->
             <a href="{{ url('/login') }}" class="registration">login</a>
-     
+      
         </div>
     </form>
     <?php use app\Http\Controllers\testController ?>
