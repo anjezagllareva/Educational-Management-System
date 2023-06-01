@@ -17,8 +17,8 @@ class UserController extends Controller
     }
     public function index()
     {
-        $users = User::all();
-        return view ('../admin.admin')->with('users', $users);
+        $users = User::get();
+        return view('../admin.admin',compact ('data'));
     }
     public function create()
     {
@@ -51,7 +51,7 @@ class UserController extends Controller
             'role' => $role
          
         ]);
-        return redirect('admin')->with('flash_message', 'User Addedd!');  
+        return redirect('admin/admin');  
     }
  
     /**
@@ -108,6 +108,70 @@ class UserController extends Controller
     public function deleteUser($id){
         User::where('id', '=',$id)->delete();
         return redirect()->back();
+
+    }
+
+    public function editUser($id){
+        $user = User::where('id'.'=',$id)->first();
+        return view('useredit',compact('user'));
+    }
+
+    public function addUser(){
+        return view('useradd');
+    }
+
+    public function saveUser(Request $request){
+        $request->validate([
+            'name' =>   'required|string|min:3|max:20',
+            'email' =>  'required|email|unique:users,email',
+            'password' => 'required|min:6',
+            'cpassword'=>'required|same:password',
+            'role' => 'required|max:1'
+         ]);
+        
+        $name = $request->name;
+        $email = $request->email;
+        $password = Hash::make($request->password);
+        $cpassword = Hash::make($request->cpassword);
+        $role = $request->role;
+
+
+        $user = new User();
+        $user->name = $name;
+        $user->email = $email;
+        $user->password = $password;
+        $user->cpassword = $cpassword;
+        $user->role = $role;
+        $user->save();
+        
+        return redirect('../admin/admin');
+
+    }
+
+    public function updateUser(Request $request){
+        $request->validate([
+            'name' =>   'required|string|min:3|max:20',
+            'email' =>  'required|email|unique:users,email',
+            'password' => 'required|min:6',
+            'cpassword'=>'required|same:password',
+            'role' => 'required|max:1'
+         ]);
+        
+        $id = $request->id;
+        $name = $request->name;
+        $email = $request->email;
+        $password = Hash::make($request->password);
+        $cpassword = Hash::make($request->cpassword);
+        $role = $request->role;
+        
+        User::where('id', '=',$id)->update([
+            'name' => $name,
+            'email' => $email,
+            'password' => $password,
+            'cpassword' => $cpassword,
+            'role' => $role
+        ]);
+        return redirect('../admin/admin');
 
     }
 }

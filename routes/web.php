@@ -226,3 +226,5 @@ Route::get('delete-user/{id}', [UserController::class,'deleteUser']);
 Route::get('admin/admin', [UserController::class,'usersTable' ]);
  
 
+Route::get('/student/messages', [MessagesFormController::class, 'createMessage']);
+Route::post('/student/messages', [Messa::class, 'MessagesForm'])->name('messages.store');

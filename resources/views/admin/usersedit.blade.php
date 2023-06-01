@@ -88,45 +88,7 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-envelope me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Message</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Admin send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Admin send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Admin send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all message</a>
-                        </div>
-                    </div>
+
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
@@ -140,11 +102,11 @@
             </nav>
             <!-- Navbar End -->
 
-  
-            
+
+
             <div class="card" style="margin:20px;">
   <div class="card-header">Edit User</div>
-  <div class="card-body"> 
+  <div class="card-body">
   <form action="{{ url('admin/' .$users->id) }}" method="post">
         {!! csrf_field() !!}
         @method("PATCH")
@@ -161,13 +123,13 @@
         <input type="text" name="role" id="role" value="{{$users->role}}" class="form-control"></br>
         <input type="submit" value="Update" class="btn btn-success"></br>
     </form>
-    
+
   </div>
 </div>
-  
+
             </div>
         <!-- Content End -->
-          
+
 
 
         <!-- Back to Top -->
