@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Student\MessagesFormController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsFormController;
 use App\Http\Controllers\testController;
@@ -224,3 +225,4 @@ Route::post('/login', [CustomAuthController::class, 'customLogin'])->name('login
 Route::get('delete-user/{id}', [UserController::class,'deleteUser']);
 Route::get('admin/admin', [UserController::class,'usersTable' ]);
  
+
