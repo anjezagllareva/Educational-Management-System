@@ -145,10 +145,15 @@
   <div class="card-header">Create New Users</div>
   <div class="card-body">
        
-      <form action="{{ url('admin/') }}" method="post">
+      <form action="{{url('save-user/')}}" method="post">
         {!! csrf_field() !!}
         <label>Name</label></br>
         <input type="text" name="name" id="name" class="form-control"></br>
+        @error('name')
+        <div class="alert alert-danger" role="alert">
+            {{$message}}
+        </div>
+        @enderror
         <label>Email</label></br>
         <input type="text" name="email" id="email" class="form-control"></br>
         <label>Password</label></br>

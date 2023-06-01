@@ -89,7 +89,13 @@ Route::get('admin/usersadd', function () {
 Route::get('admin/usersedit', function () {
     return view('admin/usersedit');
 });
-Route::resource("/admin", UserController::class);
+
+
+Route::get('add-user/', [UserController::class,'addUser']);
+Route::post('save-user/', [UserController::class,'saveUser']);
+Route::get('edit-user/{id}', [UserController::class,'editUser']);
+Route::post('update-user', [UserController::class,'updateUser']);
+
 
 
 Route::get('student/courses', function () {
@@ -222,5 +228,5 @@ Route::post('/test', [testController::class, 'TestForm'])->name('register.custom
 Route::get('/login', [CustomAuthController::class, 'createLoginForm']);
 Route::post('/login', [CustomAuthController::class, 'customLogin'])->name('login.custom');
 Route::get('delete-user/{id}', [UserController::class,'deleteUser']);
-Route::get('admin/admin', [UserController::class,'usersTable' ]);
+Route::get('admin/admin', [UserController::class,'usersTable']);
  

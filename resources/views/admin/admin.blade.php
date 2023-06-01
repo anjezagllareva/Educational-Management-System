@@ -159,6 +159,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @php
+                                        $i=1;
+                                    @endphp
                                     @foreach($users as $item)
                                     <tr>
                                         <td>{{ $item->id}}</td>
@@ -166,16 +169,15 @@
                                         <td>{{ $item->email}}</td>
                                         <td>{{ $item->role == 0 ? 'Admin' : 'Student'}}</td>
                                         <td>
-                                        <a href="{{ url('/admin/usersedit') }}" title="Edit Student"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
-  
+                                            <a href="{{url('/admin/usersedit/'.$item->id)}}" class="btn btn-primary btn-sm">Edit</a> 
                                         </td>
                                         <td>
-                                            <a href="{{ url('delete-user/'.$item->id)}}" class="btn btn-danger">Delete</a> 
+                                            <a href="{{url('delete-user/'.$item->id)}}" class="btn btn-danger btn-sm">Delete</a> 
                                         </td>
                                     </tr>
                                     @endforeach
                                     <tr>
-                                   <a href="{{ url('/admin/usersadd') }}" class="btn btn-success btn-sm" title="Add New Student">Add</a>
+                                   <a href="{{url('/admin/usersadd')}}" class="btn btn-success btn-sm" title="Add New Student">Add</a>
                                     </tr>
                                 </tbody>
                             </table>
