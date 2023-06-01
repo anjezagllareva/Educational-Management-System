@@ -170,7 +170,7 @@
   
                                         </td>
                                         <td>
-                                            <a href="{{ url('admin/edit'.$item->id)}}" class="btn btn-danger">Delete</a> 
+                                            <a href="{{ url('delete-user/'.$item->id)}}" class="btn btn-danger">Delete</a> 
                                         </td>
                                     </tr>
                                     @endforeach

@@ -18,11 +18,11 @@ class UserController extends Controller
     public function index()
     {
         $users = User::all();
-        return view ('admin.admin')->with('users', $users);
+        return view ('../admin.admin')->with('users', $users);
     }
     public function create()
     {
-        return view('admin.usersadd');
+        return view('../admin.usersadd');
     }
  
     /**
@@ -63,7 +63,7 @@ class UserController extends Controller
     public function show($id)
     {
         $users = User::find($id);
-        return view('admin.usersshow')->with('users', $users);
+        return view('../admin.usersshow')->with('users', $users);
     }
  
     /**
@@ -75,7 +75,7 @@ class UserController extends Controller
     public function edit($id)
     {
         $users = User::find($id);
-        return view('admin.usersedit')->with('users', $users);
+        return view('../admin.usersedit')->with('users', $users);
     }
  
     /**
@@ -90,7 +90,7 @@ class UserController extends Controller
         $users = User::find($id);
         $users = $request->all();
         $users->update($users);
-        return redirect('users')->with('flash_message', 'User Updated!');  
+        return redirect('../admin/admin')->with('flash_message', 'User Updated!');  
     }
  
     /**
@@ -102,7 +102,13 @@ class UserController extends Controller
     public function destroy($id)
     {
         User::destroy($id);
-        return redirect('admin')->with('flash_message', 'User deleted!');  
+        return redirect('../admin/admin')->with('flash_message', 'User deleted!');  
+    }
+
+    public function deleteUser($id){
+        User::where('id', '=',$id)->delete();
+        return redirect()->back();
+
     }
 }
 

@@ -221,5 +221,6 @@ Route::get('/test', [testController::class, 'createTestForm']);
 Route::post('/test', [testController::class, 'TestForm'])->name('register.custom');
 Route::get('/login', [CustomAuthController::class, 'createLoginForm']);
 Route::post('/login', [CustomAuthController::class, 'customLogin'])->name('login.custom');
-
+Route::get('delete-user/{id}', [UserController::class,'deleteUser']);
 Route::get('admin/admin', [UserController::class,'usersTable' ]);
+ 
