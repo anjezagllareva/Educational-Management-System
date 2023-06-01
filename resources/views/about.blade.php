@@ -56,7 +56,7 @@
                                     <!-- Main-menu -->
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
-                                            <ul id="navigation">                                                                                          
+                                            <ul id="navigation">
                                                 <li class="active" ><a href="{{ url('/index') }}">Home</a></li>
                                                 <li><a href="{{ url('/courses') }}">Courses</a></li>
                                                 <li><a href="{{ url('/about') }}">About</a></li>
@@ -68,7 +68,7 @@
                                         </nav>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -94,14 +94,14 @@
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="{{ url('/index') }}">Home</a></li>
-                                            <li class="breadcrumb-item"><a href="{{ url('/about') }}">about</a></li> 
+                                            <li class="breadcrumb-item"><a href="{{ url('/courses') }}">courses</a></li>
                                         </ol>
                                     </nav>
                                     <!-- breadcrumb End -->
                                 </div>
                             </div>
                         </div>
-                    </div>          
+                    </div>
                 </div>
             </div>
         </section>
@@ -214,7 +214,7 @@
                                 <img src="assets/img/gallery/topic1.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">HTML</a></h3>
+                                    <h3><a href="{{ url('/courses') }}">HTML</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -226,7 +226,7 @@
                                 <img src="assets/img/gallery/topic2.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">CSS</a></h3>
+                                    <h3><a href="{{ url('/courses') }}">CSS</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -238,7 +238,7 @@
                                 <img src="assets/img/gallery/topic3.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">C++</a></h3>
+                                    <h3><a href="{{ url('/courses') }}">C++</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +250,7 @@
                                 <img src="assets/img/gallery/topic4.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Python</a></h3>
+                                    <h3><a href="{{ url('/courses') }}">Python</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -262,7 +262,7 @@
                                 <img src="assets/img/gallery/topic5.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Java</a></h3>
+                                    <h3><a href="{{ url('/courses') }}">Java</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@
                                 <img src="assets/img/gallery/topic6.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Java Script</a></h3>
+                                    <h3><a href="{{ url('/courses') }}">Java Script</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -286,7 +286,7 @@
                                 <img src="assets/img/gallery/topic7.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">React JS</a></h3>
+                                    <h3><a href="{{ url('/courses') }}">React</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -298,7 +298,7 @@
                                 <img src="assets/img/gallery/topic8.png" alt="">
                                 <div class="topic-content-box">
                                     <div class="topic-content">
-                                        <h3><a href="#">Node JS</a></h3>
+                                    <h3><a href="{{ url('/courses') }}">Node Js</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -308,7 +308,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-12">
                         <div class="section-tittle text-center mt-20">
-                            <a href="courses.html" class="border-btn">View More Subjects</a>
+                            <a href="{{ url('/courses') }}" class="border-btn">View More Subjects</a>
                         </div>
                     </div>
                 </div>
@@ -455,12 +455,12 @@
                                     <li><a href="#">Master the art of searching</a></li>
                                     <li><a href="#">Solve problems</a></li>
                                     <li><a href="#">Practice</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
                     </div>
-                
+
                 </div>
             </div>
         </div>
@@ -482,7 +482,7 @@
           </div>
           <!-- Footer End-->
       </div>
-  </footer> 
+  </footer>
   <!-- Scroll Up -->
   <div id="back-top" >
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
@@ -526,7 +526,7 @@
 <script src="./assets/js/mail-script.js"></script>
 <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
 
-<!-- Jquery Plugins, main Jquery -->	
+<!-- Jquery Plugins, main Jquery -->
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
 
