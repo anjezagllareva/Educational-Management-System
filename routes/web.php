@@ -86,15 +86,11 @@ Route::get('admin/edit', function () {
 Route::get('admin/usersadd', function () {
     return view('admin/usersadd');
 });
-Route::get('admin/usersedit', function () {
-    return view('admin/usersedit');
-});
-
 
 Route::get('add-user/', [UserController::class,'addUser']);
 Route::post('save-user/', [UserController::class,'saveUser']);
-Route::get('edit-user/{id}', [UserController::class,'editUser']);
-Route::post('update-user', [UserController::class,'updateUser']);
+Route::get('admin/usersedit/{id}', [UserController::class,'editUser']);
+Route::post('update-user/', [UserController::class, 'updateUser']);
 
 
 

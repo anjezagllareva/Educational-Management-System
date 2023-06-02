@@ -145,19 +145,24 @@
             <div class="card" style="margin:20px;">
   <div class="card-header">Edit User</div>
   <div class="card-body"> 
-  <form action="{{url('update-user')}}" method="post">
-        {!! csrf_field() !!}
-        <input type="hidden" name="id" value="{{$data->id}}"/></br>
+  <form action="{{url('update-user/')}}" method="post">
+  @csrf
+        <input type="hidden" name="id" value="{{$user->id}}"/></br>
         <label>Name</label></br>
-        <input type="text" name="name" id="name" value="{{$data->name}}" class="form-control"></br>
+        <input type="text" name="name" id="name" value="{{$user->name}}" class="form-control"></br>
+        @error('name')
+        <div class="alert alert-danger" role="alert">
+            {{$message}}
+        </div>
+        @enderror
         <label>Email</label></br>
-        <input type="text" name="email" id="email" value="{{$data->email}}" class="form-control"></br>
+        <input type="text" name="email" id="email" value="{{$user->email}}" class="form-control"></br>
         <label>Password</label></br>
-        <input type="password" name="password" id="password" value="{{$data->password}}"  class="form-control"></br>
+        <input type="password" name="password" id="password" value="{{$user->password}}"  class="form-control"></br>
         <label>Cpassword</label></br>
-        <input type="password" name="cpassword" id="cpassword" value="{{$data->cpassword}}"  class="form-control"></br>
+        <input type="password" name="cpassword" id="cpassword" value="{{$user->cpassword}}"  class="form-control"></br>
         <label>Role</label></br>
-        <input type="text" name="role" id="role" value="{{$data->role}}" class="form-control"></br>
+        <input type="text" name="role" id="role" value="{{$user->role}}" class="form-control"></br>
         <input type="submit" value="Update" class="btn btn-success"></br>
     </form>
     

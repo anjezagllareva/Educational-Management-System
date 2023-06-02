@@ -68,7 +68,6 @@
                         </div>
                     </div>
                     <a href="{{ url('/student/schedule')}}" class="nav-item nav-link active"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
-                    <a href="{{ url('/student/transcripts')}}" class="nav-item nav-link"><i class="fas fa-list-ol me-2"></i>Transcripts</a>
                     <a href="{{ url('/student/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
                     <a href="{{ url('/student/calendar')}}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     <a href="{{ url('/student/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>

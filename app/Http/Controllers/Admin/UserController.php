@@ -20,11 +20,11 @@ class UserController extends Controller
         $users = User::get();
         return view('../admin.admin',compact ('data'));
     }
-    public function create()
+    public function returnView()
     {
-        return view('../admin.usersadd');
+        return view('../admin.admin');
     }
- 
+
     /**
      * Store a newly created resource in storage.
      *
@@ -112,12 +112,16 @@ class UserController extends Controller
     }
 
     public function editUser($id){
-        $user = User::where('id'.'=',$id)->first();
-        return view('useredit',compact('user'));
+        $user = User::where('id','=',$id)->first();
+        return view('../admin/usersedit',compact('user'));
     }
 
     public function addUser(){
         return view('useradd');
+    }
+    public function updateUserView()
+    {
+        return view('usersedit');
     }
 
     public function saveUser(Request $request){
@@ -149,14 +153,6 @@ class UserController extends Controller
     }
 
     public function updateUser(Request $request){
-        $request->validate([
-            'name' =>   'required|string|min:3|max:20',
-            'email' =>  'required|email|unique:users,email',
-            'password' => 'required|min:6',
-            'cpassword'=>'required|same:password',
-            'role' => 'required|max:1'
-         ]);
-        
         $id = $request->id;
         $name = $request->name;
         $email = $request->email;
@@ -165,6 +161,7 @@ class UserController extends Controller
         $role = $request->role;
         
         User::where('id', '=',$id)->update([
+            'id'=> $id,
             'name' => $name,
             'email' => $email,
             'password' => $password,
