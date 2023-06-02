@@ -232,3 +232,5 @@ Route::get('admin/admin', [UserController::class,'usersTable']);
  
 Route::get('/student/messages', [MessagesFormController::class, 'createMessage']);
 Route::post('/student/messages', [MessagesFormController::class, 'MessagesForm'])->name('messages.store');
+
+Route::get('professor/messages', [MessagesFormController::class,'messagesTable']);

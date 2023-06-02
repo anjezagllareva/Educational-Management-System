@@ -173,7 +173,7 @@
                             <button type="submit" class="button button-contactForm boxed-btn">Send</button>
                         </div>
                     </form>
-                    
+                    <?php use app\Http\Controllers\Student\MessagesFormController ?>
                 </div>
         <!--Grid column-->
 

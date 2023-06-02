@@ -8,6 +8,10 @@ use App\Models\ContactForm;
 
 class MessagesFormController extends Controller
 {
+  public function messagesTable(){
+    $messages = ContactForm::all();
+    return view('../professor.messages', ['messages' => $messages]);
+    }
     public function createMessage(Request $request) {
         return view('student/messages');
       }
