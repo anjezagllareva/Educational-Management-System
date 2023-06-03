@@ -158,9 +158,9 @@
         <label>Email</label></br>
         <input type="text" name="email" id="email" value="{{$user->email}}" class="form-control"></br>
         <label>Password</label></br>
-        <input type="password" name="password" id="password" value="{{$user->password}}"  class="form-control"></br>
+        <input type="password" name="password" id="password" value="{{$user->password}}"  class="form-control" readonly></br>
         <label>Cpassword</label></br>
-        <input type="password" name="cpassword" id="cpassword" value="{{$user->cpassword}}"  class="form-control"></br>
+        <input type="password" name="cpassword" id="cpassword" value="{{$user->cpassword}}"  class="form-control" readonly></br>
         <label>Role</label></br>
         <input type="text" name="role" id="role" value="{{$user->role}}" class="form-control"></br>
         <input type="submit" value="Update" class="btn btn-success"></br>

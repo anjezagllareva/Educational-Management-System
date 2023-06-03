@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsFormController;
 use App\Http\Controllers\testController;
 use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\UserController;
 
 
@@ -24,7 +25,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('index', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 
 Route::get('index', function () {
     return view('index');
@@ -50,9 +51,9 @@ Route::get('courses', function () {
 Route::get('index', function () {
     return view('index');
 });
-Route::get('login', function () {
-    return view('login');
-});
+// Route::get('login', function () {
+//     return view('login');
+// });
 Route::get('register', function () {
     return view('register');
 });
@@ -230,3 +231,5 @@ Route::get('/student/messages', [MessagesFormController::class, 'createMessage']
 Route::post('/student/messages', [MessagesFormController::class, 'MessagesForm'])->name('messages.store');
 
 Route::get('professor/messages', [MessagesFormController::class,'messagesTable']);
+
+// Route::get('admin.admin', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('role');

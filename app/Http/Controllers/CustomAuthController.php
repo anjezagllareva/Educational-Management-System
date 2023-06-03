@@ -13,12 +13,17 @@ class CustomAuthController extends Controller
       
     public function customLogin(Request $request)
     {
-        $credentials = $request->only('email', 'password');
- 
-        if (Auth::attempt($credentials)) {
-            return redirect()->intended('admin/admin');
+      $credentials = $request->only('email', 'password');
+  if (Auth::attempt($credentials)) {
+          if(auth()->user()->role == 1){
+            return redirect()->route('login.custom');
+          }else if(auth()->user()->role == 0){
+            return redirect('student/courses');
+          }else if(auth()->user()->role == 2){
+            return redirect('professor/schedule');
+         
         }
-  
-        return redirect("login")->withSuccess('Login details are not valid');
     }
+    return redirect('login');
+}
 }

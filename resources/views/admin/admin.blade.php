@@ -167,7 +167,7 @@
                                         <td>{{ $item->id}}</td>
                                         <td>{{ $item->name}}</td>
                                         <td>{{ $item->email}}</td>
-                                        <td>{{ $item->role == 0 ? 'Admin' : 'Student'}}</td>
+                                       <td> {{ $item->role == 0 ? 'Student' : ($item->role == 1 ? 'Admin' : 'Professor') }} </td>
                                         <td>
                                             <a href="{{url('/admin/usersedit/'.$item->id)}}" class="btn btn-primary btn-sm">Edit</a> 
                                         </td>
