@@ -223,7 +223,7 @@ Route::post('/contact', [ContactUsFormController::class, 'ContactUsForm'])->name
 Route::get('/test', [testController::class, 'createTestForm']);
 Route::post('/test', [testController::class, 'TestForm'])->name('register.custom');
 Route::get('/login', [CustomAuthController::class, 'createLoginForm']);
-Route::post('/login', [CustomAuthController::class, 'customLogin'])->name('login.custom');
+Route::post('admin/admin', [CustomAuthController::class, 'customLogin'])->name('login.custom')->middleware('role');
 Route::get('delete-user/{id}', [UserController::class,'deleteUser']);
 Route::get('admin/admin', [UserController::class,'usersTable']);
  
@@ -232,4 +232,3 @@ Route::post('/student/messages', [MessagesFormController::class, 'MessagesForm']
 
 Route::get('professor/messages', [MessagesFormController::class,'messagesTable']);
 
-// Route::get('admin.admin', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('role');
