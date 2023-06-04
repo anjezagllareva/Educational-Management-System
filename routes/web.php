@@ -87,6 +87,12 @@ Route::get('admin/edit', function () {
 Route::get('admin/usersadd', function () {
     return view('admin/usersadd');
 });
+Route::get('admin/subjectsadd', function () {
+    return view('admin/subjectsadd');
+});
+Route::get('admin/subjectsadd', function () {
+    return view('admin/subjectsedit');
+});
 
 Route::get('add-user/', [UserController::class,'addUser']);
 Route::post('save-user/', [UserController::class,'saveUser']);
@@ -233,3 +239,9 @@ Route::post('/student/messages', [MessagesFormController::class, 'MessagesForm']
 Route::get('professor/messages', [MessagesFormController::class,'messagesTable']);
 
 Route::get('admin/subjects', [SubjectsController::class,'subjectTable']);
+Route::get('delete-subjects/{id}', [SubjectsController::class,'deleteSubjects']);
+Route::post('save-subjects/', [SubjectsController::class,'saveSubjects']);
+Route::get('add-subject/', [SubjectsController::class,'addSubject']);
+Route::get('edit-subject/', [SubjectsController::class,'saveSubjects']);
+Route::get('admin/subjectsedit/{id}', [SubjectsController::class,'editSubject']);
+Route::post('update-subject/', [SubjectsController::class, 'updateSubject']);

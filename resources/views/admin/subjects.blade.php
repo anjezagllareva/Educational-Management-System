@@ -177,7 +177,7 @@
                                     </tr>
                                     @endforeach
                                     <tr>
-                                   <a href="{{url('/admin/subjectseditadd')}}" class="btn btn-success btn-sm" title="Add New Student">Add</a>
+                                   <a href="{{url('/admin/subjectsadd')}}" class="btn btn-success btn-sm" title="Add New Student">Add</a>
                                     </tr>
                                 </tbody>
                             </table>
