@@ -13,6 +13,17 @@ class SubjectsController extends Controller
         return view('../admin.subjects', ['subject' => $subject]);
      
     }
+    
+    public function subjectProfessorTable(){
+        $subject = subjects::all();
+        return view('../professor.subjects', ['subject' => $subject]);
+     
+    }
+    public function subjectStudentTable(){
+        $subject = subjects::all();
+        return view('../student.subjects', ['subject' => $subject]);
+     
+    }
 
     public function deleteSubjects($id){
         subjects::where('id', '=',$id)->delete();

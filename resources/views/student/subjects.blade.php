@@ -112,38 +112,25 @@
                             <h6 class="mb-4">Subjects</h6>
                             <table class="table">
                                 <thead>
-                                    <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">Subject</th>
+                                <tr>
+                                        <th scope="col">#</th>
                                         <th scope="col">Lecturer</th>
+                                        <th scope="col">Subject</th>
                                         <th scope="col">Email</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @php
+                                        $i=1;
+                                    @endphp
+                                    @foreach($subject as $item)
                                     <tr>
-                                        <th scope="row">1</th>
-                                        <td>Lavdim</td>
-                                        <td>Shkenca Kompjuterike 1</td>
-                                        <td>lavdim@ubt-uni.com</td>
+                                        <td>{{ $item->id}}</td>
+                                        <td>{{ $item->lecturer}}</td>
+                                        <td>{{ $item->subject}}</td>
+                                        <td>{{ $item->email}}</td>
                                     </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Vesa</td>
-                                        <td>TZP</td>
-                                        <td>vesa@ubt-uni.com</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Hizer</td>
-                                        <td>Matematika 1</td>
-                                        <td>hizer@ubt-uni.com</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Ramiz</td>
-                                        <td>Inxhinieri e Web</td>
-                                        <td>ramiz@ubt-uni.com</td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

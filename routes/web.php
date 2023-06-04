@@ -245,3 +245,6 @@ Route::get('add-subject/', [SubjectsController::class,'addSubject']);
 Route::get('edit-subject/', [SubjectsController::class,'saveSubjects']);
 Route::get('admin/subjectsedit/{id}', [SubjectsController::class,'editSubject']);
 Route::post('update-subject/', [SubjectsController::class, 'updateSubject']);
+
+Route::get('professor/subjects', [SubjectsController::class,'subjectProfessorTable']);
+Route::get('student/subjects', [SubjectsController::class,'subjectStudentTable']);
