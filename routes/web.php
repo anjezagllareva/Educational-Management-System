@@ -6,7 +6,7 @@ use App\Http\Controllers\testController;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\UserController;
-
+use App\Http\Controllers\SubjectsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -232,3 +232,4 @@ Route::post('/student/messages', [MessagesFormController::class, 'MessagesForm']
 
 Route::get('professor/messages', [MessagesFormController::class,'messagesTable']);
 
+Route::get('admin/subjects', [SubjectsController::class,'subjectTable']);
