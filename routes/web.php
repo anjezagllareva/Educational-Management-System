@@ -90,7 +90,7 @@ Route::get('admin/usersadd', function () {
 Route::get('admin/subjectsadd', function () {
     return view('admin/subjectsadd');
 });
-Route::get('admin/subjectsadd', function () {
+Route::get('admin/subjectsedit', function () {
     return view('admin/subjectsedit');
 });
 
