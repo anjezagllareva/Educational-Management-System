@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Admin</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta content="" name="keywords">
     <meta content="" name="description">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
 
     <!-- Favicon -->
     <link href="{{asset('assets/admin/img/favicon.ico')}}" rel="icon">
@@ -29,10 +34,11 @@
 
     <!-- Template Stylesheet -->
     <link href="{{asset('assets/admin/css/style.css')}} " rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="container-xxl position-relative bg-white d-flex p-0">
+<div class="container-xxl position-relative bg-white d-flex p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -100,226 +106,113 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-
-            <div class="container">
-    <div class="w-95 w-md-75 w-lg-60 w-xl-55 mx-auto mb-6 text-center">
-        <h2 class="display-18 display-md-16 display-lg-14 mb-0">Schedule</h2>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="schedule-table">
-                <table class="table bg-white">
-                    <thead>
-                        <tr>
-                            <th>Day's</th>
-                            <th>9 am</th>
-                            <th>11 am</th>
-                            <th>12 pm</th>
-                            <th>2 pm</th>
-                            <th class="last">3 pm</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="day">Sunday</td>
-                            <td class="active">
-                                <h4>Algoritme 2</h4>
-                                <p>9 am - 11 am</p>
-                                <div class="hover">
-                                    <h4>Algoritme 2</h4>
-                                    <p>9 am - 11 am</p> <span>Vesa Morina</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>SHKI 1</h4>
-                                <p>03 pm - 04 pm</p>
-                                <div class="hover">
-                                    <h4>SHKI 1</h4>
-                                    <p>03 pm - 04 pm</p> <span>Lavdim Menxhiqi</span>
-                                </div>
-                            </td>
-                            <td class="active">
-                                <h4>Rrjeta Kompjuterike</h4>
-                                <p>05 pm - 06 pm</p>
-                                <div class="hover">
-                                    <h4>Rrjeta Kompjuterike</h4>
-                                    <p>05 pm - 046am</p> <span>Besnik Qehaja</span>
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="day">Monday</td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Sisteme e Bazes se te Dhenave</h4>
-                                <p>11 am - 12 pm</p>
-                                <div class="hover">
-                                    <h4>Sisteme e Bazes se te Dhenave</h4>
-                                    <p>11 am - 12 pm</p> <span>Elton Boshnjaku</span>
-                                </div>
-                            </td>
-                            <td class="active">
-                                <h4>Inxhineri e WEB</h4>
-                                <p>03 pm - 05 pm</p>
-                                <div class="hover">
-                                    <h4>Inxhineri e WEB</h4>
-                                    <p>03 pm - 05 pm</p> <span>Greta Ahma</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Matematike 1</h4>
-                                <p>07 pm - 08 pm</p>
-                                <div class="hover">
-                                    <h4>Matematike 1</h4>
-                                    <p>07 pm - 08 pm</p> <span>Hizer Leka</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="day">Tuesday</td>
-                            <td class="active">
-                                <h4>Hyrje ne Algoritme</h4>
-                                <p>10 am - 11 am</p>
-                                <div class="hover">
-                                    <h4>Hyrje ne Algoritme</h4>
-                                    <p>10 am - 11 am</p> <span>Shkelqim Berisha</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td class="active">
-                                <h4>AOK</h4>
-                                <p>05 pm - 06 pm</p>
-                                <div class="hover">
-                                    <h4>AOK</h4>
-                                    <p>05 pm - 06 pm</p> <span>Valdrin Haxhiu</span>
-                                </div>
-                            </td>
-                            <td class="active">
-                                <h4>Qarqet Digjitale</h4>
-                                <p>07 pm - 08 pm</p>
-                                <div class="hover">
-                                    <h4>Qarqet Digjitale</h4>
-                                    <p>07 pm - 08 pm</p> <span>Bertan Karahoda</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="day">Wednesday</td>
-                            <td class="active">
-                                <h4>Matematike 2</h4>
-                                <p>10 am - 12 pm</p>
-                                <div class="hover">
-                                    <h4>Matematike 2</h4>
-                                    <p>10 am - 12 pm</p> <span>Hizer Leka</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Sisteme Operative</h4>
-                                <p>03 pm - 05 pm</p>
-                                <div class="hover">
-                                    <h4>Sisteme Operative</h4>
-                                    <p>03 pm - 05 pm</p> <span>Blerina Rrmoku</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Shkrim Shkencor dhe Teknik</h4>
-                                <p>07 pm - 08 pm</p>
-                                <div class="hover">
-                                    <h4>Shkrim Shkencor dhe Teknik</h4>
-                                    <p>07 pm - 08 pm</p> <span>Shejnaze Gagica</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="day">Thursday</td>
-                            <td></td>
-                            <td class="active">
-                                <h4>IT, e Drejta dhe Shoqeria</h4>
-                                <p>11 am - 12 pm</p>
-                                <div class="hover">
-                                    <h4>IT, e Drejta dhe Shoqeria</h4>
-                                    <p>1 am - 12 pm</p> <span>Dashmir Istrefi</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Bazat e Teknologjis Informative</h4>
-                                <p>05 pm - 06 pm</p>
-                                <div class="hover">
-                                    <h4>Bazat e Teknologjis Informative</h4>
-                                    <p>05 pm - 06 pm</p> <span>Zhilbert Tafa</span>
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="day">Friday</td>
-                            <td class="active">
-                                <h4>TZP</h4>
-                                <p>10 am - 11 am</p>
-                                <div class="hover">
-                                    <h4>TZP</h4>
-                                    <p>10 am - 11 am</p> <span>Vesa Morina</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Gjuhe Angleze</h4>
-                                <p>03 pm - 05 pm</p>
-                                <div class="hover">
-                                    <h4>Gjuhe Angleze</h4>
-                                    <p>03 pm - 05 pm</p> <span>Erza Mehmeti</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>LAB 1</h4>
-                                <p>07 pm - 08 pm</p>
-                                <div class="hover">
-                                    <h4>LAB 1</h4>
-                                    <p>07 pm - 08 pm</p> <span>Lavdim Menxhiqi</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="day">Satarday</td>
-                            <td></td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Nderveprim Kompjuter-Njeri</h4>
-                                <p>03 pm - 04 pm</p>
-                                <div class="hover">
-                                    <h4>Nderveprim Kompjuter-Njeri</h4>
-                                    <p>03 pm - 04 pm</p> <span>Vesa Morina</span>
-                                </div>
-                            </td>
-                            <td class="active">
-                                <h4>Sisteme Operative</h4>
-                                <p>05 pm - 06 pm</p>
-                                <div class="hover">
-                                    <h4>Sisteme Operative</h4>
-                                    <p>05 pm - 06 pm</p> <span>Osman Osmani</span>
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                     <tr>
-                       <td><a href="/admin/edit" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Edit</a></td>
-
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+    <div class="container mt-5" style="max-width: 700px">
+        <h2 class="h2 text-center mb-5 border-bottom pb-3">Calendar</h2>
+        <div id='full_calendar_events'>
         </div>
+    </div>{{-- Scripts --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+    $(document).ready(function () {
+
+            var SITEURL = "{{ url('/') }}";
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            var calendar = $('#full_calendar_events').fullCalendar({
+                editable: true,
+                editable: true,
+                events: SITEURL + "/calendar-event",
+                displayEventTime: true,
+                eventRender: function (event, element, view) {
+                    if (event.allDay === 'true') {
+                        event.allDay = true;
+                    } else {
+                        event.allDay = false;
+                    }
+                },
+                selectable: true,
+                selectHelper: true,
+                select: function (event_start, event_end, allDay) {
+                    var event_name = prompt('Event Name:');
+                    if (event_name) {
+                        var event_start = $.fullCalendar.formatDate(event_start, "Y-MM-DD HH:mm:ss");
+                        var event_end = $.fullCalendar.formatDate(event_end, "Y-MM-DD HH:mm:ss");
+                        $.ajax({
+                            url: SITEURL + "/calendar-crud-ajax",
+                            data: {
+                                event_name: event_name,
+                                event_start: event_start,
+                                event_end: event_end,
+                                type: 'create'
+                            },
+                            type: "POST",
+                            success: function (data) {
+                                displayMessage("Event created.");
+
+                                calendar.fullCalendar('renderEvent', {
+                                    id: data.id,
+                                    title: event_name,
+                                    start: event_start,
+                                    end: event_end,
+                                    allDay: allDay
+                                }, true);
+                                calendar.fullCalendar('unselect');
+                            }
+                        });
+                    }
+                },
+                eventDrop: function (event, delta) {
+                    var event_start = $.fullCalendar.formatDate(event.start, "Y-MM-DD");
+                    var event_end = $.fullCalendar.formatDate(event.end, "Y-MM-DD");
+
+                    $.ajax({
+                        url: SITEURL + '/calendar-crud-ajax',
+                        data: {
+                            title: event.event_name,
+                            start: event_start,
+                            end: event_end,
+                            id: event.id,
+                            type: 'edit'
+                        },
+                        type: "POST",
+                        success: function (response) {
+                            displayMessage("Event updated");
+                        }
+                    });
+                },
+                eventClick: function (event) {
+                    var eventDelete = confirm("Are you sure?");
+                    if (eventDelete) {
+                        $.ajax({
+                            type: "POST",
+                            url: SITEURL + '/calendar-crud-ajax',
+                            data: {
+                                id: event.id,
+                                type: 'delete'
+                            },
+                            success: function (response) {
+                                calendar.fullCalendar('removeEvents', event.id);
+                                displayMessage("Event removed");
+                            }
+                        });
+                    }
+                }
+            });
+        });
+
+        function displayMessage(message) {
+            toastr.success(message, 'Event');
+        }
+    </script>
     </div>
-</div>
-        </div>
         <!-- Content End -->
 
 
@@ -328,7 +221,7 @@
     </div>
 
   <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/admin/lib/chart/chart.min.js"></script>
   <script src="/assets/admin/lib/easing/easing.min.js"></script>

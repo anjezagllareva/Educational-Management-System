@@ -7,6 +7,7 @@ use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\SubjectsController;
+use App\Http\Controllers\CalenderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -92,6 +93,9 @@ Route::get('admin/subjectsadd', function () {
 });
 Route::get('admin/subjectsedit', function () {
     return view('admin/subjectsedit');
+});
+Route::get('admin/welcome', function () {
+    return view('admin/welcome');
 });
 
 Route::get('add-user/', [UserController::class,'addUser']);
@@ -232,7 +236,7 @@ Route::get('/login', [CustomAuthController::class, 'createLoginForm']);
 Route::post('admin/admin', [CustomAuthController::class, 'customLogin'])->name('login.custom')->middleware('role');
 Route::get('delete-user/{id}', [UserController::class,'deleteUser']);
 Route::get('admin/admin', [UserController::class,'usersTable']);
- 
+
 Route::get('/student/messages', [MessagesFormController::class, 'createMessage']);
 Route::post('/student/messages', [MessagesFormController::class, 'MessagesForm'])->name('messages.store');
 
@@ -248,3 +252,8 @@ Route::post('update-subject/', [SubjectsController::class, 'updateSubject']);
 
 Route::get('professor/subjects', [SubjectsController::class,'subjectProfessorTable']);
 Route::get('student/subjects', [SubjectsController::class,'subjectStudentTable']);
+
+
+
+Route::get('calendar-event', [CalenderController::class, 'index']);
+Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
