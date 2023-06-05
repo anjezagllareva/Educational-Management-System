@@ -60,43 +60,43 @@ Route::get('register', function () {
 });
 Route::get('admin/admin', function () {
     return view('admin/admin');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/students', function () {
     return view('admin/students');
 });
 Route::get('admin/calendar', function () {
     return view('admin/calendar');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/users', function () {
     return view('admin/users');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/transcripts', function () {
     return view('admin/transcripts');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/subjects', function () {
     return view('admin/subjects');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/professors', function () {
     return view('admin/professors');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/schedule', function () {
     return view('admin/schedule');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/edit', function () {
     return view('admin/edit');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/usersadd', function () {
     return view('admin/usersadd');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/subjectsadd', function () {
     return view('admin/subjectsadd');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/subjectsedit', function () {
     return view('admin/subjectsedit');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/welcome', function () {
     return view('admin/welcome');
-});
+})->middleware('isLoggedIn');
 
 Route::get('add-user/', [UserController::class,'addUser']);
 Route::post('save-user/', [UserController::class,'saveUser']);
@@ -107,124 +107,124 @@ Route::post('update-user/', [UserController::class, 'updateUser']);
 
 Route::get('student/courses', function () {
     return view('student/courses');
-});
+})->middleware('isStudent');
 Route::get('student/1stYear', function () {
     return view('student/1stYear');
-});
+})->middleware('isStudent');
 Route::get('student/calendar', function () {
     return view('student/calendar');
-});
+})->middleware('isStudent');
 Route::get('student/exams', function () {
     return view('student/exams');
-});
+})->middleware('isStudent');
 Route::get('student/transcripts', function () {
     return view('student/transcripts');
-});
+})->middleware('isStudent');
 Route::get('student/subjects', function () {
     return view('student/subjects');
-});
+})->middleware('isStudent');
 Route::get('student/2ndYear', function () {
     return view('student/2ndYear');
-});
+})->middleware('isStudent');
 Route::get('student/schedule', function () {
     return view('student/schedule');
-});
+})->middleware('isStudent');
 Route::get('student/edit', function () {
     return view('student/edit');
-});
+})->middleware('isStudent');
 Route::get('student/3rdYear', function () {
     return view('student/3rdYear');
-});
+})->middleware('isStudent');
 Route::get('student/messages', function () {
     return view('student/messages');
-});
+})->middleware('isStudent');
 
 
 
 Route::get('professor/admin', function () {
     return view('professor/admin');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/algo', function () {
     return view('professor/algo');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/arkitektur', function () {
     return view('professor/arkitektur');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/bti', function () {
     return view('professor/bti');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/databaze', function () {
     return view('professor/databaze');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/dizajn', function () {
     return view('professor/dizajn');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/english', function () {
     return view('professor/english');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/gaming', function () {
     return view('professor/gaming');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/kripto', function () {
     return view('professor/kripto');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/lab1', function () {
     return view('professor/lab1');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/lab2', function () {
     return view('professor/lab2');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/math', function () {
     return view('professor/math');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/rrjeta', function () {
     return view('professor/rrjeta');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/shk1', function () {
     return view('professor/shk1');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/shk2', function () {
     return view('professor/shk2');
-});
+})->middleware('isProfessor');
 
 Route::get('professor/web', function () {
     return view('professor/web');
-});
+})->middleware('isProfessor');
 Route::get('professor/calendar', function () {
     return view('professor/calendar');
-});
+})->middleware('isProfessor');
 Route::get('professor/transcripts', function () {
     return view('professor/transcripts');
-});
+})->middleware('isProfessor');
 Route::get('professor/subjects', function () {
     return view('professor/subjects');
-});
+})->middleware('isProfessor');
 Route::get('professor/schedule', function () {
     return view('professor/schedule');
-});
+})->middleware('isProfessor');
 Route::get('professor/edit', function () {
     return view('professor/edit');
-});
+})->middleware('isProfessor');
 Route::get('professor/messages', function () {
     return view('professor/messages');
-});
+})->middleware('isProfessor');
 Route::get('professor/students', function () {
     return view('professor/students');
-});
+})->middleware('isProfessor');
 Route::get('/dbconn', function () {
     return view('dbconn');
 });
@@ -241,7 +241,7 @@ Route::get('/logout', [CustomAuthController::class, 'logout']);
 Route::get('/student/messages', [MessagesFormController::class, 'createMessage']);
 Route::post('/student/messages', [MessagesFormController::class, 'MessagesForm'])->name('messages.store');
 
-Route::get('professor/messages', [MessagesFormController::class,'messagesTable']);
+Route::get('professor/messages', [MessagesFormController::class,'messagesTable'])->middleware('isProfessor');
 
 Route::get('admin/subjects', [SubjectsController::class,'subjectTable']);
 Route::get('delete-subjects/{id}', [SubjectsController::class,'deleteSubjects']);
@@ -251,8 +251,8 @@ Route::get('edit-subject/', [SubjectsController::class,'saveSubjects']);
 Route::get('admin/subjectsedit/{id}', [SubjectsController::class,'editSubject']);
 Route::post('update-subject/', [SubjectsController::class, 'updateSubject']);
 
-Route::get('professor/subjects', [SubjectsController::class,'subjectProfessorTable']);
-Route::get('student/subjects', [SubjectsController::class,'subjectStudentTable']);
+Route::get('professor/subjects', [SubjectsController::class,'subjectProfessorTable'])->middleware('isProfessor');
+Route::get('student/subjects', [SubjectsController::class,'subjectStudentTable'])->middleware('isStudent');
 
 
 

@@ -16,20 +16,27 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $user = User::where('email','=',$request->email)->first();
-        if($user){
-          $request->session()->put('loginEmail', $user->email);
-        }
-      $credentials = $request->only('email', 'password');
-  if (Auth::attempt($credentials)) {
+        $credentials = $request->only('email', 'password');
+       if (Auth::attempt($credentials)) {
           if(auth()->user()->role == 1){
+            $user = User::where('email','=',$request->email)->first();
+          if($user){
+          $request->session()->put('adminEmail', $user->email);
+          }
             return redirect()->route('login.custom');
           }else if(auth()->user()->role == 0){
+             $user = User::where('email','=',$request->email)->first();
+             if($user){
+             $request->session()->put('studentEmail', $user->email);
+             }
             return redirect('student/courses');
           }else if(auth()->user()->role == 2){
+            $user = User::where('email','=',$request->email)->first();
+            if($user){
+            $request->session()->put('professorEmail', $user->email);
+            }
             return redirect('professor/schedule');
-         
-        }
+          }
     }
     return redirect('login');
 }
