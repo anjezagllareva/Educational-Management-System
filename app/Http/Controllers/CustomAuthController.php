@@ -12,7 +12,11 @@ class CustomAuthController extends Controller
   }
       
     public function customLogin(Request $request)
-    {
+    { 
+      $user = User::where('email','=',$request->email)->first();
+      if($user){
+        $request->session()->put('loginEmail', $user->email);
+      }
       $credentials = $request->only('email', 'password');
   if (Auth::attempt($credentials)) {
           if(auth()->user()->role == 1){
@@ -26,4 +30,13 @@ class CustomAuthController extends Controller
     }
     return redirect('login');
 }
+
+public function logout(){
+  if(Session::has('loginEmail')){
+    Session::pull('loginEmail');
+  }
+   return redirect('login');
+}
+
+
 }

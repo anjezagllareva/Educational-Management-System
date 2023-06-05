@@ -16,7 +16,11 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $credentials = $request->only('email', 'password');
+        $user = User::where('email','=',$request->email)->first();
+        if($user){
+          $request->session()->put('loginEmail', $user->email);
+        }
+      $credentials = $request->only('email', 'password');
   if (Auth::attempt($credentials)) {
           if(auth()->user()->role == 1){
             return redirect()->route('login.custom');

@@ -236,6 +236,7 @@ Route::get('/login', [CustomAuthController::class, 'createLoginForm']);
 Route::post('admin/admin', [CustomAuthController::class, 'customLogin'])->name('login.custom')->middleware('role');
 Route::get('delete-user/{id}', [UserController::class,'deleteUser']);
 Route::get('admin/admin', [UserController::class,'usersTable']);
+Route::get('/logout', [CustomAuthController::class, 'logout']);
 
 Route::get('/student/messages', [MessagesFormController::class, 'createMessage']);
 Route::post('/student/messages', [MessagesFormController::class, 'MessagesForm'])->name('messages.store');
