@@ -63,7 +63,7 @@ Route::get('admin/admin', function () {
 })->middleware('isLoggedIn');
 Route::get('admin/students', function () {
     return view('admin/students');
-});
+})->middleware('isLoggedIn');
 Route::get('admin/calendar', function () {
     return view('admin/calendar');
 })->middleware('isLoggedIn');
@@ -98,10 +98,10 @@ Route::get('admin/welcome', function () {
     return view('admin/welcome');
 })->middleware('isLoggedIn');
 
-Route::get('add-user/', [UserController::class,'addUser']);
-Route::post('save-user/', [UserController::class,'saveUser']);
-Route::get('admin/usersedit/{id}', [UserController::class,'editUser']);
-Route::post('update-user/', [UserController::class, 'updateUser']);
+Route::get('add-user/', [UserController::class,'addUser'])->middleware('isLoggedIn');
+Route::post('save-user/', [UserController::class,'saveUser'])->middleware('isLoggedIn');
+Route::get('admin/usersedit/{id}', [UserController::class,'editUser'])->middleware('isLoggedIn');
+Route::post('update-user/', [UserController::class, 'updateUser'])->middleware('isLoggedIn');
 
 
 
@@ -233,23 +233,23 @@ Route::post('/contact', [ContactUsFormController::class, 'ContactUsForm'])->name
 Route::get('/test', [testController::class, 'createTestForm']);
 Route::post('/test', [testController::class, 'TestForm'])->name('register.custom');
 Route::get('/login', [CustomAuthController::class, 'createLoginForm']);
-Route::post('admin/admin', [CustomAuthController::class, 'customLogin'])->name('login.custom')->middleware('role');
-Route::get('delete-user/{id}', [UserController::class,'deleteUser']);
-Route::get('admin/admin', [UserController::class,'usersTable']);
+Route::post('admin/admin', [CustomAuthController::class, 'customLogin'])->name('login.custom')->middleware('role','isLoggedIn');
+Route::get('delete-user/{id}', [UserController::class,'deleteUser'])->middleware('isLoggedIn');
+Route::get('admin/admin', [UserController::class,'usersTable'])->middleware('isLoggedIn');
 Route::get('/logout', [CustomAuthController::class, 'logout']);
 
-Route::get('/student/messages', [MessagesFormController::class, 'createMessage']);
-Route::post('/student/messages', [MessagesFormController::class, 'MessagesForm'])->name('messages.store');
+Route::get('/student/messages', [MessagesFormController::class, 'createMessage'])->middleware('isStudent');
+Route::post('/student/messages', [MessagesFormController::class, 'MessagesForm'])->name('messages.store')->middleware('isStudent');
 
 Route::get('professor/messages', [MessagesFormController::class,'messagesTable'])->middleware('isProfessor');
 
-Route::get('admin/subjects', [SubjectsController::class,'subjectTable']);
-Route::get('delete-subjects/{id}', [SubjectsController::class,'deleteSubjects']);
-Route::post('save-subjects/', [SubjectsController::class,'saveSubjects']);
-Route::get('add-subject/', [SubjectsController::class,'addSubject']);
-Route::get('edit-subject/', [SubjectsController::class,'saveSubjects']);
-Route::get('admin/subjectsedit/{id}', [SubjectsController::class,'editSubject']);
-Route::post('update-subject/', [SubjectsController::class, 'updateSubject']);
+Route::get('admin/subjects', [SubjectsController::class,'subjectTable'])->middleware('isLoggedIn');
+Route::get('delete-subjects/{id}', [SubjectsController::class,'deleteSubjects'])->middleware('isLoggedIn');
+Route::post('save-subjects/', [SubjectsController::class,'saveSubjects'])->middleware('isLoggedIn');
+Route::get('add-subject/', [SubjectsController::class,'addSubject'])->middleware('isLoggedIn');
+Route::get('edit-subject/', [SubjectsController::class,'saveSubjects'])->middleware('isLoggedIn');
+Route::get('admin/subjectsedit/{id}', [SubjectsController::class,'editSubject'])->middleware('isLoggedIn');
+Route::post('update-subject/', [SubjectsController::class, 'updateSubject'])->middleware('isLoggedIn');
 
 Route::get('professor/subjects', [SubjectsController::class,'subjectProfessorTable'])->middleware('isProfessor');
 Route::get('student/subjects', [SubjectsController::class,'subjectStudentTable'])->middleware('isStudent');
