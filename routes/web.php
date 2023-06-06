@@ -138,7 +138,21 @@ Route::get('student/3rdYear', function () {
 Route::get('student/messages', function () {
     return view('student/messages');
 })->middleware('isStudent');
-
+Route::get('student/shk1', function () {
+    return view('student/shk1');
+})->middleware('isStudent');
+Route::get('student/web', function () {
+    return view('student/web');
+})->middleware('isStudent');
+Route::get('student/lab1', function () {
+    return view('student/lab1');
+})->middleware('isStudent');
+Route::get('student/gaming', function () {
+    return view('student/gaming');
+})->middleware('isStudent');
+Route::get('student/kriptografia', function () {
+    return view('student/kriptografia');
+})->middleware('isStudent');
 
 
 Route::get('professor/admin', function () {
@@ -258,3 +272,4 @@ Route::get('student/subjects', [SubjectsController::class,'subjectStudentTable']
 
 Route::get('calendar-event', [CalenderController::class, 'index']);
 Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
+

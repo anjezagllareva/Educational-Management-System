@@ -45,7 +45,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="{{ url('/student/admin')}}" class="navbar-brand mx-4 mb-3">
+                <a href="{{ url('/admin/admin')}}" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary">Student</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
@@ -58,19 +58,17 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="{{ url('/student/courses')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Courses</a>
+                    <a href="{{ url('/professor/admin')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="{{ url('/student/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Exams</a>
+                    <a href="{{ url('/professor/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ url('/student/1stYear') }}" class="dropdown-item">1st Year</a>
+                            <a href="{{ url('/student/1stYear') }}" class="dropdown-item active">1st Year</a>
                             <a href="{{ url('/student/2ndYear') }}" class="dropdown-item">2nd Year</a>
                             <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">3rd Year</a>
                         </div>
-
-                    </div>
-                    <a href="{{ url('/student/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
-                    <a href="{{ url('/student/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
-                    <a href="{{ url('/student/calendar') }}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
+                        <a href="{{ url('/student/schedule')}}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
+                    <a href="{{ url('/student/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
+                    <a href="{{ url('/student/calendar')}}" class="nav-item nav-link active"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     <a href="{{ url('/student/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
                     </div>
                 </div>
@@ -90,7 +88,7 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <div class="navbar-nav align-items-center ms-auto">
-                    
+
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
@@ -103,55 +101,11 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-             <!-- courses start -->
-            <div class="row row-cols-1 row-cols-md-5 g-4">
-	<div class="col">
-		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/shk1.jpg')}}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Shkenca Kompjuterike 1</h5>
-			</div>
-            <button class="btn btn-primary" type="submit"  onclick="handleEnroll(event)">enroll</button>
-		</div>
-	</div>
-    <div class="col">
-		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/web.png')}}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Inxhinieri e Web</h5>
-			</div>
-            <button class="btn btn-primary" type="submit"  onclick="handleEnroll1(event)">enroll</button>
-		</div>
-	</div>
-    <div class="col">
-		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/lab.jpg')}}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Lëndë Laboratorike 1 (Programim)</h5>
-			</div>
-            <button class="btn btn-primary" type="submit"  onclick="handleEnroll2(event)">enroll</button>
-		</div>
-	</div>
-    <div class="col">
-		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/loja.jpg')}}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Programimi i Lojërave</h5>
-			</div>
-            <button class="btn btn-primary" type="submit"  onclick="handleEnroll3(event)">enroll</button>
-		</div>
-	</div>
-    <div class="col">
-		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/kriptografia.jpg')}}" class="card-img-top" alt="...">
-			<div class="card-body">
-				<h5 class="card-title">Kriptografia</h5>
-			</div>
-            <button class="btn btn-primary" type="submit"  onclick="handleEnroll4(event)">enroll</button>
-		</div>
-	</div>
 
-</div>
-  <!-- courses end -->
-           
+
             </div>
         <!-- Content End -->
-          
+
 
 
         <!-- Back to Top -->
@@ -171,66 +125,6 @@
 
     <!-- Template Javascript -->
     <script src="/assets/admin/js/main.js"></script>
-    <script src="{{asset('assets/admin/js/main.js')}}"></script>
-    <script>
-    function handleEnroll(event) {
-        event.preventDefault(); // Prevent the default form submission behavior
-
-        var password = prompt("Enter password"); // Display the password prompt
-        if (password === "CSE2324") {
-            // If the correct password is entered, submit the form
-            window.location.href = "{{ url('/student/shk1') }}";
-        } else {
-            alert("Incorrect password. Please try again.");
-        }
-    }
-    function handleEnroll1(event) {
-        event.preventDefault(); // Prevent the default form submission behavior
-
-        var password = prompt("Enter password"); // Display the password prompt
-        if (password === "CSE2324") {
-            // If the correct password is entered, submit the form
-            window.location.href = "{{ url('/student/web') }}";
-        } else {
-            alert("Incorrect password. Please try again.");
-        }
-    }
-    function handleEnroll2(event) {
-        event.preventDefault(); // Prevent the default form submission behavior
-
-        var password = prompt("Enter password"); // Display the password prompt
-        if (password === "CSE2324") {
-            // If the correct password is entered, submit the form
-            window.location.href = "{{ url('/student/lab1') }}";
-        } else {
-            alert("Incorrect password. Please try again.");
-        }
-    }
-    function handleEnroll3(event) {
-        event.preventDefault(); // Prevent the default form submission behavior
-
-        var password = prompt("Enter password"); // Display the password prompt
-        if (password === "CSE2324") {
-            // If the correct password is entered, submit the form
-            window.location.href = "{{ url('/student/gaming') }}";
-        } else {
-            alert("Incorrect password. Please try again.");
-        }
-    }
-    function handleEnroll4(event) {
-        event.preventDefault(); // Prevent the default form submission behavior
-
-        var password = prompt("Enter password"); // Display the password prompt
-        if (password === "CSE2324") {
-            // If the correct password is entered, submit the form
-            window.location.href = "{{ url('/student/kriptografia') }}";
-        } else {
-            alert("Incorrect password. Please try again.");
-        }
-    }
-
-    
-</script>
 </body>
 
 </html>
