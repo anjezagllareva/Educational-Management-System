@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="{{ url('/professor/admin')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="{{ url('/student/courses')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Courses</a>
                     <div class="nav-item dropdown">
                     <a href="{{ url('/professor/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
                         <div class="dropdown-menu bg-transparent border-0">
@@ -68,8 +68,8 @@
                         </div>
                         <a href="{{ url('/student/schedule')}}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
                     <a href="{{ url('/student/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
-                    <a href="{{ url('/student/calendar')}}" class="nav-item nav-link active"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     <a href="{{ url('/student/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
+                    <a href="{{ url('/student/calendar')}}" class="nav-item nav-link active"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     </div>
                 </div>
             </nav>
