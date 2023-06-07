@@ -14,16 +14,15 @@ class ScheduleController extends Controller
      
     }
     
-    // public function subjectProfessorTable(){
-    //     $schedule = Schedule::all();
-    //     return view('../professor.schedule', ['schedule' => $schedule]);
+    public function scheduleProfessorTable(){
+        $schedule = Schedule::all();
+        return view('../professor.schedule', ['schedule' => $schedule]);
      
-    // }
-    // public function subjectStudentTable(){
-    //     $schedule = Schedule::all();
-    //     return view('../student.schedule', ['schedule' => $schedule]);
-     
-    // }
+    }
+    public function scheduleStudentTable(){
+        $schedule = Schedule::all();
+        return view('../student.schedule', ['schedule' => $schedule]);
+     }
 
     public function deleteSchedule($id){
         Schedule::where('id', '=',$id)->delete();

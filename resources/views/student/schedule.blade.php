@@ -112,203 +112,25 @@
                 <table class="table bg-white">
                     <thead>
                         <tr>
-                            <th>Day's</th>
-                            <th>9 am</th>
-                            <th>11 am</th>
-                            <th>12 pm</th>
-                            <th>2 pm</th>
-                            <th class="last">3 pm</th>
+                            <th scope="col">Day</th>
+                            <th scope="col">9:00-11:00</th>
+                            <th scope="col">11:00-13:00</th>
+                            <th scope="col">13:00-15:00</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @php
+                                        $i=1;
+                                    @endphp
+                        @foreach($schedule as $item)
                         <tr>
-                            <td class="day">Sunday</td>
-                            <td class="active">
-                                <h4>Algoritme 2</h4>
-                                <p>9 am - 11 am</p>
-                                <div class="hover">
-                                    <h4>Algoritme 2</h4>
-                                    <p>9 am - 11 am</p> <span>Vesa Morina</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>SHKI 1</h4>
-                                <p>03 pm - 04 pm</p>
-                                <div class="hover">
-                                    <h4>SHKI 1</h4>
-                                    <p>03 pm - 04 pm</p> <span>Lavdim Menxhiqi</span>
-                                </div>
-                            </td>
-                            <td class="active">
-                                <h4>Rrjeta Kompjuterike</h4>
-                                <p>05 pm - 06 pm</p>
-                                <div class="hover">
-                                    <h4>Rrjeta Kompjuterike</h4>
-                                    <p>05 pm - 046am</p> <span>Besnik Qehaja</span>
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="day">Monday</td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Sisteme e Bazes se te Dhenave</h4>
-                                <p>11 am - 12 pm</p>
-                                <div class="hover">
-                                    <h4>Sisteme e Bazes se te Dhenave</h4>
-                                    <p>11 am - 12 pm</p> <span>Elton Boshnjaku</span>
-                                </div>
-                            </td>
-                            <td class="active">
-                                <h4>Inxhineri e WEB</h4>
-                                <p>03 pm - 05 pm</p>
-                                <div class="hover">
-                                    <h4>Inxhineri e WEB</h4>
-                                    <p>03 pm - 05 pm</p> <span>Greta Ahma</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Matematike 1</h4>
-                                <p>07 pm - 08 pm</p>
-                                <div class="hover">
-                                    <h4>Matematike 1</h4>
-                                    <p>07 pm - 08 pm</p> <span>Hizer Leka</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="day">Tuesday</td>
-                            <td class="active">
-                                <h4>Hyrje ne Algoritme</h4>
-                                <p>10 am - 11 am</p>
-                                <div class="hover">
-                                    <h4>Hyrje ne Algoritme</h4>
-                                    <p>10 am - 11 am</p> <span>Shkelqim Berisha</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td class="active">
-                                <h4>AOK</h4>
-                                <p>05 pm - 06 pm</p>
-                                <div class="hover">
-                                    <h4>AOK</h4>
-                                    <p>05 pm - 06 pm</p> <span>Valdrin Haxhiu</span>
-                                </div>
-                            </td>
-                            <td class="active">
-                                <h4>Qarqet Digjitale</h4>
-                                <p>07 pm - 08 pm</p>
-                                <div class="hover">
-                                    <h4>Qarqet Digjitale</h4>
-                                    <p>07 pm - 08 pm</p> <span>Bertan Karahoda</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="day">Wednesday</td>
-                            <td class="active">
-                                <h4>Matematike 2</h4>
-                                <p>10 am - 12 pm</p>
-                                <div class="hover">
-                                    <h4>Matematike 2</h4>
-                                    <p>10 am - 12 pm</p> <span>Hizer Leka</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Sisteme Operative</h4>
-                                <p>03 pm - 05 pm</p>
-                                <div class="hover">
-                                    <h4>Sisteme Operative</h4>
-                                    <p>03 pm - 05 pm</p> <span>Blerina Rrmoku</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Shkrim Shkencor dhe Teknik</h4>
-                                <p>07 pm - 08 pm</p>
-                                <div class="hover">
-                                    <h4>Shkrim Shkencor dhe Teknik</h4>
-                                    <p>07 pm - 08 pm</p> <span>Shejnaze Gagica</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="day">Thursday</td>
-                            <td></td>
-                            <td class="active">
-                                <h4>IT, e Drejta dhe Shoqeria</h4>
-                                <p>11 am - 12 pm</p>
-                                <div class="hover">
-                                    <h4>IT, e Drejta dhe Shoqeria</h4>
-                                    <p>1 am - 12 pm</p> <span>Dashmir Istrefi</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Bazat e Teknologjis Informative</h4>
-                                <p>05 pm - 06 pm</p>
-                                <div class="hover">
-                                    <h4>Bazat e Teknologjis Informative</h4>
-                                    <p>05 pm - 06 pm</p> <span>Zhilbert Tafa</span>
-                                </div>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="day">Friday</td>
-                            <td class="active">
-                                <h4>TZP</h4>
-                                <p>10 am - 11 am</p>
-                                <div class="hover">
-                                    <h4>TZP</h4>
-                                    <p>10 am - 11 am</p> <span>Vesa Morina</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Gjuhe Angleze</h4>
-                                <p>03 pm - 05 pm</p>
-                                <div class="hover">
-                                    <h4>Gjuhe Angleze</h4>
-                                    <p>03 pm - 05 pm</p> <span>Erza Mehmeti</span>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td class="active">
-                                <h4>LAB 1</h4>
-                                <p>07 pm - 08 pm</p>
-                                <div class="hover">
-                                    <h4>LAB 1</h4>
-                                    <p>07 pm - 08 pm</p> <span>Lavdim Menxhiqi</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="day">Saturday</td>
-                            <td></td>
-                            <td></td>
-                            <td class="active">
-                                <h4>Nderveprim Kompjuter-Njeri</h4>
-                                <p>03 pm - 04 pm</p>
-                                <div class="hover">
-                                    <h4>Nderveprim Kompjuter-Njeri</h4>
-                                    <p>03 pm - 04 pm</p> <span>Vesa Morina</span>
-                                </div>
-                            </td>
-                            <td class="active">
-                                <h4>Sisteme Operative</h4>
-                                <p>05 pm - 06 pm</p>
-                                <div class="hover">
-                                    <h4>Sisteme Operative</h4>
-                                    <p>05 pm - 06 pm</p> <span>Osman Osmani</span>
-                                </div>
-                            </td>
-                            <td></td>
+                            <td class="day">{{ $item->day}}</td>
+                            <td class="hover">{{ $item->first}}</td>
+                            <td class="hover">{{ $item->second}}</td>
+                            <td class="hover">{{ $item->third}}</td>
+                            @endforeach
+                            
+                            
                         </tr>
                     </tbody>
                 </table>

@@ -262,4 +262,7 @@ Route::get('add-schedule/', [ScheduleController::class,'addSchedule'])->middlewa
 Route::get('edit-schedule/', [ScheduleController::class,'saveSchedule'])->middleware('isLoggedIn');
 Route::get('admin/scheduleedit/{id}', [ScheduleController::class,'editSchedule'])->middleware('isLoggedIn');
 Route::post('update-schedule/', [ScheduleController::class, 'updateSchedule'])->middleware('isLoggedIn');
+Route::get('professor/schedule', [ScheduleController::class,'scheduleProfessorTable'])->middleware('isProfessor');
+Route::get('student/schedule', [ScheduleController::class,'scheduleStudentTable'])->middleware('isStudent');
+
 
