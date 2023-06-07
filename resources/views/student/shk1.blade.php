@@ -101,9 +101,51 @@
                 </div>
             </nav>
             <!-- Navbar End -->
+            <div class="container p-3 my-3 border">
+            <a href="">Announcements</a></div>
+            <br>
+            <p></p>
+            <div class="container">
+                <p>Lavdim Menxhiqi</p>
+                <p>
+                    <b>E-mail</b>
+                    : lavdim.menxhiqi@ubt-uni.net
+                </p>
 
+             <br>
+             <p></p>
 
+            <div class="container p-3 my-3 border">Orari i Ligjeratave:
+            <ol>
+                 <li>E Hënë G4a</li>
+                 <li>E Martë G4a</li>
+                 <li>E Merkurë G4a</li>
+                 <li>E Enjte G4a</li>
+                 <li>E Premte G4a</li>
+                 <li>E Shtunë G4a</li>
+                </ol>
             </div>
+
+            <div class="container p-3 my-3 border">Literatura:
+                <br>
+                <br>
+                <a href="https://docs.oracle.com/javase/tutorial/">JavaOracle</a>
+                <br>
+                <br>
+                <a href="https://www.javatpoint.com/java-tutorial">JavaTutorial</a>
+                <br>
+                <br>
+                <a href="https://www.tutorialspoint.com/java/index.htm">LearnJava</a>
+                <br>
+                <br>
+                <a href="https://www.javacodegeeks.com/">JavaCourse</a>
+                <br>
+                <br>
+                <a href="https://www.udemy.com/course/java-tutorial/">JavaBeginner</a>
+            </div>
+
+
+
         <!-- Content End -->
 
 

@@ -101,7 +101,48 @@
                 </div>
             </nav>
             <!-- Navbar End -->
+            <div class="container p-3 my-3 border">
+            <a href="">Announcements</a></div>
+            <br>
+            <p></p>
+            <div class="container">
+                <p>Lavdim Menxhiqi</p>
+                <p>
+                    <b>E-mail</b>
+                    : lavdim.menxhiqi@ubt-uni.net
+                </p>
 
+             <br>
+             <p></p>
+
+            <div class="container p-3 my-3 border">Orari i Ligjeratave:
+            <ol>
+                 <li>E Hënë G4a</li>
+                 <li>E Martë G4a</li>
+                 <li>E Merkurë G4a</li>
+                 <li>E Enjte G4a</li>
+                 <li>E Premte G4a</li>
+                 <li>E Shtunë G4a</li>
+                </ol>
+            </div>
+
+            <div class="container p-3 my-3 border">Literatura:
+                <br>
+                <br>
+                <a href="https://www.w3schools.com/REACT/DEFAULT.ASP">ReactJs</a>
+                <br>
+                <br>
+                <a href="https://www.typescriptlang.org/docs/">TypeScript</a>
+                <br>
+                <br>
+                <a href="https://dotnet.microsoft.com/en-us/learn">.NET</a>
+                <br>
+                <br>
+                <a href="https://laravel.com/docs/5.1/quickstart">Laravel</a>
+                <br>
+                <br>
+                <a href="https://docs.angularjs.org/tutorial">AngularJS</a>
+            </div>
 
             </div>
         <!-- Content End -->

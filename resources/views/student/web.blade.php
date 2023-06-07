@@ -102,7 +102,50 @@
                 </div>
             </nav>
             <!-- Navbar End -->
+            <div class="container p-3 my-3 border">
+            <a href="">Announcements</a></div>
+            <br>
+            <p></p>
+            <div class="container">
+                <p>Betim Gashi</p>
+                <p>
+                    <b>E-mail</b>
+                    : betim.gashi@ubt-uni.net
+                </p>
 
+             <br>
+             <p></p>
+
+            <div class="container p-3 my-3 border">Orari i Ligjeratave:
+            <ol>
+                 <li>E Hënë G4a</li>
+                 <li>E Martë G4a</li>
+                 <li>E Merkurë G4a</li>
+                 <li>E Enjte G4a</li>
+                 <li>E Premte G4a</li>
+                 <li>E Shtunë G4a</li>
+                </ol>
+            </div>
+
+            <div class="container p-3 my-3 border">Literatura:
+                <br>
+                <br>
+                <a href="https://www.codecademy.com/learn/learn-html">Html</a>
+                <br>
+                <br>
+                <a href="https://www.learn-js.org/">JavaScript</a>
+                <br>
+                <br>
+                <a href="https://www.codecademy.com/learn/paths/php-skill">PHP</a>
+                <br>
+                <br>
+                <a href="https://web.dev/learn/css/">CSS</a>
+                <br>
+                <br>
+                <a href="https://www.simplilearn.com/top-web-frameworks-and-career-tips-in-web-development-article">Frameworks</a>
+            </div>
+
+            </div>
 
             </div>
         <!-- Content End -->

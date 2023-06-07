@@ -100,7 +100,50 @@
                 </div>
             </nav>
             <!-- Navbar End -->
+            <div class="container p-3 my-3 border">
+            <a href="">Announcements</a></div>
+            <br>
+            <p></p>
+            <div class="container">
+                <p>Besnik Qehaja</p>
+                <p>
+                    <b>E-mail</b>
+                    : besnik.qehaja@ubt-uni.net
+                </p>
 
+             <br>
+             <p></p>
+
+            <div class="container p-3 my-3 border">Orari i Ligjeratave:
+            <ol>
+                 <li>E Hënë G4a</li>
+                 <li>E Martë G4a</li>
+                 <li>E Merkurë G4a</li>
+                 <li>E Enjte G4a</li>
+                 <li>E Premte G4a</li>
+                 <li>E Shtunë G4a</li>
+                </ol>
+            </div>
+
+            <div class="container p-3 my-3 border">Literatura:
+                <br>
+                <br>
+                <a href="https://www.globalknowledge.com/ca-en/resources/resource-library/articles/a-beginners-guide-to-encryption/">Enkriptimi i të Dhënave</a>
+                <br>
+                <br>
+                <a href="https://u-next.com/blogs/cyber-security/different-types-of-hackers/">Types Of Hackers</a>
+                <br>
+                <br>
+                <a href="https://www.usclaro.com/promotions/zero-trust-promo?utm_term=network%20security&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=4634081503&hsa_cam=20187015567&hsa_grp=151590850762&hsa_ad=661237315354&hsa_src=g&hsa_tgt=kwd-10119700&hsa_kw=network%20security&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw1YCkBhAOEiwA5aN4AUa38pJ3_1bdcCX4-BbhvDQUKVkh5mAI1D_WvAjGvyPDPAzHhfbleBoC6uYQAvD_BwE">Cyber Security</a>
+                <br>
+                <br>
+                <a href="https://www.csoonline.com/article/3249765/what-is-the-dark-web-how-to-access-it-and-what-youll-find.html">DarkWeb</a>
+                <br>
+                <br>
+                <a href="https://www.codecademy.com/learn/learn-powershell">Powershell</a>
+            </div>
+
+            </div>
 
             </div>
         <!-- Content End -->

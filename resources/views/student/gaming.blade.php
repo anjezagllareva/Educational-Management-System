@@ -101,7 +101,50 @@
                 </div>
             </nav>
             <!-- Navbar End -->
+            <div class="container p-3 my-3 border">
+            <a href="">Announcements</a></div>
+            <br>
+            <p></p>
+            <div class="container">
+                <p>Vesa Morina</p>
+                <p>
+                    <b>E-mail</b>
+                    : vesa.morina@ubt-uni.net
+                </p>
 
+             <br>
+             <p></p>
+
+            <div class="container p-3 my-3 border">Orari i Ligjeratave:
+            <ol>
+                 <li>E Hënë G4a</li>
+                 <li>E Martë G4a</li>
+                 <li>E Merkurë G4a</li>
+                 <li>E Enjte G4a</li>
+                 <li>E Premte G4a</li>
+                 <li>E Shtunë G4a</li>
+                </ol>
+            </div>
+
+            <div class="container p-3 my-3 border">Literatura:
+                <br>
+                <br>
+                <a href="https://quasarinstitute.it/en/undergraduate/game-design-en/?gclid=CjwKCAjw1YCkBhAOEiwA5aN4Acc3Mp0l2EUJiHV7NEcSFUqh5LKcVZXsoW4enB2-fDXpD6aEqEV1mBoCMK0QAvD_BwE">GameDesign</a>
+                <br>
+                <br>
+                <a href="https://www.skillshare.com/en/blog/how-to-animate-a-character-a-beginners-guide/">Movements</a>
+                <br>
+                <br>
+                <a href="https://www.learncpp.com/">C++</a>
+                <br>
+                <br>
+                <a href="https://happycoding.io/tutorials/libgdx/">LibGDX</a>
+                <br>
+                <br>
+                <a href="https://www.simplilearn.com/top-web-frameworks-and-career-tips-in-web-development-article">Frameworks</a>
+            </div>
+
+            </div>
 
             </div>
         <!-- Content End -->
