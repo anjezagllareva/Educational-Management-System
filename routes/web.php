@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\SubjectsController;
 use App\Http\Controllers\CalenderController;
 use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\ShkiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -265,4 +266,9 @@ Route::post('update-schedule/', [ScheduleController::class, 'updateSchedule'])->
 Route::get('professor/schedule', [ScheduleController::class,'scheduleProfessorTable'])->middleware('isProfessor');
 Route::get('student/schedule', [ScheduleController::class,'scheduleStudentTable'])->middleware('isStudent');
 
-
+Route::get('professor/shkenca1add', function () {
+    return view('professor/shkenca1add');
+})->middleware('isProfessor');
+Route::get('/upload-file', [ShkiController::class, 'createForm'])->middleware('isProfessor');
+Route::post('/upload-file', [ShkiController::class, 'fileUpload'])->name('fileUpload')->middleware('isProfessor');
+Route::get('professor/shkenca1', [ShkiController::class,'scheduleTable'])->middleware('isProfessor');

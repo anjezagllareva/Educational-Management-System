@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Student</title>
+    <title>Professor</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -45,8 +45,8 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="{{ url('/admin/admin')}}" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary">Student</h3>
+                <a href="{{ url('/professor/students')}}" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary">Professor</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -54,22 +54,25 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Student</h6>
+                        <h6 class="mb-0">Professor</h6>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="{{ url('/student/courses')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Courses</a>
+                    <a href="{{ url('/professor/courses')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Courses</a>
                     <div class="nav-item dropdown">
                     <a href="{{ url('/professor/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ url('/student/1stYear') }}" class="dropdown-item active">1st Year</a>
-                            <a href="{{ url('/student/2ndYear') }}" class="dropdown-item">2nd Year</a>
-                            <a href="{{ url('/student/3rdYear') }}" class="dropdown-item">3rd Year</a>
+                        <a href="{{ url('/professor/shk1') }}" class="dropdown-item">Shkenca Kompjuterike 1</a>
+                            <a href="{{ url('/professor/web') }}" class="dropdown-item">Inxhinieri e Web</a>
+                            <a href="{{ url('/professor/lab1') }}" class="dropdown-item">Lëndë Laboratorike 1 (Programim)</a>
+                            <a href="{{ url('/professor/gaming') }}" class="dropdown-item">Programimi i Lojërave</a>
+                            <a href="{{ url('/professor/kripto') }}" class="dropdown-item">Kriptografia</a>
                         </div>
-                        <a href="{{ url('/student/schedule')}}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
-                    <a href="{{ url('/student/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
-                    <a href="{{ url('/student/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
-                    <a href="{{ url('/student/calendar')}}" class="nav-item nav-link active"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
+                        <a href="{{ url('/professor/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
+                    <a href="{{ url('/professor/students') }}" class="nav-item nav-link"><i class="fas fa-user me-2"></i>Students</a>
+                    <a href="{{ url('/professor/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
+                    <a href="{{ url('/professor/messages') }}" class="nav-item nav-link active"><i class="fas fa-envelope me-2"></i>Messages</a>
+                    <a href="{{ url('/professor/calendar') }}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     </div>
                 </div>
             </nav>
@@ -92,7 +95,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">Student</span>
+                            <span class="d-none d-lg-inline-flex">Professor</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="{{ url('/logout') }}" class="dropdown-item">Log Out</a>
@@ -101,69 +104,48 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-            <div class="container p-3 my-3 border">
-            <a href="">Announcements</a></div>
-            <br>
-            <p></p>
-            <div class="container">
-                <p>Lavdim Menxhiqi</p>
-                <p>
-                    <b>E-mail</b>
-                    : lavdim.menxhiqi@ubt-uni.net
-                </p>
-
-             <br>
-             <p></p>
-
-            <div class="container p-3 my-3 border">Orari i Ligjeratave:
-            <ol>
-                 <li>E Hënë G4a</li>
-                 <li>E Martë G4a</li>
-                 <li>E Merkurë G4a</li>
-                 <li>E Enjte G4a</li>
-                 <li>E Premte G4a</li>
-                 <li>E Shtunë G4a</li>
-                </ol>
-            </div>
-
-            <div class="container p-3 my-3 border">Orari i Ligjeratave:
-                <div>
-                <h5>Topic 1</h5>
-                <a href="/images/myw3schoolsimage.jpg" download>Msimi 1</a>
-                </div>
-
-                <div>
-                    <h5>Topic 2</h5>
-                </div>
-                <div>
-                    <h5>Topic 3</h5>
-                </div>
-                <div>
-                    <h5>Topic 4</h5>
-                </div>       
-
-                </div>
-
-            <div class="container p-3 my-3 border">Literatura:
-                <br>
-                <br>
-                <a href="https://docs.oracle.com/javase/tutorial/">JavaOracle</a>
-                <br>
-                <br>
-                <a href="https://www.javatpoint.com/java-tutorial">JavaTutorial</a>
-                <br>
-                <br>
-                <a href="https://www.tutorialspoint.com/java/index.htm">LearnJava</a>
-                <br>
-                <br>
-                <a href="https://www.javacodegeeks.com/">JavaCourse</a>
-                <br>
-                <br>
-                <a href="https://www.udemy.com/course/java-tutorial/">JavaBeginner</a>
+            <div class="container mt-5">
+                <form action="{{route('fileUpload')}}" method="post" enctype="multipart/form-data">
+                  <h3 class="text-center mb-5">Upload File in Laravel</h3>
+                    @csrf
+                    @if ($message = Session::get('success'))
+                    <div class="alert alert-success">
+                        <strong>{{ $message }}</strong>
+                    </div>
+                  @endif
+                  @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                              <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                  @endif
+                    <div class="custom-file">
+                        <input type="file" name="file" class="custom-file-input" id="chooseFile">
+                        <label class="custom-file-label" for="chooseFile">Select file</label>
+                    </div>
+                    <div
+                    <label>Title</label></br>
+                    <input type="text" name="title" id="title" class="form-control"></br>
+                    </div>
+                    <div
+                    <label>Text</label></br>
+                    <input type="text" name="text" id="text" class="form-control"></br>
+                    </div>
+                    <button type="submit" name="submit" class="btn btn-primary btn-block mt-4">
+                        Upload Files
+                    </button>
+                </form>
             </div>
 
 
+  
 
+
+
+            </div>
         <!-- Content End -->
 
 
