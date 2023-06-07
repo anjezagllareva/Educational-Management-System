@@ -57,29 +57,20 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
+                    <a href="{{ url('/professor/courses')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Courses</a>
                     <div class="nav-item dropdown">
                     <a href="{{ url('/professor/submits') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ url('/professor/english') }}" class="dropdown-item">Gjuhe Angleze per Inxhinieri</a>
-                            <a href="{{ url('/professor/math') }}" class="dropdown-item">Matematike 1</a>
-                            <a href="{{ url('/professor/bti') }}" class="dropdown-item">Bazat e Teknologjise Informative</a>
-                            <a href="{{ url('/professor/shk1') }}" class="dropdown-item">Shkenca Kompjuterike 1</a>
-                            <a href="{{ url('/professor/algo') }}" class="dropdown-item">Hyrje ne Algoritme</a>
-                            <a href="{{ url('/professor/shk2') }}" class="dropdown-item">Shkenca Kompjuterike 2</a>
+                        <a href="{{ url('/professor/shk1') }}" class="dropdown-item">Shkenca Kompjuterike 1</a>
                             <a href="{{ url('/professor/web') }}" class="dropdown-item">Inxhinieri e Web</a>
-                            <a href="{{ url('/professor/databaze') }}" class="dropdown-item">Sistemet e Bazes se te Dhenave</a>
-                            <a href="{{ url('/professor/rrjeta') }}" class="dropdown-item">Rrjeta Kompjuterike dhe Komunikimi</a>
                             <a href="{{ url('/professor/lab1') }}" class="dropdown-item">Lëndë Laboratorike 1 (Programim)</a>
                             <a href="{{ url('/professor/gaming') }}" class="dropdown-item">Programimi i Lojërave</a>
                             <a href="{{ url('/professor/kripto') }}" class="dropdown-item">Kriptografia</a>
-                            <a href="{{ url('/professor/dizajn') }}" class="dropdown-item">Dizajnimi i Softuerit</a>
-                            <a href="{{ url('/professor/lab2') }}" class="dropdown-item">Lëndë Laboratorike 2 (Programim)</a>
-                            <a href="{{ url('/professor/arkitektur') }}" class="dropdown-item">Arkitekturë Softuerike</a>
                         </div>
-                    <a href="{{ url('/professor/students') }}" class="nav-item nav-link"><i class="fas fa-user me-2"></i>Students</a>
-                    <a href="{{ url('/professor/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
-                    <a href="{{ url('/professor/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
+                        <a href="{{ url('/professor/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
+                    <a href="{{ url('/professor/students') }}" class="nav-item nav-link active"><i class="fas fa-user me-2"></i>Students</a>
                     <a href="{{ url('/professor/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
+                    <a href="{{ url('/professor/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
                     <a href="{{ url('/professor/calendar') }}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     </div>
                 </div>

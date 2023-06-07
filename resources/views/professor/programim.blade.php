@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="{{asset('assets/admin/img/favicon.ico')}}" rel="icon">
+    <link href="{{asset('admin/img/favicon.ico')}}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-     <!-- Libraries Stylesheet -->
-   <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -46,7 +46,7 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="{{ url('/professor/students')}}" class="navbar-brand mx-4 mb-3">
-                <h3 class="text-primary">Professor</h3>
+                    <h3 class="text-primary">Professor</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -58,29 +58,20 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
+                    <a href="{{ url('/professor/courses')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Courses</a>
                     <div class="nav-item dropdown">
                     <a href="{{ url('/professor/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ url('/professor/english') }}" class="dropdown-item">Gjuhe Angleze per Inxhinieri</a>
-                            <a href="{{ url('/professor/math') }}" class="dropdown-item">Matematike 1</a>
-                            <a href="{{ url('/professor/bti') }}" class="dropdown-item">Bazat e Teknologjise Informative</a>
-                            <a href="{{ url('/professor/shk1') }}" class="dropdown-item">Shkenca Kompjuterike 1</a>
-                            <a href="{{ url('/professor/algo') }}" class="dropdown-item">Hyrje ne Algoritme</a>
-                            <a href="{{ url('/professor/shk2') }}" class="dropdown-item">Shkenca Kompjuterike 2</a>
+                        <a href="{{ url('/professor/shk1') }}" class="dropdown-item">Shkenca Kompjuterike 1</a>
                             <a href="{{ url('/professor/web') }}" class="dropdown-item">Inxhinieri e Web</a>
-                            <a href="{{ url('/professor/databaze') }}" class="dropdown-item">Sistemet e Bazes se te Dhenave</a>
-                            <a href="{{ url('/professor/rrjeta') }}" class="dropdown-item">Rrjeta Kompjuterike dhe Komunikimi</a>
                             <a href="{{ url('/professor/lab1') }}" class="dropdown-item">Lëndë Laboratorike 1 (Programim)</a>
                             <a href="{{ url('/professor/gaming') }}" class="dropdown-item">Programimi i Lojërave</a>
                             <a href="{{ url('/professor/kripto') }}" class="dropdown-item">Kriptografia</a>
-                            <a href="{{ url('/professor/dizajn') }}" class="dropdown-item">Dizajnimi i Softuerit</a>
-                            <a href="{{ url('/professor/lab2') }}" class="dropdown-item">Lëndë Laboratorike 2 (Programim)</a>
-                            <a href="{{ url('/professor/arkitektur') }}" class="dropdown-item">Arkitekturë Softuerike</a>
                         </div>
-                        <a href="{{ url('/professor/students') }}" class="nav-item nav-link"><i class="fas fa-user me-2"></i>Students</a>
-                    <a href="{{ url('/professor/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
-                    <a href="{{ url('/professor/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
+                        <a href="{{ url('/professor/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
+                    <a href="{{ url('/professor/students') }}" class="nav-item nav-link"><i class="fas fa-user me-2"></i>Students</a>
                     <a href="{{ url('/professor/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
+                    <a href="{{ url('/professor/messages') }}" class="nav-item nav-link active"><i class="fas fa-envelope me-2"></i>Messages</a>
                     <a href="{{ url('/professor/calendar') }}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     </div>
                 </div>
@@ -100,6 +91,7 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <div class="navbar-nav align-items-center ms-auto">
+
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
@@ -113,44 +105,13 @@
             </nav>
             <!-- Navbar End -->
 
+  
 
-           
-            <!-- Table Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-12 col-xl-8">
-                        <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4"></h6>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First Name</th>
-                                        <th scope="col">Last Name</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Grade</th>
-                                        <th scope="col">Edit</th>
-                                        <th scope="col">Delete</th>
-                                    </tr>
-                                    <tr>
-                                            <th scope="row">1</th>
-                                            <td>filan</td>
-                                            <td>fisteku</td>
-                                            <td>filani@ubt-uni.com</td>
-                                            <td>example</td>
-                                            <td><a href="/admin/edit" class="btn btn-primary btn-lg btn-sm" role="button" aria-disabled="true">Edit</a></td>
-                                            <td><a href="/admin/edit" class="btn btn-danger btn-lg btn-sm" role="button" aria-disabled="true">Delete</a></td>
-                                        </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
-            <!-- Table End -->
-
-        </div>
         <!-- Content End -->
+
 
 
         <!-- Back to Top -->

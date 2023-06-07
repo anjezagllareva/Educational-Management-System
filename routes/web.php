@@ -159,30 +159,6 @@ Route::get('professor/admin', function () {
     return view('professor/admin');
 })->middleware('isProfessor');
 
-Route::get('professor/algo', function () {
-    return view('professor/algo');
-})->middleware('isProfessor');
-
-Route::get('professor/arkitektur', function () {
-    return view('professor/arkitektur');
-})->middleware('isProfessor');
-
-Route::get('professor/bti', function () {
-    return view('professor/bti');
-})->middleware('isProfessor');
-
-Route::get('professor/databaze', function () {
-    return view('professor/databaze');
-})->middleware('isProfessor');
-
-Route::get('professor/dizajn', function () {
-    return view('professor/dizajn');
-})->middleware('isProfessor');
-
-Route::get('professor/english', function () {
-    return view('professor/english');
-})->middleware('isProfessor');
-
 Route::get('professor/gaming', function () {
     return view('professor/gaming');
 })->middleware('isProfessor');
@@ -195,24 +171,8 @@ Route::get('professor/lab1', function () {
     return view('professor/lab1');
 })->middleware('isProfessor');
 
-Route::get('professor/lab2', function () {
-    return view('professor/lab2');
-})->middleware('isProfessor');
-
-Route::get('professor/math', function () {
-    return view('professor/math');
-})->middleware('isProfessor');
-
-Route::get('professor/rrjeta', function () {
-    return view('professor/rrjeta');
-})->middleware('isProfessor');
-
 Route::get('professor/shk1', function () {
     return view('professor/shk1');
-})->middleware('isProfessor');
-
-Route::get('professor/shk2', function () {
-    return view('professor/shk2');
 })->middleware('isProfessor');
 
 Route::get('professor/web', function () {
@@ -238,6 +198,25 @@ Route::get('professor/messages', function () {
 })->middleware('isProfessor');
 Route::get('professor/students', function () {
     return view('professor/students');
+})->middleware('isProfessor');
+
+Route::get('professor/courses', function () {
+    return view('professor/courses');
+})->middleware('isProfessor');
+Route::get('professor/shkenca1', function () {
+    return view('professor/shkenca1');
+})->middleware('isProfessor');
+Route::get('professor/inxhinieri', function () {
+    return view('professor/inxhinieri');
+})->middleware('isProfessor');
+Route::get('professor/laborator', function () {
+    return view('professor/laborator');
+})->middleware('isProfessor');
+Route::get('professor/programim', function () {
+    return view('professor/programim');
+})->middleware('isProfessor');
+Route::get('professor/kriptografia', function () {
+    return view('professor/kriptografia');
 })->middleware('isProfessor');
 Route::get('/dbconn', function () {
     return view('dbconn');
