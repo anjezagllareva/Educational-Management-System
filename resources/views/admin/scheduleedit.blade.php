@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="{{ url('/admin/admin')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="{{ url('/admin/admin')}}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
                         <a href="{{ url('/admin/users') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-user me-2"></i>Users</a>
                         <div class="dropdown-menu bg-transparent border-0">
@@ -67,7 +67,7 @@
                         </div>
 
                     </div>
-                    <a href="{{ url('/admin/schedule') }}" class="nav-item nav-link active"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
+                    <a href="{{ url('/admin/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
                     <a href="{{ url('/admin/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
                     <a href="{{ url('/admin/calendar') }}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
                     </div>
@@ -140,52 +140,28 @@
             </nav>
             <!-- Navbar End -->
 
-  <!-- Table Start -->
-  <div class="container-fluid pt-4 px-4">
-    <div class="row g-4">
-        <div class="col-sm-12 col-xl-8">
-            <div class="bg-light rounded h-100 p-4">
-                <h6 class="mb-4">Schedule</h6>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Day</th>
-                            <th scope="col">9:00-11:00</th>
-                            <th scope="col">11:00-13:00</th>
-                            <th scope="col">13:00-15:00</th>
-                            <th scope="col">Edit</th>
-                            <th scope="col">Delete</th>
-                        </tr>
-                    </thead>
-                    @php
-                      $i=1;
-                    @endphp
-                    @foreach($schedule as $item)
-                                    <tr>
-                                        <td>{{ $item->id}}</td>
-                                        <td>{{ $item->day}}</td>
-                                        <td>{{ $item->first}}</td>
-                                        <td>{{ $item->second}}</td>
-                                        <td>{{ $item->third}}</td>
-                                        <td>
-                                            <a href="{{url('/admin/scheduleedit/'.$item->id)}}" class="btn btn-primary btn-sm">Edit</a> 
-                                        </td>
-                                        <td>
-                                            <a href="{{url('delete-schedule/'.$item->id)}}" class="btn btn-danger btn-sm">Delete</a> 
-                                        </td>
-                                    </tr>
-                                    @endforeach
-                                    <tr>
-                                   <a href="{{url('/admin/scheduleadd')}}" class="btn btn-success btn-sm">Add</a>
-                                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
+  
+            
+            <div class="card" style="margin:20px;">
+  <div class="card-header">Edit User</div>
+  <div class="card-body"> 
+  <form action="{{url('update-schedule/')}}" method="post">
+  @csrf
+        <input type="hidden" name="id" value="{{$sche->id}}"/></br>
+        <label>day</label></br>
+        <input type="text" name="day" id="day" value="{{$sche->day}}" class="form-control"></br>
+        <label>first</label></br>
+        <input type="text" name="first" id="first" value="{{$sche->first}}" class="form-control"></br>
+        <label>second</label></br>
+        <input type="text" name="second" id="second" value="{{$sche->second}}" class="form-control"></br>
+        <label>third</label></br>
+        <input type="text" name="third" id="third" value="{{$sche->third}}" class="form-control"></br>
+        <input type="submit" value="Update" class="btn btn-success"></br>
+    </form>
+    
+  </div>
 </div>
-<!-- Table End -->
-
+  
             </div>
         <!-- Content End -->
           

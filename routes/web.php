@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\SubjectsController;
 use App\Http\Controllers\CalenderController;
+use App\Http\Controllers\ScheduleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -81,6 +82,12 @@ Route::get('admin/professors', function () {
 })->middleware('isLoggedIn');
 Route::get('admin/schedule', function () {
     return view('admin/schedule');
+})->middleware('isLoggedIn');
+Route::get('admin/scheduleadd', function () {
+    return view('admin/scheduleadd');
+})->middleware('isLoggedIn');
+Route::get('admin/scheduleedit', function () {
+    return view('admin/scheduleedit');
 })->middleware('isLoggedIn');
 Route::get('admin/edit', function () {
     return view('admin/edit');
@@ -248,7 +255,11 @@ Route::get('professor/subjects', [SubjectsController::class,'subjectProfessorTab
 Route::get('student/subjects', [SubjectsController::class,'subjectStudentTable'])->middleware('isStudent');
 
 
-
-Route::get('calendar-event', [CalenderController::class, 'index']);
-Route::post('calendar-crud-ajax', [CalenderController::class, 'calendarEvents']);
+Route::get('admin/schedule', [ScheduleController::class,'scheduleTable'])->middleware('isLoggedIn');
+Route::get('delete-schedule/{id}', [ScheduleController::class,'deleteSchedule'])->middleware('isLoggedIn');
+Route::post('save-schedule/', [ScheduleController::class,'saveSchedule'])->middleware('isLoggedIn');
+Route::get('add-schedule/', [ScheduleController::class,'addSchedule'])->middleware('isLoggedIn');
+Route::get('edit-schedule/', [ScheduleController::class,'saveSchedule'])->middleware('isLoggedIn');
+Route::get('admin/scheduleedit/{id}', [ScheduleController::class,'editSchedule'])->middleware('isLoggedIn');
+Route::post('update-schedule/', [ScheduleController::class, 'updateSchedule'])->middleware('isLoggedIn');
 
