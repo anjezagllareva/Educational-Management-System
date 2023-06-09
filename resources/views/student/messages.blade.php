@@ -29,6 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{asset('assets/admin/css/style.css')}} " rel="stylesheet">
+    <link href="{{asset('assets/admin/css/contact.css')}} " rel="stylesheet">
 </head>
 
 <body>
@@ -111,7 +112,7 @@
     <!--Section heading-->
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
     <!--Section description-->
-    <p class="w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+    <p class="w-responsive mx-auto mb-5" style="text-align:center;">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
         a matter of hours to help you.</p>
 
     <div class="row">
@@ -139,7 +140,7 @@
                                      @endif
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6-">
                                 <div class="form-group">
                                     <input class="form-control {{ $errors->has('name') ? 'error' : '' }}" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
                                     @if ($errors->has('name'))
@@ -149,8 +150,8 @@
                                      @endif
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
+                            <div class="col-sm-6-">
+                                <div class="form-group1">
                                     <input class="form-control {{ $errors->has('email') ? 'error' : '' }}" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
                                     @if ($errors->has('email'))
                                         <div class="error">
