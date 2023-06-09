@@ -12,11 +12,18 @@ class ShkiController extends Controller
         return view('shkenca1add');
       }
 
-      public function scheduleTable(){
+      public function shkiTable(){
         $fileModel = shki::all();
         return view('../professor.shkenca1', ['fileModel' => $fileModel]);
      
         }
+
+        public function ShkiStudentTable(){
+            $fileModel = shki::all();
+            return view('../student.shk1', ['fileModel' => $fileModel]);
+         }
+
+
     public function fileUpload(Request $req){
             $req->validate([
             'file' => 'required|mimes:csv,txt,xlx,xls,pdf|max:2048',
@@ -41,4 +48,42 @@ class ShkiController extends Controller
                 ->with('file', $fileName);
             }
        }
+
+       public function editShki($id){
+        $fileModel = shki::where('id','=',$id)->first();
+        return view('../professor/shkenca1edit',compact('fileModel'));
+    }
+
+    public function updateShki(Request $request ){
+        $id = $request->id;
+
+    $fileModel = shki::find($id);
+    $fileModel->title = $request->input('title');
+    $fileModel->text = $request->input('text');
+
+    if ($request->hasFile('file')) {
+        $destination = '/storage/' .$fileModel->name;
+        if(shki::exists($destination)){
+            shki::delete($destination);
+        }
+        $fileName = time() . '_' . $request->file->getClientOriginalName();
+        $filePath = $request->file('file')->storeAs('uploads', $fileName, 'public');
+        $fileModel->name = $fileName;
+        $fileModel->file_path = '/storage/' . $filePath;
+    }
+
+    $fileModel->update();
+
+
+
+    return redirect('professor/shkenca1');
+
+    }
+
+
+    public function deleteShki($id){
+        shki::where('id', '=',$id)->delete();
+        return redirect()->back();
+
+    }
 }

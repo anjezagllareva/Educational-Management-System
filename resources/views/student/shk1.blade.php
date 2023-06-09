@@ -126,24 +126,18 @@
                 </ol>
             </div>
 
-            <div class="container p-3 my-3 border">Orari i Ligjeratave:
+            <div class="container p-3 my-3 border">
+                @foreach($fileModel as $item)
                 <div>
-                <h5>Topic 1</h5>
-                <a href="/images/myw3schoolsimage.jpg" download>Msimi 1</a>
+                    <h5>Topic {{$item->title}}
+                        </h5>
+                        <a href="{{ asset($item->file_path) }}" download>{{$item->name}}</a></br>
+                        <b>Title : {{$item->title}}</b>
+                        <p>Info: {{$item->text}}</p>
                 </div>
 
-                <div>
-                    <h5>Topic 2</h5>
-                </div>
-                <div>
-                    <h5>Topic 3</h5>
-                </div>
-                <div>
-                    <h5>Topic 4</h5>
-                </div>       
-
-                </div>
-
+                @endforeach
+            </div>
             <div class="container p-3 my-3 border">Literatura:
                 <br>
                 <br>

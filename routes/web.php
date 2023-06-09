@@ -271,4 +271,8 @@ Route::get('professor/shkenca1add', function () {
 })->middleware('isProfessor');
 Route::get('/upload-file', [ShkiController::class, 'createForm'])->middleware('isProfessor');
 Route::post('/upload-file', [ShkiController::class, 'fileUpload'])->name('fileUpload')->middleware('isProfessor');
-Route::get('professor/shkenca1', [ShkiController::class,'scheduleTable'])->middleware('isProfessor');
+Route::get('professor/shkenca1', [ShkiController::class,'shkiTable'])->middleware('isProfessor');
+Route::get('professor/shkenca1edit/{id}', [ShkiController::class,'editShki'])->middleware('isProfessor');
+Route::post('update-shki/', [ShkiController::class, 'updateShki'])->middleware('isProfessor');
+Route::get('delete-shki/{id}', [ShkiController::class,'deleteShki'])->middleware('isProfessor');
+Route::get('student/shk1', [ShkiController::class,'ShkiStudentTable'])->middleware('isStudent');
