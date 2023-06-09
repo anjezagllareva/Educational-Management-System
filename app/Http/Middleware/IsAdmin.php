@@ -35,7 +35,7 @@ class IsAdmin
             if($user){
             $request->session()->put('professorEmail', $user->email);
             }
-            return redirect('professor/schedule');
+            return redirect('professor/courses');
           }
     }
     return redirect('login');

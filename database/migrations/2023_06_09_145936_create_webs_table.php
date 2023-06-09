@@ -11,8 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('shki', function (Blueprint $table) {
+        Schema::create('webs', function (Blueprint $table) {
             $table->id();
+            $table->string('title')->nullable();
+            $table->string('text')->nullable();
             $table->string('name')->nullable();
             $table->string('file_path')->nullable();
             $table->timestamps();
@@ -24,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('shki');
+        Schema::dropIfExists('webs');
     }
 };

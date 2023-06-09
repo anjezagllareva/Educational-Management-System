@@ -107,10 +107,10 @@
             <br>
             <p></p>
             <div class="container">
-                <p>Betim Gashi</p>
+                <p>Lavdim Menxhiqi</p>
                 <p>
                     <b>E-mail</b>
-                    : betim.gashi@ubt-uni.net
+                    : lavdim.menxhiqi@ubt-uni.net
                 </p>
 
              <br>
@@ -127,24 +127,34 @@
                 </ol>
             </div>
 
+            <div class="container p-3 my-3 border">
+                @foreach($fileModel as $item)
+                <div>
+                    <h5>Topic {{$item->id}}
+                        </h5>
+                        <a href="{{ asset($item->file_path) }}" download>{{$item->name}}</a></br>
+                        <b>Title : {{$item->title}}</b>
+                        <p>Info: {{$item->text}}</p>
+                </div>
+
+                @endforeach
+            </div>
             <div class="container p-3 my-3 border">Literatura:
                 <br>
                 <br>
-                <a href="https://www.codecademy.com/learn/learn-html">Html</a>
+                <a href="https://docs.oracle.com/javase/tutorial/">JavaOracle</a>
                 <br>
                 <br>
-                <a href="https://www.learn-js.org/">JavaScript</a>
+                <a href="https://www.javatpoint.com/java-tutorial">JavaTutorial</a>
                 <br>
                 <br>
-                <a href="https://www.codecademy.com/learn/paths/php-skill">PHP</a>
+                <a href="https://www.tutorialspoint.com/java/index.htm">LearnJava</a>
                 <br>
                 <br>
-                <a href="https://web.dev/learn/css/">CSS</a>
+                <a href="https://www.javacodegeeks.com/">JavaCourse</a>
                 <br>
                 <br>
-                <a href="https://www.simplilearn.com/top-web-frameworks-and-career-tips-in-web-development-article">Frameworks</a>
-            </div>
-
+                <a href="https://www.udemy.com/course/java-tutorial/">JavaBeginner</a>
             </div>
 
             </div>

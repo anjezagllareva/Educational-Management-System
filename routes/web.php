@@ -10,6 +10,7 @@ use App\Http\Controllers\SubjectsController;
 use App\Http\Controllers\CalenderController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\ShkiController;
+use App\Http\Controllers\WebController;
 
 /*
 |--------------------------------------------------------------------------
@@ -276,3 +277,14 @@ Route::get('professor/shkenca1edit/{id}', [ShkiController::class,'editShki'])->m
 Route::post('update-shki/', [ShkiController::class, 'updateShki'])->middleware('isProfessor');
 Route::get('delete-shki/{id}', [ShkiController::class,'deleteShki'])->middleware('isProfessor');
 Route::get('student/shk1', [ShkiController::class,'ShkiStudentTable'])->middleware('isStudent');
+
+Route::get('professor/inxhineriadd', function () {
+    return view('professor/inxhinieriadd');
+})->middleware('isProfessor');
+Route::get('/upload-file', [WebController::class, 'createForm'])->middleware('isProfessor');
+Route::post('/upload-file', [WebController::class, 'fileUpload'])->name('fileUpload')->middleware('isProfessor');
+Route::get('professor/inxhinieri', [WebController::class,'webTable'])->middleware('isProfessor');
+Route::get('professor/inxhinieriedit/{id}', [WebController::class,'editWeb'])->middleware('isProfessor');
+Route::post('update-web/', [WebController::class, 'updateWeb'])->middleware('isProfessor');
+Route::get('delete-web/{id}', [WebController::class,'deleteWeb'])->middleware('isProfessor');
+Route::get('student/web', [WebController::class,'WebStudentTable'])->middleware('isStudent');
