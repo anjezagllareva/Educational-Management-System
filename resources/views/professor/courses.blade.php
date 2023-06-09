@@ -220,7 +220,7 @@
         var password = prompt("Enter password"); // Display the password prompt
         if (password === "kriptografia") {
             // If the correct password is entered, submit the form
-            window.location.href = "{{ url('/professor/kriptografia') }}";
+            window.location.href = "{{ url('/professor/kriptografi') }}";
         } else {
             alert("Incorrect password. Please try again.");
         }

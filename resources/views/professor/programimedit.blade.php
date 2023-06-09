@@ -104,68 +104,26 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-             <div class="container p-3 my-3 border">
-            <a href="">Announcements</a></div>
-            <br>
-            <p></p>
-            <div class="container">
-                <p>Lavdim Menxhiqi</p>
-                <p>
-                    <b>E-mail</b>
-                    : lavdim.menxhiqi@ubt-uni.net
-                </p>
 
-             <br>
-             <p></p>
-
-            <div class="container p-3 my-3 border">Orari i Ligjeratave:
-            <ol>
-                 <li>E Hënë G4a</li>
-                 <li>E Martë G4a</li>
-                 <li>E Merkurë G4a</li>
-                 <li>E Enjte G4a</li>
-                 <li>E Premte G4a</li>
-                 <li>E Shtunë G4a</li>
-                </ol>
+             <div class="card" style="margin:20px;">
+             <div class="card-header">Edit User</div>
+             <div class="card-body">
+             <form action="{{url('update-programim/')}}" method="post">
+            @csrf
+            <input type="hidden" name="id" value="{{$fileModel->id}}"/></br>
+            <div class="custom-file">
+                <input type="file" name="file" class="custom-file-input" id="file">
+                <label class="custom-file-label" for="chooseFile">Select file</label>
             </div>
+           <label>Title</label></br>
+           <input type="text" name="title" id="title" value="{{$fileModel->title}}" class="form-control"></br>
+           <label>Text</label></br>
+           <input type="text" name="text" id="text" value="{{$fileModel->text}}" class="form-control"></br>
+           <input type="submit" value="Update" class="btn btn-success"></br>
+         </form>
 
-            <div class="container p-3 my-3 border">Orari i Ligjeratave:
-                @foreach($fileModel as $item)
-                <div>
-                    <h5>Topic {{$item->id}}
-                        <a href="{{url('/professor/programimedit/'.$item->id)}}" class="btn btn-primary btn-sm">Edit</a>
-                        <a href="{{url('delete-programim/'.$item->id)}}" class="btn btn-danger btn-sm">Delete</a>
-                        </h5>
-                        <a href="{{ asset($item->file_path) }}" download>{{$item->name}}</a></br>
-                        <b>Title : {{$item->title}}</b>
-                        <p>Info: {{$item->text}}</p>
-                </div>
-
-                @endforeach
-
-                <tr>
-                    <a href="{{url('/professor/programimadd')}}" class="btn btn-success btn-sm">Add</a>
-                 </tr>
-
-                </div>
-
-            <div class="container p-3 my-3 border">Literatura:
-                <br>
-                <br>
-                <a href="https://docs.oracle.com/javase/tutorial/">JavaOracle</a>
-                <br>
-                <br>
-                <a href="https://www.javatpoint.com/java-tutorial">JavaTutorial</a>
-                <br>
-                <br>
-                <a href="https://www.tutorialspoint.com/java/index.htm">LearnJava</a>
-                <br>
-                <br>
-                <a href="https://www.javacodegeeks.com/">JavaCourse</a>
-                <br>
-                <br>
-                <a href="https://www.udemy.com/course/java-tutorial/">JavaBeginner</a>
-            </div>
+        </div>
+    </div>
 
 
 

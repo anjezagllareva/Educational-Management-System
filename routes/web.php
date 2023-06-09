@@ -12,6 +12,7 @@ use App\Http\Controllers\CalenderController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\ShkiController;
 use App\Http\Controllers\WebController;
+use App\Http\Controllers\ProgramimController;
 
 /*
 |--------------------------------------------------------------------------
@@ -225,8 +226,8 @@ Route::get('professor/laborator', function () {
 Route::get('professor/programim', function () {
     return view('professor/programim');
 })->middleware('isProfessor');
-Route::get('professor/kriptografia', function () {
-    return view('professor/kriptografia');
+Route::get('professor/kriptografi', function () {
+    return view('professor/kriptografi');
 })->middleware('isProfessor');
 Route::get('/dbconn', function () {
     return view('dbconn');
@@ -301,3 +302,16 @@ Route::get('professor/laboratoredit/{id}', [LabController::class,'editLab'])->mi
 Route::post('update-lab/', [LabController::class, 'updateLab'])->middleware('isProfessor');
 Route::get('delete-lab/{id}', [LabController::class,'deleteLab'])->middleware('isProfessor');
 Route::get('student/lab1', [LabController::class,'LabStudentTable'])->middleware('isStudent');
+
+
+
+Route::get('professor/programimadd', function () {
+    return view('professor/programimadd');
+})->middleware('isProfessor');
+Route::get('/upload-file', [ProgramimController::class, 'createForm'])->middleware('isProfessor');
+Route::post('/upload-file', [ProgramimController::class, 'fileUpload'])->name('fileUpload')->middleware('isProfessor');
+Route::get('professor/programim', [ProgramimController::class,'programimTable'])->middleware('isProfessor');
+Route::get('professor/programimedit/{id}', [ProgramimController::class,'editProgramim'])->middleware('isProfessor');
+Route::post('update-programim/', [ProgramimController::class, 'updateProgramim'])->middleware('isProfessor');
+Route::get('delete-programim/{id}', [ProgramimController::class,'deleteProgramim'])->middleware('isProfessor');
+Route::get('student/gaming', [ProgramimController::class,'programimStudentTable'])->middleware('isStudent');
