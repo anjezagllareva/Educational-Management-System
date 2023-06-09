@@ -104,67 +104,40 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-             <div class="container p-3 my-3 border">
-            <a href="">Announcements</a></div>
-            <br>
-            <p></p>
-            <div class="container">
-                <p>Lavdim Menxhiqi</p>
-                <p>
-                    <b>E-mail</b>
-                    : lavdim.menxhiqi@ubt-uni.net
-                </p>
-
-             <br>
-             <p></p>
-
-            <div class="container p-3 my-3 border">Orari i Ligjeratave:
-            <ol>
-                 <li>E Hënë G4a</li>
-                 <li>E Martë G4a</li>
-                 <li>E Merkurë G4a</li>
-                 <li>E Enjte G4a</li>
-                 <li>E Premte G4a</li>
-                 <li>E Shtunë G4a</li>
-                </ol>
-            </div>
-
-            <div class="container p-3 my-3 border">Orari i Ligjeratave:
-                @foreach($fileModel as $item)
-                <div>
-                    <h5>Topic {{$item->id}}
-                        <a href="{{url('/professor/shkenca1edit/'.$item->id)}}" class="btn btn-primary btn-sm">Edit</a>
-                        <a href="{{url('delete-shki/'.$item->id)}}" class="btn btn-danger btn-sm">Delete</a>
-                        </h5>
-                        <a href="{{ asset($item->file_path) }}" download>{{$item->name}}</a></br>
-                        <b>Title : {{$item->title}}</b>
-                        <p>Info: {{$item->text}}</p>
-                </div>
-
-                @endforeach
-
-                <tr>
-                    <a href="{{url('/professor/shkenca1add')}}" class="btn btn-success btn-sm">Add</a>
-                 </tr>
-
-                </div>
-
-            <div class="container p-3 my-3 border">Literatura:
-                <br>
-                <br>
-                <a href="https://docs.oracle.com/javase/tutorial/">JavaOracle</a>
-                <br>
-                <br>
-                <a href="https://www.javatpoint.com/java-tutorial">JavaTutorial</a>
-                <br>
-                <br>
-                <a href="https://www.tutorialspoint.com/java/index.htm">LearnJava</a>
-                <br>
-                <br>
-                <a href="https://www.javacodegeeks.com/">JavaCourse</a>
-                <br>
-                <br>
-                <a href="https://www.udemy.com/course/java-tutorial/">JavaBeginner</a>
+            <div class="container mt-5">
+                <form action="{{route('fileUpload')}}" method="post" enctype="multipart/form-data">
+                  <h3 class="text-center mb-5">Upload File in Laravel</h3>
+                    @csrf
+                    @if ($message = Session::get('success'))
+                    <div class="alert alert-success">
+                        <strong>{{ $message }}</strong>
+                    </div>
+                  @endif
+                  @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                              <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                  @endif
+                    <div class="custom-file">
+                        <input type="file" name="file" class="custom-file-input" id="chooseFile">
+                        <label class="custom-file-label" for="chooseFile">Select file</label>
+                    </div>
+                    <div
+                    <label>Title</label></br>
+                    <input type="text" name="title" id="title" class="form-control"></br>
+                    </div>
+                    <div
+                    <label>Text</label></br>
+                    <input type="text" name="text" id="text" class="form-control"></br>
+                    </div>
+                    <button type="submit" name="submit" class="btn btn-primary btn-block mt-4">
+                        Upload Files
+                    </button>
+                </form>
             </div>
 
 

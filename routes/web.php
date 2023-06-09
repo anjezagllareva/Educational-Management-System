@@ -13,6 +13,7 @@ use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\ShkiController;
 use App\Http\Controllers\WebController;
 use App\Http\Controllers\ProgramimController;
+use App\Http\Controllers\KriptografiaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -315,3 +316,15 @@ Route::get('professor/programimedit/{id}', [ProgramimController::class,'editProg
 Route::post('update-programim/', [ProgramimController::class, 'updateProgramim'])->middleware('isProfessor');
 Route::get('delete-programim/{id}', [ProgramimController::class,'deleteProgramim'])->middleware('isProfessor');
 Route::get('student/gaming', [ProgramimController::class,'programimStudentTable'])->middleware('isStudent');
+
+
+Route::get('professor/kriptografiadd', function () {
+    return view('professor/kriptografiadd');
+})->middleware('isProfessor');
+Route::get('/upload-file', [KriptografiaController::class, 'createForm'])->middleware('isProfessor');
+Route::post('/upload-file', [KriptografiaController::class, 'fileUpload'])->name('fileUpload')->middleware('isProfessor');
+Route::get('professor/kriptografi', [KriptografiaController::class,'kriptografiTable'])->middleware('isProfessor');
+Route::get('professor/kriptografiedit/{id}', [KriptografiaController::class,'editKriptografi'])->middleware('isProfessor');
+Route::post('update-kriptografi/', [KriptografiaController::class, 'updateKriptografi'])->middleware('isProfessor');
+Route::get('delete-kriptografi/{id}', [KriptografiaController::class,'deleteKriptografi'])->middleware('isProfessor');
+Route::get('student/kriptografia', [KriptografiaController::class,'kriptografiStudentTable'])->middleware('isStudent');

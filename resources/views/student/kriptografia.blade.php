@@ -125,6 +125,19 @@
                 </ol>
             </div>
 
+            <div class="container p-3 my-3 border">
+                @foreach($fileModel as $item)
+                <div>
+                    <h5>Topic {{$item->id}}
+                        </h5>
+                        <a href="{{ asset($item->file_path) }}" download>{{$item->name}}</a></br>
+                        <b>Title : {{$item->title}}</b>
+                        <p>Info: {{$item->text}}</p>
+                </div>
+
+                @endforeach
+            </div>
+
             <div class="container p-3 my-3 border">Literatura:
                 <br>
                 <br>

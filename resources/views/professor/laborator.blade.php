@@ -134,7 +134,7 @@
                 <div>
                     <h5>Topic {{$item->id}}
                         <a href="{{url('/professor/laboratoredit/'.$item->id)}}" class="btn btn-primary btn-sm">Edit</a>
-                        <a href="{{url('delete-lab/'.$item->id)}}" class="btn btn-danger btn-sm">Delete</a>  
+                        <a href="{{url('delete-lab/'.$item->id)}}" class="btn btn-danger btn-sm">Delete</a>
                         </h5>
                         <a href="{{ asset($item->file_path) }}" download>{{$item->name}}</a></br>
                         <b>Title : {{$item->title}}</b>
@@ -142,14 +142,14 @@
                 </div>
 
                 @endforeach
-                
+
                 <tr>
                     <a href="{{url('/professor/laboratoradd')}}" class="btn btn-success btn-sm">Add</a>
                  </tr>
 
                 </div>
 
-            <div class="container p-3 my-3 border">Literatura:
+                <div class="container p-3 my-3 border">Literatura:
                 <br>
                 <br>
                 <a href="https://docs.oracle.com/javase/tutorial/">JavaOracle</a>
@@ -166,7 +166,7 @@
                 <br>
                 <a href="https://www.udemy.com/course/java-tutorial/">JavaBeginner</a>
             </div>
-  
+
 
 
 

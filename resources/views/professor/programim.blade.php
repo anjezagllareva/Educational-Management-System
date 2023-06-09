@@ -149,22 +149,22 @@
 
                 </div>
 
-            <div class="container p-3 my-3 border">Literatura:
+                <div class="container p-3 my-3 border">Literatura:
                 <br>
                 <br>
-                <a href="https://docs.oracle.com/javase/tutorial/">JavaOracle</a>
+                <a href="https://quasarinstitute.it/en/undergraduate/game-design-en/?gclid=CjwKCAjw1YCkBhAOEiwA5aN4Acc3Mp0l2EUJiHV7NEcSFUqh5LKcVZXsoW4enB2-fDXpD6aEqEV1mBoCMK0QAvD_BwE">GameDesign</a>
                 <br>
                 <br>
-                <a href="https://www.javatpoint.com/java-tutorial">JavaTutorial</a>
+                <a href="https://www.skillshare.com/en/blog/how-to-animate-a-character-a-beginners-guide/">Movements</a>
                 <br>
                 <br>
-                <a href="https://www.tutorialspoint.com/java/index.htm">LearnJava</a>
+                <a href="https://www.learncpp.com/">C++</a>
                 <br>
                 <br>
-                <a href="https://www.javacodegeeks.com/">JavaCourse</a>
+                <a href="https://happycoding.io/tutorials/libgdx/">LibGDX</a>
                 <br>
                 <br>
-                <a href="https://www.udemy.com/course/java-tutorial/">JavaBeginner</a>
+                <a href="https://www.simplilearn.com/top-web-frameworks-and-career-tips-in-web-development-article">Frameworks</a>
             </div>
 
 
