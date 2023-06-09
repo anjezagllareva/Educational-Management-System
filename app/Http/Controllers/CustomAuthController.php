@@ -19,18 +19,27 @@ class CustomAuthController extends Controller
             $user = User::where('email','=',$request->email)->first();
           if($user){
           $request->session()->put('adminEmail', $user->email);
+          $request->session()->put('adminName', $user->name);
+          $request->session()->put('adminRole', $user->role);
+          $request->session()->put('adminId', $user->id);
           }
             return redirect()->route('login.custom');
           }else if(auth()->user()->role == 0){
              $user = User::where('email','=',$request->email)->first();
              if($user){
              $request->session()->put('studentEmail', $user->email);
+             $request->session()->put('studentName', $user->name);
+             $request->session()->put('studentRole', $user->role);
+             $request->session()->put('studentId', $user->id);
              }
             return redirect('student/courses');
           }else if(auth()->user()->role == 2){
             $user = User::where('email','=',$request->email)->first();
             if($user){
             $request->session()->put('professorEmail', $user->email);
+            $request->session()->put('professorName', $user->name);
+            $request->session()->put('professorRole', $user->role);
+            $request->session()->put('professorId', $user->id);
             }
             return redirect('professor/schedule');
           }

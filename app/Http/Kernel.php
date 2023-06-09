@@ -67,5 +67,6 @@ class Kernel extends HttpKernel
         'isLoggedIn' => \App\Http\Middleware\AuthCheck::class,
         'isStudent' => \App\Http\Middleware\StudentCheck::class,
         'isProfessor' => \App\Http\Middleware\professorCheck::class,
+        'isWebProfessor' => \App\Http\Middleware\WebProf::class,
     ];
 }
