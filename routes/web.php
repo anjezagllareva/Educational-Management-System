@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\LabController;
 use App\Http\Controllers\Student\MessagesFormController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsFormController;
@@ -288,3 +289,15 @@ Route::get('professor/inxhinieriedit/{id}', [WebController::class,'editWeb'])->m
 Route::post('update-web/', [WebController::class, 'updateWeb'])->middleware('isProfessor');
 Route::get('delete-web/{id}', [WebController::class,'deleteWeb'])->middleware('isProfessor');
 Route::get('student/web', [WebController::class,'WebStudentTable'])->middleware('isStudent');
+
+
+Route::get('professor/laboratoradd', function () {
+    return view('professor/laboratoradd');
+})->middleware('isProfessor');
+Route::get('/upload-file', [LabController::class, 'createForm'])->middleware('isProfessor');
+Route::post('/upload-file', [LabController::class, 'fileUpload'])->name('fileUpload')->middleware('isProfessor');
+Route::get('professor/laborator', [LabController::class,'labTable'])->middleware('isProfessor');
+Route::get('professor/laboratoredit/{id}', [LabController::class,'editLab'])->middleware('isProfessor');
+Route::post('update-lab/', [LabController::class, 'updateLab'])->middleware('isProfessor');
+Route::get('delete-lab/{id}', [LabController::class,'deleteLab'])->middleware('isProfessor');
+Route::get('student/lab1', [LabController::class,'LabStudentTable'])->middleware('isStudent');
