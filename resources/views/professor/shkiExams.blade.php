@@ -61,7 +61,6 @@
                     <a href="{{ url('/professor/courses')}}" class="nav-item nav-link active"><i class="fas fa-calendar-alt me-2"></i>Courses</a>
                     <a href="{{ url('/professor/submits')}}" class="nav-item nav-link"><i class="fas fa-pen-alt me-2"></i>Submits</a>
                     <a href="{{ url('/professor/schedule')}}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Schedule</a>
-                    <a href="{{ url('/professor/students') }}" class="nav-item nav-link"><i class="fas fa-user me-2"></i>Students</a>
                     <a href="{{ url('/professor/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
                     <a href="{{ url('/professor/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
                     <a href="{{ url('/professor/calendar')}}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
@@ -101,7 +100,7 @@
                 <!-- Table Start -->
                 <div class="container-fluid pt-4 px-6">
                 <div class="row g-6">
-                    <div class="col-sm-12 col-xl-6">
+                    <div class="col-sm-12 col-xl-8">
                         <div class="bg-light rounded h-100 p-4">
                             <h6 class="mb-4">Shki Exams</h6>
                             <table class="table">

@@ -58,22 +58,13 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="{{ url('/professor/courses')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Courses</a>
-                    <div class="nav-item dropdown">
-                    <a href="{{ url('/professor/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                        <a href="{{ url('/professor/shk1') }}" class="dropdown-item">Shkenca Kompjuterike 1</a>
-                            <a href="{{ url('/professor/web') }}" class="dropdown-item">Inxhinieri e Web</a>
-                            <a href="{{ url('/professor/lab1') }}" class="dropdown-item">Lëndë Laboratorike 1 (Programim)</a>
-                            <a href="{{ url('/professor/gaming') }}" class="dropdown-item">Programimi i Lojërave</a>
-                            <a href="{{ url('/professor/kripto') }}" class="dropdown-item">Kriptografia</a>
-                        </div>
-                        <a href="{{ url('/professor/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
-                    <a href="{{ url('/professor/students') }}" class="nav-item nav-link"><i class="fas fa-user me-2"></i>Students</a>
-                    <a href="{{ url('/professor/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
-                    <a href="{{ url('/professor/messages') }}" class="nav-item nav-link active"><i class="fas fa-envelope me-2"></i>Messages</a>
-                    <a href="{{ url('/professor/calendar') }}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
-                    </div>
+                    <a href="{{ url('/professor/courses')}}" class="nav-item nav-link active"><i class="fas fa-calendar-alt me-2"></i>Courses</a>
+                    <a href="{{ url('/professor/submits')}}" class="nav-item nav-link"><i class="fas fa-pen-alt me-2"></i>Submits</a>
+                    <a href="{{ url('/professor/schedule')}}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Schedule</a>
+                    <a href="{{ url('/professor/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
+                    <a href="{{ url('/professor/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
+                    <a href="{{ url('/professor/calendar')}}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
+                </div>
                 </div>
             </nav>
         </div>
@@ -109,10 +100,10 @@
             <br>
             <p></p>
             <div class="container">
-                <p>Lavdim Menxhiqi</p>
+                <p>Blerim Zylfiu</p>
                 <p>
                     <b>E-mail</b>
-                    : lavdim.menxhiqi@ubt-uni.net
+                    : blerim.zylfiu@ubt-uni.net
                 </p>
 
              <br>
@@ -120,12 +111,12 @@
 
             <div class="container p-3 my-3 border">Orari i Ligjeratave:
             <ol>
-                 <li>E Hënë G4a</li>
-                 <li>E Martë G4a</li>
-                 <li>E Merkurë G4a</li>
-                 <li>E Enjte G4a</li>
-                 <li>E Premte G4a</li>
-                 <li>E Shtunë G4a</li>
+                 <li>E Hënë G3a</li>
+                 <li>E Martë G3b</li>
+                 <li>E Merkurë G5a</li>
+                 <li>E Enjte G5b</li>
+                 <li>E Premte G6a</li>
+                 <li>E Shtunë G6b</li>
                 </ol>
             </div>
 
@@ -152,19 +143,17 @@
                 <div class="container p-3 my-3 border">Literatura:
                 <br>
                 <br>
-                <a href="https://docs.oracle.com/javase/tutorial/">JavaOracle</a>
+                <a href="https://sd.blackball.lv/library/Beginning_Software_Engineering_(2015).pdf">Software Engineering</a>
                 <br>
                 <br>
-                <a href="https://www.javatpoint.com/java-tutorial">JavaTutorial</a>
+                <a href="https://www.octawian.ro/fisiere/situri/asor/build/html/_downloads/1fcab53a6d916e39c715fc20a9a9c2a8/Silberschatz_A_databases_6th_ed.pdf">DATABASE SYSTEM CONCEPTS</a>
                 <br>
                 <br>
-                <a href="https://www.tutorialspoint.com/java/index.htm">LearnJava</a>
+                <a href="https://books.google.com/books/about/ASP_NET_Core_5_and_React.html?id=PkUTEAAAQBAJ">ASP.NET CORE 5 and React</a>
                 <br>
                 <br>
-                <a href="https://www.javacodegeeks.com/">JavaCourse</a>
+                <a href="https://dl.ebooksworld.ir/motoman/Cengage.Learning.Database.Systems.13th.Edition.www.EBooksWorld.ir.pdf">DATABASE SYSTEMS: DESIGN</a>
                 <br>
-                <br>
-                <a href="https://www.udemy.com/course/java-tutorial/">JavaBeginner</a>
             </div>
 
 

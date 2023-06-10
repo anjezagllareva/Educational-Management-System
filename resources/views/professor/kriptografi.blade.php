@@ -58,22 +58,13 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="{{ url('/professor/courses')}}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Courses</a>
-                    <div class="nav-item dropdown">
-                    <a href="{{ url('/professor/exams') }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-pen-alt me-2"></i>Submits</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                        <a href="{{ url('/professor/shk1') }}" class="dropdown-item">Shkenca Kompjuterike 1</a>
-                            <a href="{{ url('/professor/web') }}" class="dropdown-item">Inxhinieri e Web</a>
-                            <a href="{{ url('/professor/lab1') }}" class="dropdown-item">Lëndë Laboratorike 1 (Programim)</a>
-                            <a href="{{ url('/professor/gaming') }}" class="dropdown-item">Programimi i Lojërave</a>
-                            <a href="{{ url('/professor/kripto') }}" class="dropdown-item">Kriptografia</a>
-                        </div>
-                        <a href="{{ url('/professor/schedule') }}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Schedule</a>
-                    <a href="{{ url('/professor/students') }}" class="nav-item nav-link"><i class="fas fa-user me-2"></i>Students</a>
-                    <a href="{{ url('/professor/subjects') }}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
-                    <a href="{{ url('/professor/messages') }}" class="nav-item nav-link active"><i class="fas fa-envelope me-2"></i>Messages</a>
-                    <a href="{{ url('/professor/calendar') }}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
-                    </div>
+                    <a href="{{ url('/professor/courses')}}" class="nav-item nav-link active"><i class="fas fa-calendar-alt me-2"></i>Courses</a>
+                    <a href="{{ url('/professor/submits')}}" class="nav-item nav-link"><i class="fas fa-pen-alt me-2"></i>Submits</a>
+                    <a href="{{ url('/professor/schedule')}}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Schedule</a>
+                    <a href="{{ url('/professor/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
+                    <a href="{{ url('/professor/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
+                    <a href="{{ url('/professor/calendar')}}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
+                </div>
                 </div>
             </nav>
         </div>
@@ -109,10 +100,10 @@
             <br>
             <p></p>
             <div class="container">
-                <p>Lavdim Menxhiqi</p>
+                <p>Gazmend Krasniqi</p>
                 <p>
                     <b>E-mail</b>
-                    : lavdim.menxhiqi@ubt-uni.net
+                    : gazmend.krasniqi@ubt-uni.net
                 </p>
 
              <br>
@@ -120,12 +111,12 @@
 
             <div class="container p-3 my-3 border">Orari i Ligjeratave:
             <ol>
-                 <li>E Hënë G4a</li>
-                 <li>E Martë G4a</li>
-                 <li>E Merkurë G4a</li>
-                 <li>E Enjte G4a</li>
-                 <li>E Premte G4a</li>
-                 <li>E Shtunë G4a</li>
+                 <li>E Hënë G1a</li>
+                 <li>E Martë G1b</li>
+                 <li>E Merkurë G2a</li>
+                 <li>E Enjte G2b</li>
+                 <li>E Premte G3a</li>
+                 <li>E Shtunë G3b</li>
                 </ol>
             </div>
 
