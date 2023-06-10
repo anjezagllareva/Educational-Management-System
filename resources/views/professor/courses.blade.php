@@ -40,6 +40,7 @@
             </div>
         </div>
         <!-- Spinner End -->
+        
 
 
         <!-- Sidebar Start -->
@@ -87,6 +88,7 @@
                 <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
                 </a>
+                
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -106,6 +108,11 @@
             </nav>
             <!-- Navbar End -->
             <!-- courses start -->
+            @if (session('status'))
+            <div class="alert alert-danger">
+            {{ session('status') }}
+            </div>
+           @endif
             <div class="row row-cols-1 row-cols-md-5 g-4">
 	<div class="col">
 		<div class="card h-100"> <img src="{{asset('assets/admin/img/courses/shk1.jpg')}}" class="card-img-top" alt="...">

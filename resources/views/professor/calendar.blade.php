@@ -104,6 +104,11 @@
                 </div>
             </nav>
             <!-- Navbar End -->
+            @if (session('status'))
+            <div class="alert alert-danger">
+            {{ session('status') }}
+            </div>
+           @endif
             <img src="{{asset('assets/admin/img/calendar.png')}}" width="1000" height="600" style="margin-top:50px;">
 
         </div>

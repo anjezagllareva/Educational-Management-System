@@ -19,7 +19,7 @@ class WebProf
        $email = Session()->get('professorEmail');
        $webProf = subjects::where('email', '=',$email)->first();
         if($webProf==null || $webProf->email !== Session()->get('professorEmail')){
-            return redirect('login');
+            return back()->with('status', 'You dont have access');
         }
         return $next($request);
 
