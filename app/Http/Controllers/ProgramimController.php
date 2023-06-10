@@ -10,7 +10,7 @@ use App\Models\programim;
 class ProgramimController extends Controller
 {
     public function createForm(){
-        return view('programimadd');
+        return view('professor/programimadd');
       }
 
       public function programimTable(){

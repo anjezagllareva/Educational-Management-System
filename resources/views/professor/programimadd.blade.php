@@ -96,7 +96,7 @@
             </nav>
             <!-- Navbar End -->
             <div class="container mt-5">
-                <form action="{{route('fileUpload')}}" method="post" enctype="multipart/form-data">
+                <form action="{{route('fileUploadProgramim')}}" method="post" enctype="multipart/form-data">
                   <h3 class="text-center mb-5">Upload File in Laravel</h3>
                     @csrf
                     @if ($message = Session::get('success'))

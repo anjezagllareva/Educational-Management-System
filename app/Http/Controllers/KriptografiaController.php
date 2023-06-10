@@ -10,7 +10,7 @@ use App\Models\Kriptografia;
 class KriptografiaController extends Controller
 {
     public function createForm(){
-        return view('kriptografiadd');
+        return view('professor/kriptografiadd');
       }
 
       public function kriptografiTable(){

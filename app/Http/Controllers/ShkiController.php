@@ -9,7 +9,7 @@ use App\Models\shki;
 class ShkiController extends Controller
 {
     public function createForm(){
-        return view('shkenca1add');
+        return view('professor/shkenca1add');
       }
 
       public function shkiTable(){

@@ -9,7 +9,7 @@ use App\Models\web;
 class WebController extends Controller
 {
     public function createForm(){
-        return view('inxhinieriadd');
+        return view('professor/inxhinieriadd');
       }
 
       public function webTable(){

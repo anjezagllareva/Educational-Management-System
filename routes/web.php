@@ -274,22 +274,18 @@ Route::post('update-schedule/', [ScheduleController::class, 'updateSchedule'])->
 Route::get('professor/schedule', [ScheduleController::class,'scheduleProfessorTable'])->middleware('isProfessor');
 Route::get('student/schedule', [ScheduleController::class,'scheduleStudentTable'])->middleware('isStudent');
 
-Route::get('professor/shkenca1add', function () {
-    return view('professor/shkenca1add');
-})->middleware('isProfessor');
-Route::get('/upload-file', [ShkiController::class, 'createForm'])->middleware('isProfessor');
-Route::post('/upload-file', [ShkiController::class, 'fileUpload'])->name('fileUpload')->middleware('isProfessor');
+
+Route::get('professor/shkenca1add', [ShkiController::class, 'createForm'])->middleware('isProfessor');
+Route::post('professor/shkenca1add', [ShkiController::class, 'fileUpload'])->name('fileUploadShki')->middleware('isProfessor');
 Route::get('professor/shkenca1', [ShkiController::class,'shkiTable'])->middleware('isProfessor');
 Route::get('professor/shkenca1edit/{id}', [ShkiController::class,'editShki'])->middleware('isProfessor');
 Route::post('update-shki/', [ShkiController::class, 'updateShki'])->middleware('isProfessor');
 Route::get('delete-shki/{id}', [ShkiController::class,'deleteShki'])->middleware('isProfessor');
 Route::get('student/shk1', [ShkiController::class,'ShkiStudentTable'])->middleware('isStudent');
 
-Route::get('professor/inxhineriadd', function () {
-    return view('professor/inxhinieriadd');
-})->middleware('isProfessor');
-Route::get('/upload-file', [WebController::class, 'createForm'])->middleware('isProfessor');
-Route::post('/upload-file', [WebController::class, 'fileUpload'])->name('fileUpload')->middleware('isProfessor');
+
+Route::get('professor/inxhinieriadd', [WebController::class, 'createForm'])->middleware('isProfessor');
+Route::post('professor/inxhinieriadd', [WebController::class, 'fileUpload'])->name('fileUploadWeb')->middleware('isProfessor');
 Route::get('professor/inxhinieri', [WebController::class,'webTable'])->middleware('isProfessor');
 Route::get('professor/inxhinieriedit/{id}', [WebController::class,'editWeb'])->middleware('isProfessor');
 Route::post('update-web/', [WebController::class, 'updateWeb'])->middleware('isProfessor');
@@ -297,11 +293,9 @@ Route::get('delete-web/{id}', [WebController::class,'deleteWeb'])->middleware('i
 Route::get('student/web', [WebController::class,'WebStudentTable'])->middleware('isStudent');
 
 
-Route::get('professor/laboratoradd', function () {
-    return view('professor/laboratoradd');
-})->middleware('isProfessor');
-Route::get('/upload-file', [LabController::class, 'createForm'])->middleware('isProfessor');
-Route::post('/upload-file', [LabController::class, 'fileUpload'])->name('fileUpload')->middleware('isProfessor');
+
+Route::get('professor/laboratoradd', [LabController::class, 'createForm'])->middleware('isProfessor');
+Route::post('professor/laboratoradd', [LabController::class, 'fileUpload'])->name('fileUploadLab')->middleware('isProfessor');
 Route::get('professor/laborator', [LabController::class,'labTable'])->middleware('isProfessor');
 Route::get('professor/laboratoredit/{id}', [LabController::class,'editLab'])->middleware('isProfessor');
 Route::post('update-lab/', [LabController::class, 'updateLab'])->middleware('isProfessor');
@@ -310,11 +304,8 @@ Route::get('student/lab1', [LabController::class,'LabStudentTable'])->middleware
 
 
 
-Route::get('professor/programimadd', function () {
-    return view('professor/programimadd');
-})->middleware('isProfessor');
-Route::get('/upload-file', [ProgramimController::class, 'createForm'])->middleware('isProfessor');
-Route::post('/upload-file', [ProgramimController::class, 'fileUpload'])->name('fileUpload')->middleware('isProfessor');
+Route::get('professor/programimadd', [ProgramimController::class, 'createForm'])->middleware('isProfessor');
+Route::post('professor/programimadd', [ProgramimController::class, 'fileUpload'])->name('fileUploadProgramim')->middleware('isProfessor');
 Route::get('professor/programim', [ProgramimController::class,'programimTable'])->middleware('isProfessor');
 Route::get('professor/programimedit/{id}', [ProgramimController::class,'editProgramim'])->middleware('isProfessor');
 Route::post('update-programim/', [ProgramimController::class, 'updateProgramim'])->middleware('isProfessor');
@@ -322,11 +313,9 @@ Route::get('delete-programim/{id}', [ProgramimController::class,'deleteProgramim
 Route::get('student/gaming', [ProgramimController::class,'programimStudentTable'])->middleware('isStudent');
 
 
-Route::get('professor/kriptografiadd', function () {
-    return view('professor/kriptografiadd');
-})->middleware('isProfessor');
-Route::get('/upload-file', [KriptografiaController::class, 'createForm'])->middleware('isProfessor');
-Route::post('/upload-file', [KriptografiaController::class, 'fileUpload'])->name('fileUpload')->middleware('isProfessor');
+
+Route::get('professor/kriptografiadd', [KriptografiaController::class, 'createForm'])->middleware('isProfessor');
+Route::post('professor/kriptografiadd', [KriptografiaController::class, 'fileUpload'])->name('fileUploadKripto')->middleware('isProfessor');
 Route::get('professor/kriptografi', [KriptografiaController::class,'kriptografiTable'])->middleware('isProfessor');
 Route::get('professor/kriptografiedit/{id}', [KriptografiaController::class,'editKriptografi'])->middleware('isProfessor');
 Route::post('update-kriptografi/', [KriptografiaController::class, 'updateKriptografi'])->middleware('isProfessor');

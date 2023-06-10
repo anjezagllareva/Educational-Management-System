@@ -9,7 +9,7 @@ use App\Models\lab;
 class LabController extends Controller
 {
     public function createForm(){
-        return view('laboratoradd');
+        return view('professor/laboratoradd');
       }
 
       public function labTable(){
