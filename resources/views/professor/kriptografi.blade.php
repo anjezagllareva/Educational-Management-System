@@ -135,7 +135,7 @@
                 @endforeach
 
                 <tr>
-                    <a href="{{url('/professor/programimadd')}}" class="btn btn-success btn-sm">Add</a>
+                    <a href="{{url('/professor/kriptografiadd')}}" class="btn btn-success btn-sm">Add</a>
                  </tr>
 
                 </div>

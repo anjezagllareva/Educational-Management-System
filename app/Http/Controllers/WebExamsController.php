@@ -63,8 +63,10 @@ class WebExamsController extends Controller
      
     }
 
-    public function deleteExams($id){
-        WebExams::where('id', '=',$id)->delete();
+    public function deleteExams($subject){
+        $email = Session()->get('studentEmail');
+
+        WebExams::where('subject', $subject)->where('email', $email)->delete();
         return redirect()->back();
 
     }

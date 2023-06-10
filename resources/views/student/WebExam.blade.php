@@ -131,7 +131,7 @@
                                             <a href="{{url('do-exams/'.$item->id)}}" class="btn btn-success btn-sm">Exam</a> 
                                         </td>
                                         <td>
-                                            <a href="{{url('delete-subjects/'.$item->id)}}" class="btn btn-danger btn-sm">Cancel</a> 
+                                            <a href="{{url('delete-exams/'.$item->subject)}}" class="btn btn-danger btn-sm">Cancel</a> 
                                         </td>
                                     </tr>
                                     @endforeach
