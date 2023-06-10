@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Professor</title>
+    <title>ADMIN</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -45,8 +45,8 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="{{ url('/professor/students')}}" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary">Professor</h3>
+                <a href="{{ url('/admin/admin')}}" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary">Admin</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -54,7 +54,7 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Professor</h6>
+                        <h6 class="mb-0">Admin</h6>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
@@ -65,6 +65,7 @@
                     <a href="{{ url('/professor/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
                     <a href="{{ url('/professor/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
                     <a href="{{ url('/professor/calendar')}}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
+                </div>
                 </div>
             </nav>
         </div>
@@ -82,11 +83,49 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <div class="navbar-nav align-items-center ms-auto">
-
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-envelope me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Message</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Admin send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Admin send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Admin send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all message</a>
+                        </div>
+                    </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="{{asset('assets/admin/img/admin.png')}}" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">Professor</span>
+                            <span class="d-none d-lg-inline-flex">Admin</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="{{ url('/logout') }}" class="dropdown-item">Log Out</a>
@@ -96,46 +135,34 @@
             </nav>
             <!-- Navbar End -->
 
+  
             
-            <!-- Table Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Basic Table</h6>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Id</th>
-                                        <th scope="col">Message</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Subject</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                @foreach ($messages as $item)
-                                 <tr>
-                                    <td>{{ $item->id }}</td>
-                                    <td>{{ $item->message }}</td>
-                                    <td>{{ $item->name }}</td>
-                                    <td>{{ $item->email }}</td>
-                                    <td>{{ $item->subject }}</td>
-                                </tr>
-                                @endforeach
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Table End -->
-
-
-
+            <div class="card" style="margin:20px;">
+  <div class="card-header">Edit User</div>
+  <div class="card-body"> 
+  <form action="{{url('update-exams/')}}" method="post">
+  @csrf
+        <input type="hidden" name="id" value="{{$exams->id}}"/></br>
+        <label>Name</label></br>
+        <input type="text" name="name" id="name" value="{{$exams->name}}" class="form-control"></br>
+        @error('name')
+        <div class="alert alert-danger" role="alert">
+            {{$message}}
+        </div>
+        @enderror
+        <label>Email</label></br>
+        <input type="email" name="email" id="email" value="{{$exams->email}}" class="form-control"></br>
+        <label>Grade</label></br>
+        <input type="text" name="grade" id="grade" value="{{$exams->grade}}" class="form-control"></br>
+        <input type="submit" value="Update" class="btn btn-success"></br>
+    </form>
+    
+  </div>
+</div>
+  
             </div>
         <!-- Content End -->
-
+          
 
 
         <!-- Back to Top -->

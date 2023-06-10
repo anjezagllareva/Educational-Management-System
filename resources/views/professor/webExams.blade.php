@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="{{asset('admin/img/favicon.ico')}}" rel="icon">
+    <link href="{{asset('assets/admin/img/favicon.ico')}}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,15 +20,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
+   <!-- Libraries Stylesheet -->
+   <link href="{{asset('assets/admin/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+   <link href="{{asset('assets/admin/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('assets/admin/css/bootstrap.min.css')}}" rel="stylesheet">
+   <!-- Customized Bootstrap Stylesheet -->
+   <link href="{{asset('assets/admin/css/bootstrap.min.css')}}" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="{{asset('assets/admin/css/style.css')}} " rel="stylesheet">
+   <!-- Template Stylesheet -->
+   <link href="{{asset('assets/admin/css/style.css')}} " rel="stylesheet">
 </head>
 
 <body>
@@ -82,6 +82,7 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
 
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -96,33 +97,44 @@
             </nav>
             <!-- Navbar End -->
 
-            
-            <!-- Table Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
+
+                <!-- Table Start -->
+                <div class="container-fluid pt-4 px-6">
+                <div class="row g-6">
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Basic Table</h6>
+                            <h6 class="mb-4">Web Exams</h6>
                             <table class="table">
                                 <thead>
-                                    <tr>
-                                        <th scope="col">Id</th>
-                                        <th scope="col">Message</th>
+                                <tr>
+                                        <th scope="col">#</th>
                                         <th scope="col">Name</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Subject</th>
+                                        <th scope="col">Grade</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                @foreach ($messages as $item)
-                                 <tr>
-                                    <td>{{ $item->id }}</td>
-                                    <td>{{ $item->message }}</td>
-                                    <td>{{ $item->name }}</td>
-                                    <td>{{ $item->email }}</td>
-                                    <td>{{ $item->subject }}</td>
-                                </tr>
-                                @endforeach
+                                    @php
+                                        $i=1;
+                                    @endphp
+                                    @foreach($exams as $item)
+                                    <tr>
+                                        <td>{{ $item->id}}</td>
+                                        <td>{{ $item->name}}</td>
+                                        <td>{{ $item->email}}</td>
+                                        <td>{{ $item->subject}}</td>
+                                        <td>{{ $item->grade}}</td>
+                                        <td>
+                                            <a href="{{url('/admin/WebExamsEdit/'.$item->id)}}" class="btn btn-primary btn-sm">Edit</a> 
+                                        </td>
+                                        <td>
+                                            <a href="{{url('delete-exams/'.$item->id)}}" class="btn btn-danger btn-sm">Delete</a> 
+                                        </td>
+                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
@@ -130,31 +142,27 @@
                 </div>
             </div>
             <!-- Table End -->
-
-
-
-            </div>
+        </div>
         <!-- Content End -->
-
 
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/admin/lib/chart/chart.min.js"></script>
-    <script src="/assets/admin/lib/easing/easing.min.js"></script>
-    <script src="/assets/admin/lib/waypoints/waypoints.min.js"></script>
-    <script src="/assets/admin/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="/assets/admin/lib/tempusdominus/js/moment.min.js"></script>
-    <script src="/assets/admin/lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="/assets/admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/admin/lib/chart/chart.min.js"></script>
+  <script src="/assets/admin/lib/easing/easing.min.js"></script>
+  <script src="/assets/admin/lib/waypoints/waypoints.min.js"></script>
+  <script src="/assets/admin/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="/assets/admin/lib/tempusdominus/js/moment.min.js"></script>
+  <script src="/assets/admin/lib/tempusdominus/js/moment-timezone.min.js"></script>
+  <script src="/assets/admin/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="/assets/admin/js/main.js"></script>
+  <!-- Template Javascript -->
+  <script src="/assets/admin/js/main.js"></script>
 </body>
 
 </html>

@@ -14,6 +14,7 @@ use App\Http\Controllers\ShkiController;
 use App\Http\Controllers\WebController;
 use App\Http\Controllers\ProgramimController;
 use App\Http\Controllers\KriptografiaController;
+use App\Http\Controllers\WebExamsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -192,7 +193,7 @@ Route::get('professor/web', function () {
 })->middleware('isProfessor');
 Route::get('professor/calendar', function () {
     return view('professor/calendar');
-})->middleware('isWebProfessor');
+})->middleware('isProfessor');
 Route::get('professor/transcripts', function () {
     return view('professor/transcripts');
 })->middleware('isProfessor');
@@ -230,6 +231,9 @@ Route::get('professor/programim', function () {
 Route::get('professor/kriptografi', function () {
     return view('professor/kriptografi');
 })->middleware('isProfessor');
+Route::get('professor/submits', function () {
+    return view('professor/submits');
+})->middleware('exam');
 Route::get('/dbconn', function () {
     return view('dbconn');
 });
@@ -328,3 +332,17 @@ Route::get('professor/kriptografiedit/{id}', [KriptografiaController::class,'edi
 Route::post('update-kriptografi/', [KriptografiaController::class, 'updateKriptografi'])->middleware('isProfessor');
 Route::get('delete-kriptografi/{id}', [KriptografiaController::class,'deleteKriptografi'])->middleware('isProfessor');
 Route::get('student/kriptografia', [KriptografiaController::class,'kriptografiStudentTable'])->middleware('isStudent');
+
+Route::get('professor/WebExams', [WebExamsController::class,'ExamsTable'])->middleware('isProfessor');
+Route::get('delete-exams/{id}', [WebExamsController::class,'deleteExams'])->middleware('isProfessor');
+Route::get('admin/WebExamsEdit/{id}', [WebExamsController::class,'editExams'])->middleware('isProfessor');
+Route::post('update-exams/', [WebExamsController::class, 'updateExams'])->middleware('isProfessor');
+Route::get('student/transcript', [WebExamsController::class,'Transcript'])->middleware('isStudent');
+Route::get('student/WebExam', [WebExamsController::class,'studentSubjects'])->middleware('isStudent');
+Route::get('do-exams/{id}', [WebExamsController::class,'DoExam'])->middleware('isStudent');
+
+
+Route::get('professor/shkiExams', [WebExamsController::class,'ShkiExamsTable'])->middleware('isProfessor');
+Route::get('professor/LabExams', [WebExamsController::class,'LabExamsTable'])->middleware('isProfessor');
+Route::get('professor/ProgramimExams', [WebExamsController::class,'ProgramimExamsTable'])->middleware('isProfessor');
+Route::get('professor/KriptoExams', [WebExamsController::class,'KriptografiExamsTable'])->middleware('isProfessor');
