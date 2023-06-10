@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
+use App\Models\subjects;
 
 class WebProf
 {
@@ -15,9 +16,9 @@ class WebProf
      */
     public function handle(Request $request, Closure $next): Response
     {
-       
-        
-        if(Session()->get('professorName') !== 'erza'){
+       $email = Session()->get('professorEmail');
+       $webProf = subjects::where('email', '=',$email)->first();
+        if($webProf==null || $webProf->email !== Session()->get('professorEmail')){
             return redirect('login');
         }
         return $next($request);

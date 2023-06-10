@@ -192,7 +192,7 @@ Route::get('professor/web', function () {
 })->middleware('isProfessor');
 Route::get('professor/calendar', function () {
     return view('professor/calendar');
-})->middleware('isProfessor');
+})->middleware('isWebProfessor');
 Route::get('professor/transcripts', function () {
     return view('professor/transcripts');
 })->middleware('isProfessor');
