@@ -58,12 +58,13 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="{{ url('/professor/courses')}}" class="nav-item nav-link active"><i class="fas fa-calendar-alt me-2"></i>Courses</a>
-                    <a href="{{ url('/professor/submits')}}" class="nav-item nav-link"><i class="fas fa-pen-alt me-2"></i>Submits</a>
+                    <a href="{{ url('/professor/courses')}}" class="nav-item nav-link"><i class="fas fa-calendar-alt me-2"></i>Courses</a>
+                    <a href="{{ url('/professor/submits')}}" class="nav-item nav-link active"><i class="fas fa-pen-alt me-2"></i>Submits</a>
                     <a href="{{ url('/professor/schedule')}}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Schedule</a>
                     <a href="{{ url('/professor/subjects')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Subjects</a>
                     <a href="{{ url('/professor/messages') }}" class="nav-item nav-link"><i class="fas fa-envelope me-2"></i>Messages</a>
                     <a href="{{ url('/professor/calendar')}}" class="nav-item nav-link"><i class="fas fa-calendar-week me-2"></i>Calendar</a>
+                </div>
                 </div>
             </nav>
         </div>

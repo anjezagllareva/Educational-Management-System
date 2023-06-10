@@ -101,7 +101,7 @@
                 <div class="row g-4">
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Basic Table</h6>
+                            <h6 class="mb-4">Message Table</h6>
                             <table class="table">
                                 <thead>
                                     <tr>
