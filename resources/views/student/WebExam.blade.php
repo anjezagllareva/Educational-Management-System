@@ -111,9 +111,8 @@
                                         <th scope="col">Lecturer</th>
                                         <th scope="col">Subject</th>
                                         <th scope="col">Email</th>
-                                        <th scope="col">Active</th>
-                                        <th scope="col">Edit</th>
-                                        <th scope="col">Delete</th>
+                                        <th scope="col">Submit</th>
+                                        <th scope="col">Cancel</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -126,7 +125,6 @@
                                         <td>{{ $item->lecturer}}</td>
                                         <td>{{ $item->subject}}</td>
                                         <td>{{ $item->email}}</td>
-                                        <td></td>
                                         <td>
                                             <a href="{{url('do-exams/'.$item->id)}}" class="btn btn-success btn-sm">Exam</a> 
                                         </td>
