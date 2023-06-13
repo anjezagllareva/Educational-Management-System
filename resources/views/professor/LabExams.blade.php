@@ -100,7 +100,7 @@
                 <!-- Table Start -->
                 <div class="container-fluid pt-4 px-6">
                 <div class="row g-6">
-                    <div class="col-sm-12 col-xl-6">
+                    <div class="col-sm-12 col-xl-8">
                         <div class="bg-light rounded h-100 p-4">
                             <h6 class="mb-4">Lab Exams</h6>
                             <table class="table">
