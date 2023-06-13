@@ -52,7 +52,7 @@ class ProgramimController extends Controller
 
        public function editProgramim($id){
         $fileModel = programim::where('id','=',$id)->first();
-        return view('../professor/shkenca1edit',compact('fileModel'));
+        return view('../professor/programimedit',compact('fileModel'));
     }
 
     public function updateProgramim(Request $request ){

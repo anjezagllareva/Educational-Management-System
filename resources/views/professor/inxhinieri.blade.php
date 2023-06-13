@@ -124,7 +124,7 @@
                 @foreach($fileModel as $item)
                 <div>
                     <h5>Topic {{$item->id}}
-                        <a href="{{url('/professor/inxhineriedit/'.$item->id)}}" class="btn btn-primary btn-sm">Edit</a>
+                        <a href="{{url('/professor/inxhinieriedit/'.$item->id)}}" class="btn btn-primary btn-sm">Edit</a>
                         <a href="{{url('delete-web/'.$item->id)}}" class="btn btn-danger btn-sm">Delete</a>  
                         </h5>
                         <a href="{{ asset($item->file_path) }}" download>{{$item->name}}</a></br>
@@ -135,7 +135,7 @@
                 @endforeach
                 
                 <tr>
-                    <a href="{{url('/professor/inxhineriadd')}}" class="btn btn-success btn-sm">Add</a>
+                    <a href="{{url('/professor/inxhinieriadd')}}" class="btn btn-success btn-sm">Add</a>
                  </tr>
 
                 </div>
