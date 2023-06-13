@@ -130,7 +130,7 @@
                                             <a href="{{url('/admin/WebExamsEdit/'.$item->id)}}" class="btn btn-primary btn-sm">Edit</a> 
                                         </td>
                                         <td>
-                                            <a href="{{url('delete-exams/'.$item->id)}}" class="btn btn-danger btn-sm">Delete</a> 
+                                            <a href="{{url('cancel-exams/'.$item->id)}}" class="btn btn-danger btn-sm">Delete</a> 
                                         </td>
                                     </tr>
                                     @endforeach

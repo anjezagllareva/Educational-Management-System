@@ -71,6 +71,15 @@ class WebExamsController extends Controller
 
     }
 
+    public function cancelExams($id){
+        WebExams::where('id', '=',$id)->update([
+            'grade' => null,
+        ]);
+
+        return redirect()->back();
+
+    }
+
     public function DoExam(Request $request){
         $email = Session()->get('studentEmail');
         $name = Session()->get('studentName');
