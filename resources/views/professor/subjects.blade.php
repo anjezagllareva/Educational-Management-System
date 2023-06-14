@@ -107,7 +107,8 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                        <th scope="col">#</th>
+                                        <th scope="col">ID</th>
+                                         <th scope="col">profID</th>
                                         <th scope="col">Lecturer</th>
                                         <th scope="col">Subject</th>
                                         <th scope="col">Email</th>
@@ -120,6 +121,7 @@
                                     @foreach($subject as $item)
                                     <tr>
                                         <td>{{ $item->id}}</td>
+                                        <td>{{ $item->professorID}}</td>
                                         <td>{{ $item->lecturer}}</td>
                                         <td>{{ $item->subject}}</td>
                                         <td>{{ $item->email}}</td>
