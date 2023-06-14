@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\subjects;
+use App\Models\Users;
+use App\Models\User;
 
 class SubjectsController extends Controller
 {
@@ -44,17 +46,21 @@ class SubjectsController extends Controller
         
         $request->validate([
             'lecturer' =>   'required|string|min:3|max:20',
-            'subject' =>   'required|string|min:3|max:20',
-            'email' =>  'required|email|unique:users,email',
+            'subject' =>   'required|string',
+            'email' =>  'required|email',
             
          ]);
+        
         
         $lecturer = $request->lecturer;
         $subject = $request->subject;
         $email = $request->email;
+        $profID = Users::where('email','=',$email)->first();
+        
 
 
         $sub = new subjects();
+        $sub->professorID = $profID->id;
         $sub->lecturer = $lecturer;
         $sub->subject = $subject;
         $sub->email = $email;

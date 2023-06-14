@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class subjects extends Model
 {
     use HasFactory;
-    public $fillable = ['lecturer', 'subject', 'email',];
+    public $fillable = ['professorID','lecturer', 'subject', 'email',];
 }

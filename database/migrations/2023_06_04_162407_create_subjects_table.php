@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('subjects', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('professorID')->unsigned()->index()->nullable();
+            $table->foreign('professorID')->references('id')->on('users');
             $table->string('lecturer');
             $table->string('subject');
             $table->string('email');
